@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #05070f; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "HarmonyOS Sans SC", sans-serif;
+    color: #e8f0ff;
+    -webkit-font-smoothing: antialiased;
+    width: max-content;
+  }
+  .wrap {
+    position: relative;
+    width: 860px;
+    padding: 0 0 18px;
+    background: #05070f;
+    isolation: isolate;
+  }
+  /* 整图背景：元素星空图，和天赋图同一套观感 */
+  .wrap::before {
+    content: ""; position: absolute; inset: 0; z-index: -2;
+    background-image: url("{{_res_path}}{{bgImg}}");
+    background-size: 860px auto;
+    background-repeat: repeat-y;
+    background-position: center top;
+  }
+  .wrap::after {
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background:
+      radial-gradient(ellipse at 74% 3%, rgba(120,190,255,.12), transparent 42%),
+      linear-gradient(180deg,
+        rgba(6,16,34,.10) 0%,
+        rgba(6,16,34,.06) 7%,
+        rgba(6,16,34,.14) 18%,
+        rgba(6,16,34,.26) 42%,
+        rgba(6,16,34,.34) 70%,
+        rgba(6,16,34,.38) 100%);
+  }
+
+  /* ---------- 头部 ---------- */
+  .head {
+    position: relative;
+    padding: 30px 32px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .head-bg {
+    position: absolute; inset: 0;
+    background-image: url("{{_res_path}}{{card}}");
+    background-size: cover;
+    background-position: center 42%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 14%, rgba(0,0,0,.72) 52%, rgba(0,0,0,.28) 80%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 0%, #000 14%, rgba(0,0,0,.72) 52%, rgba(0,0,0,.28) 80%, transparent 100%);
+  }
+  .head-mask {
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(4,8,18,.58) 0%, rgba(4,8,18,.30) 44%, rgba(4,8,18,.06) 72%, rgba(4,8,18,0) 100%),
+      linear-gradient(180deg, rgba(4,8,18,.14) 0%, rgba(4,8,18,.02) 60%, rgba(4,8,18,.16) 100%);
+  }
+  .avatar {
+    flex: 0 0 176px;
+    width: 176px; height: 176px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background: radial-gradient(circle at 50% 40%, {{accentSoft}}, rgba(10,20,40,.92) 72%);
+    border: 3px solid {{accentLine}};
+    box-shadow: 0 0 30px {{accentLine}}, 0 8px 22px rgba(0,0,0,.5);
+  }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .head-inner { position: relative; z-index: 2; display: flex; width: 100%; gap: 28px; align-items: center; }
+  .head-txt { flex: 1; min-width: 0; }
+  .kicker {
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: {{accent}};
+    padding: 4px 16px;
+    border-radius: 22px;
+    background: {{accentSoft}};
+    border: 1px solid {{accentLine}};
+    margin-bottom: 14px;
+  }
+  .name-row { display: flex; align-items: baseline; gap: 16px; }
+  .cname {
+    font-size: 78px; font-weight: 700; letter-spacing: 4px;
+    color: #fff;
+    text-shadow: 0 2px 18px rgba(0,0,0,.8), 0 0 34px {{accentLine}};
+  }
+  .enname {
+    font-size: 19px; letter-spacing: 5px; color: rgba(170,200,255,.55);
+    text-transform: uppercase;
+  }
+  .role-desc {
+    margin-top: 12px;
+    font-size: 20px; line-height: 1.7;
+    color: rgba(215,228,255,.80);
+    text-shadow: 0 1px 8px rgba(0,0,0,.85);
+  }
+  .role-desc b { color: {{accent}}; font-weight: 600; }
+
+  /* ---------- 共鸣链区 ---------- */
+  .sec-title {
+    margin: 16px 26px 4px;
+    font-size: 13px; letter-spacing: 3px;
+    color: rgba(190,214,255,.82);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .sec-title::after {
+    content: ""; flex: 1; height: 1px;
+    background: linear-gradient(90deg, {{accentLine}}, rgba(120,160,240,0));
+  }
+
+  .chain {
+    margin: 10px 26px 0;
+    border-radius: 14px;
+    background: linear-gradient(180deg, rgba(120,165,255,.10), rgba(70,110,190,.06));
+    border-left: 3px solid {{accentLine}};
+    box-shadow: 0 4px 14px rgba(0,0,0,.30);
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 14px 18px 14px 14px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cno {
+    position: absolute; right: 14px; top: 6px;
+    font-size: 42px; font-weight: 800;
+    color: {{accentNo}};
+    letter-spacing: 1px;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    pointer-events: none;
+  }
+  .cicon {
+    width: 68px; height: 68px; border-radius: 50%;
+    flex: 0 0 68px;
+    display: flex; align-items: center; justify-content: center;
+    position: relative; z-index: 1;
+  }
+  .cicon img {
+    width: 42px; height: 42px; object-fit: contain;
+    opacity: .96;
+  }
+  .cbody { flex: 1; min-width: 0; position: relative; z-index: 1; padding-right: 46px; }
+  .cname {
+    font-size: 21px; font-weight: 700; letter-spacing: .5px;
+    color: #ffffff;
+    margin-bottom: 6px;
+    text-shadow: 0 2px 12px rgba(0,0,0,.6), 0 0 18px {{accentSoft}};
+  }
+  .cdesc {
+    font-size: 14.5px; line-height: 1.72;
+    color: rgba(232,240,255,.86);
+    white-space: pre-line;
+    text-shadow: 0 1px 5px rgba(0,0,0,.45);
+  }
+  .cdesc b { color: {{accent}}; font-weight: 600; }
+
+  /* 底部 */
+  .foot {
+    margin: 16px 26px 0;
+    padding-top: 12px;
+    border-top: 1px solid rgba(110,150,230,.12);
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 11px; color: rgba(178,202,238,.68);
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <div class="head-bg"></div>
+    <div class="head-mask"></div>
+    <div class="head-inner">
+      {{if head}}<div class="avatar"><img src="{{_res_path}}{{head}}" alt=""></div>{{/if}}
+      <div class="head-txt">
+        <div class="kicker">共 鸣 链</div>
+        <div class="name-row">
+          <div class="cname">{{name}}</div>
+          <div class="enname">{{subtitle}}</div>
+        </div>
+        <div class="role-desc">共 <b>{{count}}</b> 条共鸣链 · 按解锁顺序排列</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-title">共 鸣 链 节 点</div>
+
+  {{each chains c}}
+  <div class="chain">
+    <div class="cno">{{c.no}}</div>
+    <div class="cicon" style="{{c.iconCss}}">{{if c.iconPath}}<img src="{{_res_path}}{{c.iconPath}}" alt="">{{/if}}</div>
+    <div class="cbody">
+      <div class="cname">{{c.name}}</div>
+      <div class="cdesc">{{@c.desc}}</div>
+    </div>
+  </div>
+  {{/each}}
+
+  <div class="foot">
+    <span>鸣潮 · 角色共鸣链</span>
+    <span>{{watermark}}</span>
+  </div>
+</div>
+</body>
+</html>

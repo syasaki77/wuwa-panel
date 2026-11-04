@@ -1,0 +1,2582 @@
+{
+ "丹瑾": {
+  "name": "丹瑾",
+  "subtitle": "DANJIN",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/dfd733841aa64af3a3e79180749080ee20240521.png",
+  "chains": [
+   {
+    "name": "丹心本如鉴",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/a8e2be6bf31343ceb437e5d1b19d324a20240328.png",
+    "desc": "丹瑾攻击携带共鸣技能<b>朱蚀之刻</b>的目标时，自身的攻击提升5%，持续6秒，可叠加6层，每次受到伤害时减少1层。",
+    "iconPath": "img/chain/8f51739d9f83740a.png"
+   },
+   {
+    "name": "明镜却蒙尘",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/5387f2be349a461eb4299e65b364d0cb20240328.png",
+    "desc": "丹瑾攻击携带共鸣技能<b>朱蚀之刻</b>的目标时，造成的伤害额外提升20%。",
+    "iconPath": "img/chain/03bfec210d362375.png"
+   },
+   {
+    "name": "刹那芳华不长久",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/a72aaaae6a5f41acb61efb19acad739920240328.png",
+    "desc": "共鸣解放伤害加成提升30%。",
+    "iconPath": "img/chain/9862faabc558d97e.png"
+   },
+   {
+    "name": "孤艳难红",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/658e58623fe74cf6a6ff8919a3ef448020240328.png",
+    "desc": "<b>【彤华】</b>积攒60点以上时，丹瑾的暴击提升15%。释放重击<b>缭乱</b>消耗所有<b>【彤华】</b>后，此效果会被延续至重击<b>纷落</b>结束。",
+    "iconPath": "img/chain/e1df02d314be465b.png"
+   },
+   {
+    "name": "剑扫春秋",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/c2eb57926c11458ab5075765ea9536f120240328.png",
+    "desc": "丹瑾的湮灭伤害加成提升15%，生命低于60%时湮灭伤害加成额外提升15%。",
+    "iconPath": "img/chain/8f462d5cbe423676.png"
+   },
+   {
+    "name": "绯染碧玉岂堪留",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f577ad2a79cb4f43b2d642161ba1c61520240328.png",
+    "desc": "施放重击<b>缭乱</b>时，队伍中的角色的攻击提升20%，持续20秒。",
+    "iconPath": "img/chain/d3a078533b0a81c4.png"
+   }
+  ]
+ },
+ "丽贝卡": {
+  "name": "丽贝卡",
+  "subtitle": "REBECCA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/6e0663dd55f541f8aa10d9299877f33d20260509.png",
+  "chains": [
+   {
+    "name": "请多指教咯~",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/096d7f94995241ec8adbddb0f929fcef20260606.png",
+    "desc": "丽贝卡以下技能伤害倍率提升50%：\n·<b>普攻·猎手</b>、<b>重击·猎手</b>、<b>战术闪避·猎手</b>、<b>闪避反击·猎手</b>。\n·<b>普攻·铁胆</b>、<b>战术闪避·铁胆</b>、<b>闪避反击·铁胆</b>。\n丽贝卡获得<b>小孩子才做选择！</b>效果时，额外获得3层<b>街头直觉</b>，持续12秒。施放<b>战术闪避·猎手</b>、<b>战术闪避·铁胆</b>时，若拥有街头直觉则消耗1层<b>街头直觉</b>，回复20点耐力。\n共鸣解放<b>大烟花！</b>免疫打断。",
+    "iconPath": "img/chain/1fc6173cc73dfd31.png"
+   },
+   {
+    "name": "哦，原来是你啊！",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/244bfb6e21004ddb86bb190b1ee1a49220260606.png",
+    "desc": "施放变奏技能<b>呜呼，来发大的！</b>、变奏技能<b>蠢货，有本事来抓我！</b>或共鸣解放<b>狂欢时间！</b>时，队伍中的角色全属性伤害加成提升20%，持续30秒。\n队伍中的角色附加<b>【骇破·偏移】</b>时，全伤害加深15%，持续30秒。\n处于非战斗状态时，<b>【手感火热】</b>回复速度翻倍。",
+    "iconPath": "img/chain/e92d0b12130476b3.png"
+   },
+   {
+    "name": "背后就交给我吧！",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/cb49481244e7408c8c6a001b82b29bbd20260606.png",
+    "desc": "丽贝卡共鸣解放<b>狂欢时间！</b>、共鸣解放<b>大烟花！</b>伤害倍率提升60%。\n丽贝卡共鸣解放<b>狂欢时间！</b>爆炸范围增加30%。\n施放变奏技能<b>呜呼，来发大的！</b>、变奏技能<b>蠢货，有本事来抓我！</b>时，获得120点<b>【手感火热】</b>。",
+    "iconPath": "img/chain/5382b1a58b9c5137.png"
+   },
+   {
+    "name": "我会保护你的！",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/943e3e98323b4731b4c4498ca707382020260606.png",
+    "desc": "丽贝卡<b>小孩子才做选择！</b>属性加成效果额外提升60%。",
+    "iconPath": "img/chain/e7a7283fbfbb4120.png"
+   },
+   {
+    "name": "边缘幻梦",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/27fa8d984c6c4e08808d3f4fac491e7c20260606.png",
+    "desc": "丽贝卡附加<b>【骇破·偏移】</b>时，自身普攻伤害加成提升20%，持续8秒。",
+    "iconPath": "img/chain/10ea7e469d7b6f2b.png"
+   },
+   {
+    "name": "也许……",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/26dd2717d1e84f7e909b41eb9661184320260606.png",
+    "desc": "丽贝卡从所有来源中获得的普攻伤害加成数值提升40%。\n丽贝卡施放<b>重击·哒哒哒！·猎手</b>、<b>重击·砰砰砰！·铁胆</b>期间，额外造成一次900%的<b>导电伤害</b>，此次伤害为普攻伤害。\n丽贝卡施放<b>重击·哒哒哒！·猎手</b>、<b>重击·砰砰砰！·铁胆</b>时，额外回复20点<b>【手感火热】</b>。\n受到致死伤害时，此次伤害不会使丽贝卡倒下，并且立即回复5次2077点固定生命值，该效果每10分钟可触发1次。\n处于非战斗状态大于4秒时，丽贝卡回复120点<b>【狂热】</b>，每4秒只生效1次。",
+    "iconPath": "img/chain/708a960b743c0c3d.png"
+   }
+  ]
+ },
+ "仇远": {
+  "name": "仇远",
+  "subtitle": "Qiuyuan",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/f8712f82152143019fce0fe2b290375c20250910.png",
+  "chains": [
+   {
+    "name": "如剑不动，相由心生",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/2ff31aa5d61b4a57a72b4c660998db2620251030.png",
+    "desc": "<b>答剑·弦歌不辍</b>、<b>答剑·割股之心</b>、<b>答剑·忠烈死节</b>免疫打断。\n仇远<b>暴击提升</b>20%。",
+    "iconPath": "img/chain/0d3da74ddf478642.png"
+   },
+   {
+    "name": "剑啊，谓我弃绝弦歌不辍",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/c63c98222b8743db8bdcc38a55450ca520251030.png",
+    "desc": "<b>【竹照】</b>获得时增加额外效果：附近队伍中的<b>角色声骸技能伤害加深</b>30%。",
+    "iconPath": "img/chain/362392fd810b6527.png"
+   },
+   {
+    "name": "剑啊，谓我弃绝割股之心",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/cbccc65c2e844c95a17f452076bd31fe20251030.png",
+    "desc": "<b>共鸣解放万钧一断</b>伤害倍率增加500%。\n协奏能量充满且不处于<b>【淋漓醉墨】</b>状态下时，仇远的<b>共鸣技能</b>替换为<b>共鸣技能荷蓑出林</b>，每20秒可施放1次。\n施放<b>荷蓑出林</b>时，提前结束<b>且从容</b>效果，消耗60点协奏能量并回复<b>【挑灯问剑】</b>400点，对目标造成仇远自身500%攻击的<b>气动伤害</b>，此次伤害视为<b>声骸技能伤害</b>，下一次常态攻击<b>普攻</b>替换为<b>答剑·质黑相青第三段</b>。\n施放<b>荷蓑出林</b>后，下次仇远进入<b>【淋漓醉墨】</b>状态时无法获得<b>且从容</b>效果，<b>答剑·弦歌不辍</b>、<b>答剑·割股之心</b>、<b>答剑·忠烈死节</b>伤害倍率增加600%，<b>答剑·忠烈死节</b>命中时额外获得协奏能量30点。\n施放<b>荷蓑出林</b>后，非联机状态下下次<b>延奏技能</b>替换为<b>延奏技能新筠坠箨</b>，造成仇远自身500%攻击的<b>气动伤害</b>，此次伤害视为<b>声骸技能伤害</b>。",
+    "iconPath": "img/chain/c61a54ff59e5c89e.png"
+   },
+   {
+    "name": "剑啊，谓我弃绝忠烈死节",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/74214f7bc33b4f1d95d06ed1fdd3b7af20251030.png",
+    "desc": "仇远攻击提升20%。",
+    "iconPath": "img/chain/9c43509e11587937.png"
+   },
+   {
+    "name": "剑啊，如今我弹铗而歌",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f40f48518b224cd3b0b93e1772ab377d20251030.png",
+    "desc": "仇远无视目标15%的防御。",
+    "iconPath": "img/chain/24154687803fba00.png"
+   },
+   {
+    "name": "如是我闻、我见、我言",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/853301355f034b6c893e689e836abead20251030.png",
+    "desc": "施放<b>重击答剑·忠烈死节</b>时，停滞周围的敌人，持续5秒，该效果联机状态下不会生效。切换至其他角色或目标受到伤害时提前清除停滞效果。\n退出<b>【淋漓醉墨】</b>状态且为队伍中登场角色时，对范围内敌人造成自身600%攻击的<b>气动伤害</b>，该伤害视为<b>声骸技能伤害</b>。\n施放<b>共鸣技能荷蓑出林</b>时，仇远暴击伤害增加100%，持续6秒。切换至其他角色时，效果提前结束。",
+    "iconPath": "img/chain/3a75ab62a4e77f33.png"
+   }
+  ]
+ },
+ "今汐": {
+  "name": "今汐",
+  "subtitle": "JINHSI",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/27b8039090e04cc2aed0bcbe989d5d9420240627.png",
+  "chains": [
+   {
+    "name": "沉海洄天溯",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/9aacf31dacf94ad2b7cc31f2691ac05d20240622.png",
+    "desc": "今汐施放普攻<b>凌霄·普攻</b>、共鸣技能<b>逐天取月</b>时，获得一层<b>惊蛰</b>效果，可叠加4层，持续6秒。施放共鸣技能<b>惊龙破空</b>时，消耗<b>惊蛰</b>效果的所有层数，每消耗一层，共鸣技能<b>惊龙破空</b>造成的伤害提升20%。",
+    "iconPath": "img/chain/1e74f678f97d177d.png"
+   },
+   {
+    "name": "绒雪凝屏息",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/012b1310578c4f4c8d1fee8cc96b649c20240622.png",
+    "desc": "今汐处于非战斗状态大于4秒时，回复50点<b>【韶光】</b>，每4秒只生效1次。",
+    "iconPath": "img/chain/cffc0f946f008047.png"
+   },
+   {
+    "name": "天定神子身",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0a6063b077ac4868839327ae8951107b20240622.png",
+    "desc": "今汐施放变奏技能<b>蟠龙清辉</b>后，获得一层<b>谪仙</b>效果，每层使攻击提升25%，可叠加2层，效果持续20秒。",
+    "iconPath": "img/chain/9f1cee2d54d366aa.png"
+   },
+   {
+    "name": "自甘佑凡尘",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/018a1279fd1245e5be152f7d281c436b20240622.png",
+    "desc": "今汐施放共鸣解放<b>移岁诛邪</b>或共鸣技能<b>惊龙破空</b>时，附近队伍中所有角色全属性伤害加成提升20%，持续20秒。",
+    "iconPath": "img/chain/326b6fe74bc788d1.png"
+   },
+   {
+    "name": "流光化霜雪",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/7beb4e9cce5d470d989c7a8b4f39858020240622.png",
+    "desc": "共鸣解放<b>移岁诛邪</b>伤害倍率提升120%。",
+    "iconPath": "img/chain/99adfc821f2eea8f.png"
+   },
+   {
+    "name": "寒尽又逢春",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/763c8bbf68374c40b019353e0208837420240622.png",
+    "desc": "共鸣技能<b>惊龙破空</b>伤害倍率提升45%，消耗<b>【韶光】</b>时带来的倍率增加效果额外提升45%。",
+    "iconPath": "img/chain/01ae3671ab9b6e44.png"
+   }
+  ]
+ },
+ "凌阳": {
+  "name": "凌阳",
+  "subtitle": "LINGYANG",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/a7a24a8033334a379563d39776e8e37f20240521.png",
+  "chains": [
+   {
+    "name": "醒狮开光，如意吉祥",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/06501290899244de9ca97667fe90763220240328.png",
+    "desc": "<b>共鸣解放·狮子奋迅</b>的持续期间提升凌阳自身的<b>抗打断能力</b>。",
+    "iconPath": "img/chain/364424786e0f4b88.png"
+   },
+   {
+    "name": "威风凛凛，四方张狂",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/19511cc596044c8b891fa95b78e0289e20240328.png",
+    "desc": "施放<b>变奏技能·出洞·睡狮蛰醒</b>时，凌阳额外回复<b>10</b>点<b>共鸣能量</b>，每<b>20</b>秒可触发<b>1</b>次。",
+    "iconPath": "img/chain/b6674cce450a1824.png"
+   },
+   {
+    "name": "瞠目顾盼，其声昂昂",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/3e9291defc014fad8a602ba64861265120240328.png",
+    "desc": "<b>共鸣解放<b>·</b>狮子奋迅</b>持续期间，凌阳的<b>普攻伤害</b>加成提升<b>20%</b>，<b>共鸣技能伤害</b>加成提升<b>10%</b>。",
+    "iconPath": "img/chain/dfd399a1d7816746.png"
+   },
+   {
+    "name": "一跳三叫，众仙折腰",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/6141f992b1f4434ca970c813b4b4538f20240328.png",
+    "desc": "凌阳施放<b>延奏技能·留痕·踏雪点星</b>时，队伍中的角色<b>冷凝伤害</b>加成提升<b>20%</b>，持续<b>30</b>秒。",
+    "iconPath": "img/chain/a604e6c7b6a165b0.png"
+   },
+   {
+    "name": "蹑罡踏斗，七星悬朗",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/501798d1dc024363a5a84900b1011bf420240328.png",
+    "desc": "施放<b>共鸣解放·奋进·狮子奋迅，俱足万行</b>时，将额外造成凌阳<b>200%</b>攻击的<b>冷凝伤害</b>。",
+    "iconPath": "img/chain/140c2908ea1b0629.png"
+   },
+   {
+    "name": "神功盖世，百鬼震惶",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f837cab764664803b05b872ca41ce2c120240328.png",
+    "desc": "处于<b>共鸣回路·行狮状态</b>时，凌阳每次施放<b>共鸣技能·飞身式·翻山越涧</b>后<b>3</b>秒内，下<b>1</b>次<b>普攻</b>的普攻伤害加成提升<b>100%</b>。",
+    "iconPath": "img/chain/d9788373d819012e.png"
+   }
+  ]
+ },
+ "千咲": {
+  "name": "千咲",
+  "subtitle": "CHISA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/35a3c6cc5d5a4ac8ba84d2cc3a481e5720251019.png",
+  "chains": [
+   {
+    "name": "穿行于荒芜长廊",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/bb41ada4873b48e497d13e5fce5f16cc20251118.png",
+    "desc": "千咲施放<b>锯环·疾攻</b>、<b>锯环·终结</b>、<b>电锯模式·闪避反击</b>期间，免疫打断。\n千咲施加<b>虚无绞痕</b>时，触发下述效果：\n·自身攻击提升<b>30%</b>，持续<b>15</b>秒。\n·对目标造成<b>61803</b>点固定<b>湮灭伤害</b>，最多可将目标生命扣除至<b>61.80%</b>，同一目标最多可受到<b>1</b>次该伤害。此次伤害为普攻伤害，不受伤害加成影响。",
+    "iconPath": "img/chain/07fe61fd2998a20a.png"
+   },
+   {
+    "name": "织作牵绊的弦网",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/6eb70ce123ec4f4ebaa058586fab810f20251118.png",
+    "desc": "造成伤害无视目标<b>10%</b>湮灭伤害抗性。\n附近队伍中的角色处于<b>虚湮之线</b>状态时，全属性伤害加成提升<b>50%</b>。",
+    "iconPath": "img/chain/0aca47b659379229.png"
+   },
+   {
+    "name": "踱过长夜的迷惘",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4c199c99a2fc4ad3bd69ae6b5bc58aab20251118.png",
+    "desc": "<b>锯环·疾攻</b>、<b>电锯模式·闪避反击</b>、<b>锯环·终结</b>的伤害倍率提升<b>120%</b>，该倍率提升效果与<b>万缕·汇终</b>的倍率提升效果相互叠加。\n<b>锯环·疾攻</b>、<b>电锯模式·闪避反击</b>消耗<b>【锯环残响】</b>提供的<b>锯环·终结</b>倍率增加效果提升<b>120%</b>，该倍率提升效果与<b>万缕·汇终</b>的倍率提升效果相互叠加。\n<b>锯环·疾攻</b>、<b>电锯模式·闪避反击</b>、<b>锯环·终结</b>破共振度能力提升<b>50%</b>。",
+    "iconPath": "img/chain/3924a5f74d5c4c5a.png"
+   },
+   {
+    "name": "斩断循环的劫章",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1561741f8b2e4c8ba811c5973a3c0be520251118.png",
+    "desc": "<b>虚无绞痕</b>效果替换为：\n拥有<b>虚无绞痕</b>的目标受到角色直接造成的伤害时，千咲为目标附加1层<b>【虚湮效应】</b>，该效果每<b>1</b>秒最多触发<b>1</b>次。",
+    "iconPath": "img/chain/032e4e798d203ee9.png"
+   },
+   {
+    "name": "万盏灯火将照亮归途所向",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ff0bc567d4f94bd0a72ce4b135ed334120251118.png",
+    "desc": "共鸣解放<b>即刻·归无</b>的伤害加成提升<b>100%</b>。\n<b>命弦·掠行</b>消耗的<b>【命弦·本流】</b>降低<b>50%</b>。",
+    "iconPath": "img/chain/e28f88d26a58e269.png"
+   },
+   {
+    "name": "由此重铸希望，与天光",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0d46d224cb654ed08f9e22aa5e6d75ec20251118.png",
+    "desc": "千咲施放<b>锯环·疾攻</b>、<b>锯环·终结、电锯模式·闪避反击</b>期间，受到致死伤害时不会倒下，最少保留<b>1</b>点生命。\n<b>虚无绞痕</b>强化为<b>虚无绞痕·终焉</b>，获得下述效果：\n·<b>虚无绞痕·终焉</b>拥有<b>虚无绞痕</b>的所有效果。\n·拥有<b>虚无绞痕·终焉</b>的目标受到异常效应伤害加深<b>30%</b>。\n·拥有<b>虚无绞痕·终焉</b>的目标受到千咲伤害提升<b>40%</b>。",
+    "iconPath": "img/chain/8dbcf63bd8e1c751.png"
+   }
+  ]
+ },
+ "卜灵": {
+  "name": "卜灵",
+  "subtitle": "BULING",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/9b01acf89fc844af9d177f839ffba7e620251019.png",
+  "chains": [
+   {
+    "name": "百般法宝，借物打力",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/7a9f299aa16c4154922dabff995db5f920251210.png",
+    "desc": "<b>共鸣解放·飞雷诀·归一</b>造成伤害时，此次伤害的<b>暴击提升</b>20%。",
+    "iconPath": "img/chain/4dfe6766f38eeb8c.png"
+   },
+   {
+    "name": "符法通玄，神鬼咸听",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0bf7c0a0275d4893af202164f84f1af820251210.png",
+    "desc": "卜灵进入<b>【阴阳相生】</b>状态时，回复25点共鸣能量，该效果每24秒可生效1次。",
+    "iconPath": "img/chain/07cc59c5a37c6d33.png"
+   },
+   {
+    "name": "召灵遣将，窥探天机",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/2bc65896ed544b688b4392c316768a0e20251210.png",
+    "desc": "<b>【五雷荡煞阵】</b>持续期间，队伍中的角色生命值低于50%时，立即回复350+150%卜灵攻击的生命值，该效果每24秒可生效1次。",
+    "iconPath": "img/chain/2cb26a9b0ac717dd.png"
+   },
+   {
+    "name": "索拉云游，气运加身",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/83ab325e74304ce79f7d09853f5e970420251210.png",
+    "desc": "卜灵的<b>治疗效果加成提升</b>20%。",
+    "iconPath": "img/chain/36826a9a1942b108.png"
+   },
+   {
+    "name": "论坛禁言，速换马甲",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/99d26a5caec5478db478f61a31ad296320251210.png",
+    "desc": "<b>【五雷荡煞阵】</b>生成时，立即对范围内所有目标附加6层<b>【电磁效应】</b>。",
+    "iconPath": "img/chain/5cf656c3180fbc6a.png"
+   },
+   {
+    "name": "“天地混元雷符水帖天尊”",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/915b83beb48f4782b47ca9fbcebf1a9a20251210.png",
+    "desc": "<b>【雷法·三才合一】</b>状态持续期间，队伍中登场的角色获得的<b>共鸣技能</b><b>伤害加成效果提升</b>至50%。",
+    "iconPath": "img/chain/5d08f7136b187ba8.png"
+   }
+  ]
+ },
+ "卡卡罗": {
+  "name": "卡卡罗",
+  "subtitle": "CALCHARO",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/f80b94a968ff40cfb713bd5796a8665c20240521.png",
+  "chains": [
+   {
+    "name": "隐秘谈判",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/c7b10026b5874b7386ff793cd79afec020240328.png",
+    "desc": "<b>共鸣技能灭杀指令</b>命中目标时，额外回复<b>10</b>点共鸣能量，每<b>20</b>秒可触发<b>1</b>次。",
+    "iconPath": "img/chain/de4f06411905c847.png"
+   },
+   {
+    "name": "零和博弈",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/956b9f69ebb44fbf8cfdbdf75807155f20240328.png",
+    "desc": "施放<b>变奏技能全境通缉</b>或<b>变奏技能「必要的手段」</b>后，<b>共鸣技能伤害</b>加成提升<b>30%</b>，持续<b>15</b>秒。",
+    "iconPath": "img/chain/f2a019bdb9820421.png"
+   },
+   {
+    "name": "铁腕外交",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/409459a5b78044939c333a6ee353e46e20240328.png",
+    "desc": "<b>共鸣解放杀戮武装</b>状态持续期间，卡卡罗的<b>导电伤害</b>加成提升<b>25%</b>。",
+    "iconPath": "img/chain/2200b49dd1077000.png"
+   },
+   {
+    "name": "集群威胁",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/397e0cabe5e749c68530ca0c41d87bcb20240328.png",
+    "desc": "施放<b>延奏技能掠影奇袭</b>时，队伍中的角色<b>导电伤害</b>加成提升<b>20%</b>，持续<b>30</b>秒。",
+    "iconPath": "img/chain/f4380ff58e54feed.png"
+   },
+   {
+    "name": "替代协议",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/801dc552054343deb346a07a823e911d20240328.png",
+    "desc": "<b>变奏技能全境通缉</b>及<b>变奏技能「必要的手段」</b>的伤害提升<b>50%</b>。",
+    "iconPath": "img/chain/563fe446d2eecf1a.png"
+   },
+   {
+    "name": "最后通牒",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/fffd98068e32496f8404a2b492c0ae9e20240328.png",
+    "desc": "施放<b>重击「死告」</b>时，卡卡罗将会召唤2个猎杀影进行协同攻击，每个猎杀影可造成卡卡罗<b>100.00%</b>攻击的<b>导电伤害</b>，此次伤害为<b>共鸣解放伤害</b>。",
+    "iconPath": "img/chain/e749c93c731acd49.png"
+   }
+  ]
+ },
+ "卡提希娅": {
+  "name": "卡提希娅",
+  "subtitle": "CARTETHYIA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/472d1f3df29a4976ac9e5159800354c920250509.png",
+  "chains": [
+   {
+    "name": "因命运戴上冠冕",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1c613559e73b4284b3768520f80f9fcf20250607.png",
+    "desc": "<b>【卡提希娅】</b>、<b>【芙露德莉斯】</b>自身技能直接造成的伤害击败被附加<b>【风蚀效应】</b>状态的目标后，获得<b>【集意】</b>状态，持续<b>10</b>秒。\n<b>【集意】</b>状态下保留击败目标被附加<b>【风蚀效应】</b>的最高层数，自身下一次技能直接造成的伤害立即为命中目标附加该层数，最高可叠加至当前目标的<b>【风蚀效应】</b>层数上限，同时清除<b>【集意】</b>状态，清除<b>【集意】</b>状态后进入冷却时间<b>1</b>秒。\n<b>【芙露德莉斯】</b>每积攒<b>【决意】</b>达到<b>30、60、90、120</b>时，<b>【芙露德莉斯】</b>的暴击伤害提升<b>25%</b>，持续<b>15</b>秒，最多可叠加<b>4</b>层，每次叠加时不刷新持续时间，施放<b>共鸣解放·看潮怒风哮之刃</b>后会清除该暴击伤害提升效果。",
+    "iconPath": "img/chain/6ef9472abf1b42b8.png"
+   },
+   {
+    "name": "听风潮斩断利刃",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4655b62636144d4a92d2aba344ec58a120250607.png",
+    "desc": "施放<b>共鸣解放·听骑士从心祈愿</b>后，使自身一定范围内的目标<b>【风蚀效应】</b>层数上限提升<b>3</b>层，自身技能下一次直接造成伤害后，对自身一定范围内的目标附加<b>3</b>层<b>【风蚀效应】</b>，并立刻结算<b>1</b>次目标身上的<b>【风蚀效应】</b>效果，此次结算不消耗<b>【风蚀效应】</b>层数。\n<b>【卡提希娅】</b>普攻、重击、闪避反击、变奏技能倍率提升<b>50%</b>，空中攻击倍率提升<b>200%</b>。\n施放<b>空中攻击·卡提希娅</b>后，每回收<b>1</b>种<b>【剑之影】</b>使<b>共鸣技能·卡提希娅</b>的冷却时间减少<b>1</b>秒。",
+    "iconPath": "img/chain/65d780869dd2e2b8.png"
+   },
+   {
+    "name": "以自身束悬高塔",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ecf5671b5f2e43d2b58139bbffb58aff20250607.png",
+    "desc": "<b>【芙露德莉斯】</b>的<b>普攻·芙露德莉斯第5段</b>，<b>空中攻击·芙露德莉斯第2段</b>，<b>强化重击·芙露德莉斯</b>，<b>共鸣技能·凭风斩浪破敌</b>会为命中目标附加<b>2</b>层<b>【风蚀效应】</b>。\n<b>共鸣解放·看潮怒风哮之刃</b>的伤害倍率提升<b>100%</b>。",
+    "iconPath": "img/chain/a2b678066e76baa6.png"
+   },
+   {
+    "name": "为拯救舍弃其身",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/795516139142441b92fbabfba7d75c1f20250607.png",
+    "desc": "队伍中的角色为目标附加<b>【虚湮效应】</b>、<b>【聚爆效应】</b>、<b>【光噪效应】</b>、<b>【电磁效应】</b>、<b>【霜渐效应】</b>、<b>【风蚀效应】</b>时，使队伍中所有角色全属性伤害加成提升<b>20%</b>，持续<b>20</b>秒。",
+    "iconPath": "img/chain/deadd0fa67e73d71.png"
+   },
+   {
+    "name": "将烈风重塑希望",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/17c0440d24f24759bf6e38ac6deea67120250607.png",
+    "desc": "<b>【卡提希娅】</b>或<b>【芙露德莉斯】</b>受到致命伤害时，此次伤害不会使<b>【卡提希娅】</b>或<b>【芙露德莉斯】</b>倒下，并获得<b>【卡提希娅】</b><b>20%</b>生命上限的护盾，持续<b>10</b>秒，该效果每<b>10</b>分钟可触发<b>1</b>次。\n施放<b>共鸣解放·听骑士从心祈愿</b>消耗的自身生命值降至生命上限的<b>25%</b>。",
+    "iconPath": "img/chain/b5b97dfcda75a58b.png"
+   },
+   {
+    "name": "尽一线挣扎自由",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/a805aaebbde74efbad7bc12713aa7e4320250607.png",
+    "desc": "施放<b>共鸣解放·看潮怒风哮之刃</b>对命中的目标附加<b>【风蚀效应】</b>至层数上限，且施放<b>共鸣解放·看潮怒风哮之刃</b>命中目标后，不再清空目标拥有的<b>【风蚀效应】</b>。\n施放<b>变奏技能·此剑，为潮水的过去</b>、<b>变奏技能·此剑，为自由的未来</b>、<b>共鸣解放·听骑士从心祈愿</b>、<b>共鸣解放·看潮怒风哮之刃</b>后，<b>30</b>秒内，队伍中的角色对<b>【风蚀效应】</b>层数到达上限的目标再次附加<b>【风蚀效应】</b>时，立即结算一次<b>【风蚀效应】</b>。\n目标受到<b>【芙露德莉斯】</b>的伤害提升<b>40%</b>。",
+    "iconPath": "img/chain/d2f63dfa9693d656.png"
+   }
+  ]
+ },
+ "吟霖": {
+  "name": "吟霖",
+  "subtitle": "YINLIN",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/9398d25ea04e40cab7b57e03ca1dbc5f20240521.png",
+  "chains": [
+   {
+    "name": "矛盾的抉择",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/6cc8469d7e5b40a3a5eb828e9b23c3da20240329.png",
+    "desc": "共鸣技能磁殛咆哮和召雷磁爆伤害提升70%。",
+    "iconPath": "img/chain/25da1f10d2edff72.png"
+   },
+   {
+    "name": "牵绊的俘虏",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0a7034e4058c463a96e55c091d5e58b820240329.png",
+    "desc": "共鸣技能磁殛爆发命中时额外恢复5点【审判值】和5点共鸣能量。",
+    "iconPath": "img/chain/c454e317afd67435.png"
+   },
+   {
+    "name": "无情的断罪",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4aba6f99e6f1416787a17aa0c94a0ad820240329.png",
+    "desc": "共鸣回路审判之雷伤害倍率提升55%。",
+    "iconPath": "img/chain/cbbd2f83eda771cb.png"
+   },
+   {
+    "name": "前行的鼓舞",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/a647da4e60b44977897afa3c423e4e4420240329.png",
+    "desc": "使用共鸣回路·审判之雷后，队伍中的角色攻击提升20%，持续12秒。",
+    "iconPath": "img/chain/2a104bf86788ec41.png"
+   },
+   {
+    "name": "决意的回响",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/8ddf2f1d5d88440ebb1ab3404ad5c07620240329.png",
+    "desc": "共鸣解放·<b>破天雷灭击</b>命中带有<b>【缚罪标记】</b>、<b>【惩罚印记】</b>的目标时，伤害提升100%。",
+    "iconPath": "img/chain/2a04c19f00f36338.png"
+   },
+   {
+    "name": "正义的践行",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/9a1476b7fed44da098a3f921fa85c5ab20240329.png",
+    "desc": "施放共鸣解放破天雷灭击后的30秒内，吟霖的普攻命中目标时额外触发疾霆昭彰，造成吟霖攻击力419.59%的导电伤害，每段普攻可触发1次，最多触发4次，此次伤害为共鸣技能伤害。",
+    "iconPath": "img/chain/fcd26c62e8af0c35.png"
+   }
+  ]
+ },
+ "嘉贝莉娜": {
+  "name": "嘉贝莉娜",
+  "subtitle": "Galbrena",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/3a838d7b7ef249008289aa2801f7052d20251009.png",
+  "chains": [
+   {
+    "name": "不熄抵牾抗争之心",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4b0317f4edd4416d9dbf6a48c11df44120251009.png",
+    "desc": "嘉贝莉娜施放<b>共鸣技能·恶翼扬升</b>时，每点<b>【余火】</b>额外为<b>普攻·炽天猎杀</b>、<b>重击·炼羽裁决</b>、<b>空中攻击·火狱暴雨</b>、<b>共鸣技能·掠袭</b>、<b>闪避反击·罪业当涤</b>提升2%暴击伤害，至多提升80%暴击伤害，退出<b>恶魔位格</b>时移除。\n<b>恶魔位格</b>期间，<b>普攻·炽天猎杀第5段</b>、<b>重击·炼羽裁决第3段</b>、<b>空中攻击·火狱暴雨</b>免疫打断。",
+    "iconPath": "img/chain/f3488a2a1e09299e.png"
+   },
+   {
+    "name": "行过烈狱与幽暗冥途",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1b108a861e6f4141849d938e74a746f720251009.png",
+    "desc": "<b>内燃烧</b>提供的攻击加成提升350%。",
+    "iconPath": "img/chain/041fc5b1399eca2c.png"
+   },
+   {
+    "name": "再燃血狩死猎之誓",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ca7395f5c394435fb76a78881e67085420251009.png",
+    "desc": "共鸣解放的伤害倍率提升130%。",
+    "iconPath": "img/chain/69265c240d6dccb4.png"
+   },
+   {
+    "name": "承负无薪孤惧苦火",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/3e2cbea50b32482395fac8659192aca320251009.png",
+    "desc": "队伍中的角色施放声骸技能时，使队伍中所有角色全属性伤害加成提升20%，持续20秒。",
+    "iconPath": "img/chain/14ff8d1be7556988.png"
+   },
+   {
+    "name": "纵使光明远去，厄难焚身",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/db41323bef0f42af9ea93e6c0ced77f220251009.png",
+    "desc": "<b>共鸣技能·迫近</b>，<b>共鸣技能·恶翼扬升</b>，<b>共鸣技能·掠袭</b>的伤害倍率提升150%。",
+    "iconPath": "img/chain/9c2ec19b29d691dc.png"
+   },
+   {
+    "name": "我仍炽耀不移，自有永有",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4c06a46155ad4ff299228f89cba18c5620251009.png",
+    "desc": "<b>恶魔位格</b>升级为<b>永恒位格</b>，<b>永恒位格</b>保留<b>恶魔位格</b>全部原有效果。\n<b>永恒位格</b>期间<b>普攻·炽天猎杀</b>、<b>重击·炼羽裁决</b>、<b>空中攻击·火狱暴雨</b>、<b>闪避反击·罪业当涤</b>的伤害倍率提升60%。\n嘉贝莉娜施放<b>共鸣技能·恶翼扬升</b>时，每点<b>【余火】</b>额外为<b>普攻·炽天猎杀</b>、<b>重击·炼羽裁决</b>、<b>空中攻击·火狱暴雨</b>、<b>共鸣技能·掠袭</b>、<b>闪避反击·罪业当涤</b>提升0.875%热熔伤害加深，至多提升35%热熔伤害加深，退出<b>永恒位格</b>时移除",
+    "iconPath": "img/chain/3d52a22718121c4a.png"
+   }
+  ]
+ },
+ "坎特蕾拉": {
+  "name": "坎特蕾拉",
+  "subtitle": "CANTARELLA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/dbe899507e244ae682d05b5520f7240820250327.png",
+  "chains": [
+   {
+    "name": "在无尽展开的波涛里",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/12ec765a016f4d5c97f05c11d2433a1620250323.png",
+    "desc": "施放<b>共鸣技能</b>时，回复1点【迷离】。共鸣技能<b>翩跹</b>、共鸣技能<b>斑驳幻梦</b>、共鸣回路<b>感知汲取</b>的伤害倍率提升50%。共鸣回路<b>感知汲取</b>免疫打断。",
+    "iconPath": "img/chain/f651eab8eddb4b80.png"
+   },
+   {
+    "name": "坠入迷离幻梦",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/2b8950033a964ba3a63d4d8eb914957e20250323.png",
+    "desc": "共鸣解放<b>陷溺</b>可以使目标进入<b>迷梦</b>，坎特蕾拉触发<b>惊醒</b>的伤害倍率提升245%。",
+    "iconPath": "img/chain/6f6f70c3832c2532.png"
+   },
+   {
+    "name": "凝视着深渊",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0757c00daf574642a6592f4cb690f79820250323.png",
+    "desc": "共鸣解放<b>陷溺</b>的伤害倍率提升370%。施放共鸣解放陷溺后，直接进入<b>蜃镜</b>状态。若当前已处于<b>蜃镜</b>状态，施放共鸣解放陷溺不会重复进入。",
+    "iconPath": "img/chain/58a3a845ed2d1032.png"
+   },
+   {
+    "name": "就像凝视自己的灵魂",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/2a6ff0e44bb74b31ab514d959461def820250323.png",
+    "desc": "<b>蜃镜状态</b>期间，治疗效果加成提升25%。",
+    "iconPath": "img/chain/e7abaabf321c4715.png"
+   },
+   {
+    "name": "投到倒影的怀里",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/272a9754b2944f94a5ff074ab9dcaf5620250323.png",
+    "desc": "共鸣解放<b>弥漫</b>的<b>织梦水母</b>的最大召唤数增加5。",
+    "iconPath": "img/chain/1ab73fb609749c47.png"
+   },
+   {
+    "name": "下坠、下坠……坠入更深的幻梦",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/d10ff6ec785c4058912b1303b22cd66520250323.png",
+    "desc": "普攻<b>蛰幻</b>的伤害倍率提升80%。施放共鸣解放<b>陷溺</b>时，坎特蕾拉的伤害无视目标30%防御，持续10秒。\n<b>迷梦</b>的前1.2秒，目标受到伤害时，若此次伤害没有附加<b>迷梦</b>，则目标不会触发<b>惊醒</b>。",
+    "iconPath": "img/chain/f545520e51112b33.png"
+   }
+  ]
+ },
+ "夏空": {
+  "name": "夏空",
+  "subtitle": "CIACCONA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/9ade8a680e174be584f07382564d9cf120250404.png",
+  "chains": [
+   {
+    "name": "故风的吟游序曲",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/011fc92187a44c498f14154f73f714cf20250522.png",
+    "desc": "施放共鸣技能<b>谐律速奏</b>时，夏空获得免疫打断的效果，持续<b>3</b>秒；施放普攻时，夏空的攻击提升<b>35%</b>，持续<b>10</b>秒。",
+    "iconPath": "img/chain/41d8a0e263e15367.png"
+   },
+   {
+    "name": "四季的连奏之音",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/8270dbbf230446c797f1d4328a7459dd20250522.png",
+    "desc": "共鸣解放<b>歌者的三重华彩</b>持续期间队伍中的角色气动伤害加成提升<b>40%</b>。",
+    "iconPath": "img/chain/b26784b4e2c566b0.png"
+   },
+   {
+    "name": "星烁此时的即兴演奏",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/7debe68baca642558db0baa709dbca0b20250522.png",
+    "desc": "施放<b>普攻第4段</b>时可额外获得1格【<b>音律</b>】；共鸣技能<b>谐律速奏</b>可使用次数增加1次",
+    "iconPath": "img/chain/0953d51fba3dc657.png"
+   },
+   {
+    "name": "托卡塔与赋格",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/35eacd77383a42abb168736d8709f28020250522.png",
+    "desc": "夏空重击<b>四拍重奏</b>造成伤害时无视敌人<b>45%</b>的防御；\n夏空造成共鸣解放伤害时无视敌人<b>45%</b>的防御。",
+    "iconPath": "img/chain/5d52462ee293ad6e.png"
+   },
+   {
+    "name": "献予长夏的永恒叙诗",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/a0d4399b27944520a59bb10f8e2834d020250522.png",
+    "desc": "夏空共鸣解放伤害加成提升<b>40%</b>；\n夏空共鸣解放<b>歌者的三重华彩</b>附近范围内的角色受到的伤害降低<b>30%</b>。",
+    "iconPath": "img/chain/5146391c15a2e6a8.png"
+   },
+   {
+    "name": "终曲未终",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/bf6f10afcf1140dda8ac7ec52e0d9dab20250522.png",
+    "desc": "夏空或<b>合奏音影</b>在进入<b>音律独奏</b>状态时可以对周围目标造成<b>220%</b>的<b>气动伤害</b>，该伤害视为共鸣解放伤害。",
+    "iconPath": "img/chain/d7a8ed24bb8e7314.png"
+   }
+  ]
+ },
+ "奥古斯塔": {
+  "name": "奥古斯塔",
+  "subtitle": "AUGUSTA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/6ba6430648974dcea4a16a018bd8eff820250731.png",
+  "chains": [
+   {
+    "name": "于焦壤中蒙垢",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/99d7cc2adb614fd5b171864dd2538c4820250825.png",
+    "desc": "【以众愿为冕】每层使暴击伤害额外提升15%。\n 【以众愿为冕】上限提高至2层。\n奥古斯塔施放变奏技能·灼金的巡行时，也可以获得1层【以众愿为冕】\n<b> 共鸣技能·不败恒阳·迅击、共鸣技能·不败恒阳·跃空、共鸣技能·不败恒阳·落袭</b>免疫打断。",
+    "iconPath": "img/chain/06274eb1e8680f10.png"
+   },
+   {
+    "name": "于血戮中涤尘",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4dd875935d2740cd84911a8aff7b82a820250825.png",
+    "desc": "【以众愿为冕】获得额外效果：每层使暴击提升<b>20%</b>。\n奥古斯塔暴击高于100%时，每多出1%暴击，奥古斯塔暴击伤害提升<b>2%</b>，最高可提升<b>100%</b>暴击伤害。",
+    "iconPath": "img/chain/e8ef1a4142351db8.png"
+   },
+   {
+    "name": "于朽腐中砺骨",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ad6eb3c8260f40638136ff084e0e2a1720250825.png",
+    "desc": "以下技能的伤害倍率提升<b>25%</b>：\n<b>·重击·烁雷·后撤、重击·烁雷·旋切、重击·烁雷·升拳。\n·共鸣技能·不败恒阳·落袭。\n·共鸣解放·赫日威临·烈阳、共鸣解放·赫日威临·不朽者之肃。</b>",
+    "iconPath": "img/chain/5b0d8a8cccd335d8.png"
+   },
+   {
+    "name": "于荣辉中孤行",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/948d0f1af5a0493981582574b1f1094720250825.png",
+    "desc": "施放<b>变奏技能·灼金的巡行</b>时，队伍中的角色的攻击提升<b>20%</b>，持续<b>30</b>秒。",
+    "iconPath": "img/chain/7cfeb715b3df472d.png"
+   },
+   {
+    "name": "于怒潮中卓立",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0eb164785f134f9291a81e88dc3ded7120250825.png",
+    "desc": "<b>固有技能·荣誉的加护</b>获得护盾量提升<b>50%</b>。",
+    "iconPath": "img/chain/e69b1457ba3db79e.png"
+   },
+   {
+    "name": "于耀光中刻名",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/bd0a68930d21405e8d1fbe9fb0fdc44920250825.png",
+    "desc": "·【以众愿为冕】的上限提升至4层。\n·奥古斯塔暴击高于150%时，每多出1%暴击，奥古斯塔暴击伤害提升2%，最高可提升50%暴击伤害。\n·奥古斯塔施放<b>重击·烁雷·旋切</b>、<b>重击·烁雷·升拳</b>时，可以获得2层【以众愿为冕】，每1秒仅可通过<b>于耀光中刻名</b>的效果获得2层【以众愿为冕】。\n·施放<b>重击·烁雷·旋切</b>、<b>重击·烁雷·升拳</b>过程中，会在原地额外引发【怒霆】，造成两次奥古斯塔攻击100%的<b>导电伤害</b>，此次伤害为重击伤害。",
+    "iconPath": "img/chain/0ca884005c6dffaa.png"
+   }
+  ]
+ },
+ "守岸人": {
+  "name": "守岸人",
+  "subtitle": "THE SHOREKEEPER",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/4b7b78ac32164b5ab467b4a96ba4334a20240923.png",
+  "chains": [
+   {
+    "name": "不语者假想",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ee351e5aa2a04a2ba13675055312a99b20240925.png",
+    "desc": "共鸣解放<b>终末回环</b>展开的<b>星域</b>获得加强：\n治疗和增益效果生效范围增加150%。\n持续时间增加10秒。\n施放变奏技能<b>洞悉</b>后不再结束<b>星域</b>。",
+    "iconPath": "img/chain/1e9e95ababa224d9.png"
+   },
+   {
+    "name": "夜幕的赠予与拒绝",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1340a8665b794574ade31a40bad5a1eb20240926.png",
+    "desc": "<b>浅析星域</b>新增额外效果：队伍中的角色攻击提升40%。",
+    "iconPath": "img/chain/a442dae4fd751cff.png"
+   },
+   {
+    "name": "无限正将我等待",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/8e9079d1cc68496db581353847a48a1420240925.png",
+    "desc": "施放共鸣解放<b>终末回环</b>时，守岸人额外回复20点协奏能量，每25秒可触发1次。",
+    "iconPath": "img/chain/d90e22dd6fbe07b9.png"
+   },
+   {
+    "name": "万物寂静满溢",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/92708434b2f14cdb878558cab7bb363220240925.png",
+    "desc": "施放共鸣技能<b>混沌理论</b>时，治疗效果加成提升70%。",
+    "iconPath": "img/chain/8a0b6c3b4def1867.png"
+   },
+   {
+    "name": "来自缄默的回声",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/faf6ae9ad28848dcb2acef5e293dd7fc20240925.png",
+    "desc": "<b>普攻第三段</b>牵引范围增加50%，共鸣回路<b>演绎</b>牵引范围增加30%。",
+    "iconPath": "img/chain/8251bb51fd45577c.png"
+   },
+   {
+    "name": "我所驶向的新世界",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/7305e1255c6243858d46c7470f12b9f720240926.png",
+    "desc": "变奏技能<b>洞悉</b>伤害倍率提升42%。施放变奏技能<b>洞悉</b>时，守岸人的暴击伤害提升500%。",
+    "iconPath": "img/chain/3f798fe54b9b18fa.png"
+   }
+  ]
+ },
+ "安可": {
+  "name": "安可",
+  "subtitle": "ENCORE",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/e93296bb45e74a0e9e523120e317794620240521.png",
+  "chains": [
+   {
+    "name": "羊咩的童话书",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/87945712fe264dd2be0b08b55a6eef7a20240327.png",
+    "desc": "普攻命中目标时，热熔伤害额外提升3%，可叠加4层，持续6秒。",
+    "iconPath": "img/chain/faf15596a90340e1.png"
+   },
+   {
+    "name": "数羊安眠曲",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/3f26543c0eb643589194dbf0edd2437220240327.png",
+    "desc": "施放普攻·咩咩或共鸣技能·热情欢迎式时，回复10点共鸣能量，每10秒可触发1次。",
+    "iconPath": "img/chain/aa67792a3e85fa1c.png"
+   },
+   {
+    "name": "迷雾？黑海岸！",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/97a569d0a0694bce91a22a836fdc9e2120240327.png",
+    "desc": "重击白咩·失控之炎、重击黑咩·暴走之炎的伤害倍率提升40%。",
+    "iconPath": "img/chain/f86a7685a6b9dcb9.png"
+   },
+   {
+    "name": "冒险？好有趣！",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/8492e15d6b6a4ccea3b967561f67820f20240327.png",
+    "desc": "施放重击·黑咩·暴走之炎时，队伍中的热熔伤害加成提升20%，效果持续30秒。",
+    "iconPath": "img/chain/e2dd0bf7909ce58b.png"
+   },
+   {
+    "name": "聚光灯，勇士登场！",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/5e10af13d9b541008cce7a0c4865ba3120240327.png",
+    "desc": "共鸣技能伤害加成提升35%。",
+    "iconPath": "img/chain/8782a3fde6bbcbcc.png"
+   },
+   {
+    "name": "羊咩，拯救世界！",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0c196966e460445abb9d0f8aad5d5e2520240327.png",
+    "desc": "共鸣解放·黑咩大暴走期间，每次造成伤害为自身叠加1层【迷失羔羊】，每层攻击提升5%，效果持续10秒，最多可以叠加5层。",
+    "iconPath": "img/chain/c794b3f187d762a5.png"
+   }
+  ]
+ },
+ "尤诺": {
+  "name": "尤诺",
+  "subtitle": "IUNO",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/5f970e335bd34370ad2988326f3b334820250916.png",
+  "chains": [
+   {
+    "name": "圆与缺，皆替金枝镀色",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/254b48b932bb40c28a5a65c6b563220c20250915.png",
+    "desc": "尤诺处于<b>月相流转</b>状态时，攻击提升40%。\n尤诺处于<b>满月领域</b>中时，自身每秒额外回复1点共鸣能量。\n<b>共鸣技能·越限的弦引</b>和<b>重击·至臻的完满</b>免疫打断。",
+    "iconPath": "img/chain/8e59714983f01f7d.png"
+   },
+   {
+    "name": "昼或夜，且以它为永恒",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f4df4a2b3c0e4a899664a5725161376120250915.png",
+    "desc": "队伍中的角色的<b>苍白死光的祝颂</b>叠加至10层时，其额外获得40%全伤害加深。",
+    "iconPath": "img/chain/345e5e56e149aa34.png"
+   },
+   {
+    "name": "我痛饮他者的遗忘",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/d794992ee70d4df8aed4e734b6e6999a20250915.png",
+    "desc": "尤诺处于<b>月相流转</b>状态时，<b>月弓·普攻</b>、<b>共鸣技能·越限的弦引</b>、<b>月弓·闪避反击</b>造成的伤害加深65%。\n施放<b>月弓·普攻</b>或<b>月弓·闪避反击</b>后一定时间内，施放<b>共鸣技能·越限的弦引</b>将不会重置<b>月弓·普攻</b>的连段。",
+    "iconPath": "img/chain/fb176ed11f08b8d1.png"
+   },
+   {
+    "name": "任雨季栖息于眼眸",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0bc5ed44f3a54ac8b6396223ab83340a20250915.png",
+    "desc": "施放<b>重击·至臻的完满</b>时，队伍中的角色获得一个基于尤诺攻击160%的护盾，持续时间30秒，切换至其他角色不会继承该护盾。",
+    "iconPath": "img/chain/6507647975fad1d0.png"
+   },
+   {
+    "name": "万千次虚掷的注视",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f94b8cd660424c109689c9de11b5a92e20250915.png",
+    "desc": "共鸣解放伤害加成提升20%。",
+    "iconPath": "img/chain/9e3e4d76e0bf9a57.png"
+   },
+   {
+    "name": "我所在，即为不变的独一",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/dd476202021b488a8d216e0967f610d120250915.png",
+    "desc": "<b>重击·至臻的完满</b>伤害倍率增加1600%。\n尤诺施放<b>重击·至臻的完满</b>时，会再次进入<b>月相流转·新月</b>状态，获得100点<b>【灵性】</b>并重置<b>共鸣技能·越限的弦引</b>的全部冷却。",
+    "iconPath": "img/chain/c3f9bec6691fdefd.png"
+   }
+  ]
+ },
+ "布兰特": {
+  "name": "布兰特",
+  "subtitle": "BRANT",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/5412bf78678a47d29426149dc5f5403b20241122.png",
+  "chains": [
+   {
+    "name": "跟随洋流和信风",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0dc450d61053413aaf480cfaf62d186f20250305.png",
+    "desc": "火焰归亡曲施放期间会短暂停滞周围的目标，若在此期间切换至其他角色则提前结束停滞效果。\n施放变奏技能为我！后或每次空中攻击空翻时，布兰特造成伤害提升20%，持续5秒，可叠加3层。",
+    "iconPath": "img/chain/f7098d7818653572.png"
+   },
+   {
+    "name": "掠夺欢声与笑颜",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/38c1bbd8552742d09a65e281476fac6b20250305.png",
+    "desc": "施放空中攻击和火焰归亡曲时暴击提升30%。\n布兰特延奏技能航向确定！获得额外效果，20秒内：\n下一位登场角色或附近队伍中激活布兰特延奏技能的角色施放共鸣技能命中目标时，布兰特将攻击目标，会产生一次爆炸，造成布兰特攻击440%的热熔伤害，此次伤害为普攻伤害。爆炸每秒可触发1次，最多可触发2次爆炸。\n·切换至其他角色会保留该额外效果。",
+    "iconPath": "img/chain/fc8bb9b60bca1afc.png"
+   },
+   {
+    "name": "无惧惊涛骇浪",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/d66a556070d34c2c871da276213425ff20250305.png",
+    "desc": "火焰归亡曲伤害倍率提升42%。",
+    "iconPath": "img/chain/d9001fdb93329773.png"
+   },
+   {
+    "name": "纵情放声歌唱",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f66ff76b024d40f3a7a1254bdf34636720250305.png",
+    "desc": "火焰归亡曲获得的护盾量提升20%，布兰特施放火焰归亡曲时，会回复附近队伍所有角色的生命值（每1%的共鸣效率回复6.60点生命值）。",
+    "iconPath": "img/chain/6c1c6fb0547f2612.png"
+   },
+   {
+    "name": "演员说：生活皆舞台",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/636b59a0c2b24b3d86cbdf8cd87cdba920250305.png",
+    "desc": "造成普攻伤害时，普攻伤害加成提升15%，持续10秒。",
+    "iconPath": "img/chain/b75985e3ec51f335.png"
+   },
+   {
+    "name": "船长答：狂欢即世界！",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/88d8ad500fac43f282d33e25adaf4d0520250305.png",
+    "desc": "空中攻击的倍率提升30%。\n施放火焰归亡曲后，会在原地产生一次再燃，造成等同于火焰归亡曲30%的热熔伤害，此次伤害为普攻伤害。",
+    "iconPath": "img/chain/53575bc4dcd6035a.png"
+   }
+  ]
+ },
+ "弗洛洛": {
+  "name": "弗洛洛",
+  "subtitle": "PHROLOVA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/b11e8ee98e7f441ab7270705093445ee20250623.png",
+  "chains": [
+   {
+    "name": "钥匙，通往冥界的奥秘",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/e224025a3f93409e8d074063d10f68bb20250721.png",
+    "desc": "亡与死的乐章伤害倍率提升80%。\n永不消逝的梦呓伤害倍率提升80%。\n弗洛洛不处于指挥状态且不处于战斗状态4秒后，若<b>【乐声】</b>少于2枚，获得<b>【乐声·彩乐】</b>，直至<b>【乐声】</b>不少于2枚。",
+    "iconPath": "img/chain/0043726be73ca207.png"
+   },
+   {
+    "name": "绳索，重生更新的纽带",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/b8f6e118da464fa2aec16639f1c9f1f420250721.png",
+    "desc": "谱曲终末伤害倍率提升75%，<b>余响</b>对谱曲终末的倍率增加效果提升75%。\n施放谱曲终末时可获得14层<b>余响</b>。",
+    "iconPath": "img/chain/c069549cc14803cf.png"
+   },
+   {
+    "name": "匕首，消弭妄想的力量",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1df376ce63a84394b0697af63687b1a720250721.png",
+    "desc": "<b>声骸技能伤害加深</b>80%。\n施放谱曲终末期间，所有<b>【乐声】</b>将依次转化为<b>【乐声·彩乐】</b>。\n被强化攻击·彩乐·赫卡忒命中的目标，攻击降低20%，持续15秒。",
+    "iconPath": "img/chain/868c3acaf96e2b4b.png"
+   },
+   {
+    "name": "火炬，新径启行的引导",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/dc99eeec0d644794890e7873b756936520250721.png",
+    "desc": "施放声骸技能时，队伍中的角色<b>全属性伤害加成提升</b>20%，持续30秒。",
+    "iconPath": "img/chain/08e43db77761135e.png"
+   },
+   {
+    "name": "岔路，穿越生命的要地",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/d6e4848de8e24e1ab00d2d36a87785e420250721.png",
+    "desc": "进入指挥状态时，生成领域停滞周围的目标，领域持续4秒。结束指挥状态或切换至其他角色时，将提前清除停滞效果。\n处于指挥状态时，受到伤害降低30%。",
+    "iconPath": "img/chain/d93f953fabb270fc.png"
+   },
+   {
+    "name": "深夜，走出安息与终结",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4bd6e6aac4f84a7cb9e023c4c55666ad20250721.png",
+    "desc": "强化攻击·赫卡忒伤害倍率提升24%。\n施放亡与死的乐章、永不消逝的梦呓期间，将召唤赫卡忒施放1次重世幻象·赫卡忒，造成弗洛洛攻击216.42%的湮灭伤害，命中目标时获得8层<b>余响</b>。本次伤害为<b>声骸技能伤害</b>。\n处于指挥状态时，若弗洛洛不为队伍中登场角色，目标受到赫卡忒和弗洛洛的<b>伤害提升</b>40%。\n处于指挥状态时，若弗洛洛为队伍中登场角色，<b>湮灭伤害加成提升</b>60%。",
+    "iconPath": "img/chain/8efda36a79b500f8.png"
+   }
+  ]
+ },
+ "心": {
+  "name": "心",
+  "subtitle": "Hsin",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/540ebca2f4fc4ab6ba8c9754f9c6327420260829.png",
+  "chains": [
+   {
+    "name": "授以舟楫渡潮生",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/6136d14a659c4fc3aa686087e388cdca20260930.png",
+    "desc": "施放<b>共鸣解放·转相</b>时，心获得2层<b>敛华障</b>，可叠加2层，转变为<b>应世相</b>时移除全部层数。心受到敌方怪物攻击造成的伤害时，可消耗1层<b>敛华障</b>，使自身免疫打断且受到的伤害降低60%，持续1秒，该效果每1秒可触发1次。\n\n处于<b>共鸣模态·同奏</b>时：\n<b>变奏技能·应世相·诸相同奏</b>、<b>变奏技能·照世相·诸相同奏</b>的伤害倍率提升15%。且每有1层<b>【同奏增益】</b>，使<b>变奏技能·应世相·诸相同奏</b>、<b>变奏技能·照世相·诸相同奏</b>的伤害倍率额外提升10%，至多叠加4层。\n\n处于<b>共鸣模态·电磁</b>时：\n心进入战斗状态时，若<b>霆心域</b>层数不足50层，则增加至50层，每12秒可触发一次。\n<b>共鸣技能·踏月归心</b>触发<b>【电磁效应】</b>伤害提升至42%*自身<b>霆心域</b>层数*目标当前<b>【电磁效应】</b>的层数对应的<b>【电磁效应】</b>伤害倍率。",
+    "iconPath": "img/chain/bd303d1dcdf53f73.png"
+   },
+   {
+    "name": "一念初醒问此身",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/8ca343bec0e94278a1e60f5ccb013a2620260930.png",
+    "desc": "<b>重击·应世相·步红尘</b>和<b>重击·应世相·镇红尘</b>的伤害倍率提升60%。\n<b>重击·照世相·临寰宇</b>和<b>重击·照世相·镇寰宇</b>的伤害倍率提升60%。\n\n心进入战斗状态时，重置心获得<b>了尘愿</b>和<b>承天则</b>的冷却时间，并额外回复100点<b>【应世心】</b>，上述效果每12秒可触发一次。",
+    "iconPath": "img/chain/ee5863a7fee15c6e.png"
+   },
+   {
+    "name": "溪山深处留归梦",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0b828a4170db430e8233b9ff829f67de20260930.png",
+    "desc": "<b>共鸣解放·万阙垂天</b>的伤害倍率提升70%。\n\n处于<b>共鸣模态·同奏</b>时：\n<b>共鸣解放·万阙垂天</b>的暴击伤害提升20%。且每有1层<b>【同奏增益】</b>额外使其暴击伤害提升15%，至多叠加4层。\n\n处于<b>共鸣模态·电磁</b>时：\n<b>共鸣解放·万阙垂天</b>最后一段命中具有<b>【电磁效应】</b>的目标时，主动触发一次<b>【电磁效应】</b>伤害，伤害倍率为1500%*目标当前<b>【电磁效应】</b>的层数对应的<b>【电磁效应】</b>伤害倍率。",
+    "iconPath": "img/chain/57739f5daf7c3a71.png"
+   },
+   {
+    "name": "浮灯照水藏微愿",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ce514e76c07346c89701305c3d4ae02120261008.png",
+    "desc": "队伍中的角色触发以下任意效果时使队伍中所有角色全属性伤害加成提升20%，持续30秒：\n·为目标附加【<b>电磁效应</b>】、【<b>电磁爆发</b>】后。\n·未拥有并获得同奏时。\n·响应同奏时。",
+    "iconPath": "img/chain/a372bbe3cceb792b.png"
+   },
+   {
+    "name": "诸相流转由心定",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/abf166c795c9476cbcecdb6027b85ab020261008.png",
+    "desc": "处于<b>照世相</b>时，心受到的伤害降低20%。\n心受到致命伤害时，此次伤害不会使心倒下，并回复心100%生命上限的生命值，同时免疫伤害和受击，持续1秒。该效果每10分钟可触发1次",
+    "iconPath": "img/chain/b98716028cbee32f.png"
+   },
+   {
+    "name": "不教朝月负今人",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/7d97ed053c9e4e9c88b560e742bd7ebd20260930.png",
+    "desc": "目标受到心的共鸣技能伤害提升40%。\n\n心造成的共鸣技能伤害无视目标20%防御。\n\n处于<b>共鸣模态·同奏</b>时：\n队伍中的角色<b>【同奏增益】</b>效果的层数上限增加1层。队伍中的角色<b>响应同奏</b>时，队伍中的角色获得1层<b>【同奏增益】</b>，持续30秒，该效果无法叠加。\n\n处于<b>共鸣模态·电磁</b>时：\n处于战斗状态时，心附近一定范围内的目标受到<b>【电磁效应】</b>的伤害可暴击，暴击固定为80%，暴击伤害固定为230%。",
+    "iconPath": "img/chain/927d1e8876eedef7.png"
+   }
+  ]
+ },
+ "忌炎": {
+  "name": "忌炎",
+  "subtitle": "JIYAN",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/d583cd15015c401887ed71daae245c3020240805.png",
+  "chains": [
+   {
+    "name": "济世",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ff633a39e706410999580ab548c2e10620240328.png",
+    "desc": "共鸣技能<b>枪扫风定</b>可使用次数增加1次。\n施放共鸣技能<b>枪扫风定</b>时，消耗的<b>【破阵值】</b>减少15点。",
+    "iconPath": "img/chain/6e8bb0a2c9f8fbd4.png"
+   },
+   {
+    "name": "通变",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/89636ee335634949b27f8a7092cc2eb820240328.png",
+    "desc": "施放变奏技能<b>攻其不备</b>后，忌炎积攒30点<b>【破阵值】</b>，忌炎的攻击提升28%，持续15秒，每15秒可触发1次。",
+    "iconPath": "img/chain/598c6971c439369a.png"
+   },
+   {
+    "name": "观势",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/922814d752664f289d6a13044778df0620240328.png",
+    "desc": "施放共鸣技能<b>枪扫风定</b>、共鸣解放<b>苍躣八荒·谋定</b>、共鸣解放<b>苍躣八荒·后动</b>或变奏技能<b>攻其不备</b>时，忌炎的暴击提升16%、暴击伤害提升32%，持续8秒。",
+    "iconPath": "img/chain/b63a22f1658abc2c.png"
+   },
+   {
+    "name": "奇正",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/6f85db3c9e7e406b9537a463f744f0a120240328.png",
+    "desc": "施放共鸣解放·<b>苍躣八荒·谋定</b>或<b>苍躣八荒·后动</b>时，队伍中的角色重击伤害提升25%，效果持续30秒。",
+    "iconPath": "img/chain/a197a5b39f5b677f.png"
+   },
+   {
+    "name": "明断",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4ccccb20782140b480b414e75a67e31920240328.png",
+    "desc": "延奏技能<b>克己</b>伤害倍率增加120%。\n攻击命中目标时，忌炎的攻击提升3%，效果持续8秒，可叠加15层；施放变奏技能<b>攻其不备</b>后叠加至满层。",
+    "iconPath": "img/chain/5ae75e941ff3e3a3.png"
+   },
+   {
+    "name": "移山",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/80727d91d1da479a9ab008a0a2e8426f20240328.png",
+    "desc": "每次使用重击、变奏技能<b>攻其不备</b>或共鸣技能<b>枪扫风定</b>时，获得1层<b>【锐意之势】</b>，最多可叠加2层。\n施放共鸣解放<b>苍躣八荒·后动</b>会消耗所有<b>【锐意之势】</b>，每层<b>【锐意之势】</b>使共鸣解放苍躣八荒·后动的伤害倍率提升120%。",
+    "iconPath": "img/chain/428e89133a787d50.png"
+   }
+  ]
+ },
+ "折枝": {
+  "name": "折枝",
+  "subtitle": "ZHEZHI",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/f5b0fe60885249a688c20ad177785e3920240812.png",
+  "chains": [
+   {
+    "name": "骨法用笔",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/cd10df3a1bd24b55a6bfb4c1c43b93b720240814.png",
+    "desc": "折枝施放共鸣技能<b>极意·神来之笔</b>时，回复15点共鸣能量，且自身暴击提升10%，持续27秒。",
+    "iconPath": "img/chain/7769e3196a351fa4.png"
+   },
+   {
+    "name": "气韵生动",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/adfe8346611d4f298a4b187c8e3c448a20240814.png",
+    "desc": "共鸣解放<b>虚实境趣</b>的<b>墨鹤</b>的最大召唤数增加6只",
+    "iconPath": "img/chain/b5ca53c829c3336a.png"
+   },
+   {
+    "name": "应物象形",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ebaaede7e128470db0fad89b69d3599520240814.png",
+    "desc": "折枝施放共鸣技能<b>以形写神</b>、共鸣回路<b>神来之笔</b>或共鸣回路<b>极意·神来之笔</b>时，攻击提升15%，可叠加3层，持续27秒。",
+    "iconPath": "img/chain/9495dd2a5d195372.png"
+   },
+   {
+    "name": "随类赋彩",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/63c7ab4bc21e407c9b7d5d16b0376b6e20240814.png",
+    "desc": "折枝施放共鸣解放<b>虚实境趣</b>时，队伍中角色攻击提升20%，持续30秒。",
+    "iconPath": "img/chain/96f17f1be1c0c7fd.png"
+   },
+   {
+    "name": "经营位置",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/8f5a10b2e90442dea8d745a281350d8c20240814.png",
+    "desc": "共鸣解放<b>虚实境趣</b>持续期间，每召唤3只<b>墨鹤</b>，会额外召唤1只<b>墨鹤</b>协同攻击，能造成等同于<b>墨鹤</b>140%的伤害，此次伤害为普攻伤害，该伤害不会触发召唤<b>墨鹤</b>的效果。",
+    "iconPath": "img/chain/bcf1932dd08217de.png"
+   },
+   {
+    "name": "传移摹写",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/6a9d958b622f4053a13686988fcba28820240814.png",
+    "desc": "施放共鸣技能<b>神来之笔</b>或共鸣技能<b>极意·神来之笔</b>时，会额外召唤一只<b>白鹤</b>，能造成等同于神来之笔120%的伤害，此次伤害为普攻伤害。",
+    "iconPath": "img/chain/cda56a8ad866f524.png"
+   }
+  ]
+ },
+ "散华": {
+  "name": "散华",
+  "subtitle": "SANHUA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/b549548ff4f048c5974ae08c9ebd26e120240521.png",
+  "chains": [
+   {
+    "name": "孤身孑然",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/daf7e7fe9164480883e76f4705d2330920240329.png",
+    "desc": "施放第<b>5</b>段<b>普攻</b>时，散华自身<b>暴击</b>提升<b>15%</b>，持续<b>10</b>秒。",
+    "iconPath": "img/chain/73bb0b76cfee0b6b.png"
+   },
+   {
+    "name": "净雪明心",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/379de57480ee4ddcac5b59664d4b13e920240329.png",
+    "desc": "<b>重击·爆裂</b>消耗的<b>耐力</b>下降<b>10</b>点，施放<b>共鸣技能·朔雪永冻</b>时散华<b>抗打断能力</b>提升，持续<b>5</b>秒。",
+    "iconPath": "img/chain/4f1752f49b27b6ec.png"
+   },
+   {
+    "name": "目视异常",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/164999430bfb4324aa3548e451359d1220240329.png",
+    "desc": "散华攻击生命低于<b>70%</b>的目标时，造成的<b>伤害</b>提升<b>35%</b>。",
+    "iconPath": "img/chain/415f933cca23181e.png"
+   },
+   {
+    "name": "剑修五蕴",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4bb34c38c9a04d8f927abe314018fff920240329.png",
+    "desc": "施放<b>共鸣解放·焦瞑冻土</b>时，回复<b>10</b>点<b>共鸣能量</b>。\n并且<b>5</b>秒内的下次<b>重击·爆裂</b>伤害提升<b>120%</b>。",
+    "iconPath": "img/chain/414a73b834cb7ca5.png"
+   },
+   {
+    "name": "颠覆无常",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/c3a6613f6c8d4196908eeafdee4004bf20240329.png",
+    "desc": "<b>共鸣回路·冰绽</b>的<b>暴击伤害</b>提升<b>100%</b>。\n即使没有成功引爆，【冰棘】、【冰棱】、【冰川】也会在消失时直接爆炸。",
+    "iconPath": "img/chain/534a980fedc83a4c.png"
+   },
+   {
+    "name": "曙色天光",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f00c9ce2e1c44c45b8bddbe421690ccd20240329.png",
+    "desc": "引爆【冰棱】或【冰川】后，队伍中的角色<b>攻击</b>提升<b>10%</b>，持续<b>20</b>秒，可叠加<b>2</b>层。",
+    "iconPath": "img/chain/d9a18d74ec8073f1.png"
+   }
+  ]
+ },
+ "景燃": {
+  "name": "景燃",
+  "subtitle": "Jingran",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/75a6037be6d24f3292f1a0c8fa3458e020260810.png",
+  "chains": [
+   {
+    "name": "阴阳其和，终始其义",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/6d8ac4ec992b4f3685a261c46287c9b520260909.png",
+    "desc": "<b>共鸣技能·阴蚀骨</b>，<b>共鸣技能·黄泉渡</b>，<b>共鸣技能·阳焚身</b>，<b>共鸣技能·往生送</b>伤害倍率提升<b>80%</b>。\n<b>共鸣技能·阴蚀骨</b>，<b>共鸣技能·黄泉渡</b>，<b>共鸣技能·阳焚身，</b><b>共鸣技能·往生送</b>免疫打断。",
+    "iconPath": "img/chain/5cc53911595006a4.png"
+   },
+   {
+    "name": "孤灯踩影，有迹山河",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/3eab95a4589a4272b48073ffafe139c620260909.png",
+    "desc": "<b>重击·劫魄</b>和<b>重击·踏罡</b>伤害倍率提升<b>46%</b>。<b>荧惑</b>状态下【<b>命火</b>】对<b>重击·劫魄</b>或<b>重击·踏罡</b>的倍率增加效果提升<b>46%</b>。\n每次进入战斗时，景燃获得下述效果，每4秒可触发1次。\n·获得<b>300</b>点【<b>炁</b>】。\n·景燃获得<b>通幽</b>。\n<b>通幽</b>\n施放<b>重击·劫魄</b>或<b>重击·踏罡</b>时，回复共鸣能量上限<b>25%</b>的共鸣能量且<b>重击·劫魄</b>和<b>重击·踏罡</b>造成的伤害加深<b>180%</b>，持续<b>4</b>秒。",
+    "iconPath": "img/chain/692619bb64fe2f62.png"
+   },
+   {
+    "name": "乾道变化，各正性命",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ed4e331d41e24ab1bf0f75f1965a949020260909.png",
+    "desc": "景燃施放<b>重击·劫魄</b>或<b>重击·踏罡</b>时，获得<b>5</b>点【<b>鬼护</b>】。\n景燃施放<b>共鸣解放·万鬼同葬</b>后，<b>阳变阴合</b>替换为<b>阴阳交错</b>，持续<b>15</b>秒。\n<b>阴阳交错</b>\n景燃基于生命上限获得额外攻击：景燃每<b>1000</b>点生命上限获得<b>50</b>点攻击，上限<b>2500</b>。",
+    "iconPath": "img/chain/84fb4014c652c731.png"
+   },
+   {
+    "name": "虚实莫辨，人鬼无间",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ed44c8c8493e49c99e9018572d03ea6220260909.png",
+    "desc": "队伍中的角色获得护盾时，使队伍中的角色全属性伤害加成提升<b>20%</b>，持续<b>30</b>秒。",
+    "iconPath": "img/chain/875275e0173044b3.png"
+   },
+   {
+    "name": "原始反终，故知死生",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/306208e8301544e3b404534e726e571e20260909.png",
+    "desc": "景燃受到致死伤害时，此次伤害不会使景燃倒下，并获得基于景燃生命上限<b>50%</b>的护盾，护盾持续<b>15</b>秒，该效果每<b>10</b>分钟可触发一次，该护盾在切换至其他角色时不会继承。",
+    "iconPath": "img/chain/cdbc66de44172a1d.png"
+   },
+   {
+    "name": "恩仇了了，后文有期",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/29828ac0c491423393da5428ad2408a320260909.png",
+    "desc": "目标受到景燃的重击伤害提升<b>40%</b>。\n<b>魑魅魍魉</b>伤害倍率提升<b>80%</b>。\n进入<b>荧惑</b>状态后，景燃获得<b>万鬼同行</b>，持续<b>15</b>秒。<b>万鬼同行</b>持续期间，若景燃为队伍中登场角色，景燃造成伤害时，召唤<b>魑魅魍魉</b>攻击目标，对目标造成<b>热熔伤害</b>，本次伤害为重击伤害。\n此方式召唤<b>魑魅魍魉</b>间隔为<b>1</b>秒，最多以此方式召唤<b>8</b>次，满足任一下述条件时，移除<b>万鬼同行</b>并重置<b>魑魅魍魉</b>的召唤次数。\n·施放<b>共鸣解放·万鬼同葬</b>时。\n·<b>荧惑</b>持续时间结束或被移除时。",
+    "iconPath": "img/chain/51f4486d19dd8f17.png"
+   }
+  ]
+ },
+ "桃祈": {
+  "name": "桃祈",
+  "subtitle": "TAOQI",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/c6b9646d1aee4d07ad4a68164dfedb0e20240521.png",
+  "chains": [
+   {
+    "name": "怀悠然之心",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/7e69d049bc3443989ef43ad98bfdfd6720240520.png",
+    "desc": "共鸣回路<b>攻防转换</b>获得的护盾量提升40%。",
+    "iconPath": "img/chain/1e2c2568da5a9183.png"
+   },
+   {
+    "name": "假泯于众人",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1bbc530521db448d8a7e980a993d43ae20240520.png",
+    "desc": "共鸣解放<b>不动如山</b>的暴击提升20%，暴击伤害提升20%。",
+    "iconPath": "img/chain/d0665679af52bad9.png"
+   },
+   {
+    "name": "观万物之细",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f603101298ea4dd8ae3fbe7c6a41640920240520.png",
+    "desc": "共鸣技能<b>磐岩护壁</b>的持续时间延长至30秒。",
+    "iconPath": "img/chain/29d976c3529fd993.png"
+   },
+   {
+    "name": "承负重之担",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/005ea2faf29e46fdbb49cb8f9f074edd20240520.png",
+    "desc": "成功触发重击<b>后发制人</b>时，回复桃祈25%生命值，同时防御提升50%，持续5秒，每15秒可触发1次。",
+    "iconPath": "img/chain/300c053783c67554.png"
+   },
+   {
+    "name": "解市井民忧",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/fa7106b1f5da44fb83b52d5d1206898a20240520.png",
+    "desc": "共鸣回路<b>攻防转换</b>的伤害提升50%，共鸣回路<b>攻防转换</b>命中目标时，回复20点共鸣能量。",
+    "iconPath": "img/chain/714b07d83d6b78e3.png"
+   },
+   {
+    "name": "护城邦安危",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/32ad84252ef3435492f11204b9ef345c20240520.png",
+    "desc": "共鸣技能<b>磐岩护壁</b>获得的护盾持续期间，桃祈普攻和重击的伤害提升40%。",
+    "iconPath": "img/chain/6b6e847a4fb3a7dc.png"
+   }
+  ]
+ },
+ "椿": {
+  "name": "椿",
+  "subtitle": "CAMELLYA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/1a4ba48dee0948d69ac7c7e2e058ce8a20241102.png",
+  "chains": [
+   {
+    "name": "在无人知晓的秘密小径",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1935b11e1b5a4e13ba55ee72f24e811320241109.png",
+    "desc": "施放变奏技能<b>八千春秋</b>时，暴击伤害提升<b>28%</b>，持续<b>18</b>秒，每<b>25</b>秒可触发<b>1</b>次。共鸣回路<b>一日花</b>免疫打断。",
+    "iconPath": "img/chain/161af07c5b577db4.png"
+   },
+   {
+    "name": "呼唤那沉默之花的芬芳",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/3b56127352684ce688c8c072e77ee2cd20241109.png",
+    "desc": "共鸣回路<b>一日花</b>伤害倍率提升<b>120%</b>。",
+    "iconPath": "img/chain/86a098ce323ba708.png"
+   },
+   {
+    "name": "一根荆棘胜过千颗花种",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1e49735121624dc4b64a3d6fbb29edab20241109.png",
+    "desc": "共鸣解放<b>芳华绽烬</b>伤害倍率提升<b>50%</b>；<b>含苞状态</b>期间，椿的攻击提升<b>58%</b>。",
+    "iconPath": "img/chain/e148b43db81e4845.png"
+   },
+   {
+    "name": "它的根茎持续到永恒中",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/afdd68d3521e48c2a7d4cdc0ac65d5d520241109.png",
+    "desc": "施放变奏技能<b>八千春秋</b>后，队伍中的角色<b>普攻伤害加成</b>提升<b>25%</b>，持续<b>30</b>秒。",
+    "iconPath": "img/chain/c04aa3bcdfc0cab6.png"
+   },
+   {
+    "name": "将那无限置于你的手掌",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/495f8008e65f4ff7bc9a9a83a14fc29220241109.png",
+    "desc": "变奏技能<b>八千春秋</b>伤害倍率提升<b>303%</b>。\n延奏技能<b>缠绕</b>伤害倍率提升<b>68%</b>。",
+    "iconPath": "img/chain/fa34389663b72095.png"
+   },
+   {
+    "name": "为你的千千万万次盛放",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/c1c159eb9ee14b768c0fc9b07df0824420241109.png",
+    "desc": "共鸣回路<b>酣梦</b>的伤害倍率提升效果额外提升<b>150%</b>；\n共鸣回路<b>永生花</b>：施放共鸣回路<b>一日花</b>后<b>15</b>秒内，协奏能量充满时，若<b>永生花</b>不处于冷却状态，共鸣技能替换为<b>永生花</b>。\n施放<b>永生花</b>时，消耗<b>50</b>点协奏值，回复<b>50</b>点【红椿·蕊】，造成共鸣回路<b>一日花100%</b>的<b>湮灭伤害</b>，此次伤害为<b>普攻伤害</b>，每<b>25</b>秒可施放<b>1</b>次。\n施放<b>永生花</b>后，进入<b>含苞状态</b>，清除所有红椿·蕾，并将共鸣回路<b>酣梦</b>的伤害倍率提升效果提升至250%。\n共鸣回路<b>永生花</b>免疫打断。",
+    "iconPath": "img/chain/e66d515c32bc6982.png"
+   }
+  ]
+ },
+ "洛可可": {
+  "name": "洛可可",
+  "subtitle": "ROCCIA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/9660deb4fe9b4b22a95bd2e0b86a558b20250113.png",
+  "chains": [
+   {
+    "name": "沉闷的灰暗涌进船舱",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/abb5012678b34653abe33afd17d93b9020250117.png",
+    "desc": "施放共鸣技能<b>高难度设计</b>时，额外回复100点【想象力】与10点协奏能量。\n普攻<b>幻想照进现实</b>免疫打断。",
+    "iconPath": "img/chain/f18d87bcbd556574.png"
+   },
+   {
+    "name": "海萤石闪烁着微弱光芒",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/9bf6151c23e94824810b130f92c4af0720250117.png",
+    "desc": "施放普攻<b>幻想照进现实</b>时，队伍中的角色湮灭伤害加成提升10%，可叠加3层，持续30秒。满层时，队伍中的角色湮灭伤害加成额外提升10%，持续30秒。",
+    "iconPath": "img/chain/0c4e5e7aa1a39169.png"
+   },
+   {
+    "name": "用心观察，以手丈量",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/eae78d97b69041bdb579cf0056af627120250117.png",
+    "desc": "施放变奏技能<b>佩洛，来帮忙</b>时，洛可可暴击提升10%，暴击伤害提升30%，持续15秒。",
+    "iconPath": "img/chain/109674c07f7d6a8e.png"
+   },
+   {
+    "name": "千万“奇藏”于箱中汇聚",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/055c68426dd84d86952200064becea1e20250117.png",
+    "desc": "施放共鸣技能<b>高难度设计</b>时，普攻幻想照进现实伤害倍率提升60%，持续12秒。",
+    "iconPath": "img/chain/eba5b9f84e0942e8.png"
+   },
+   {
+    "name": "重建乐土，在舞台上",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f410ec4c33d443619597b6dc70b946eb20250117.png",
+    "desc": "共鸣解放<b>即兴喜剧，开场</b>伤害倍率提升20%，重击伤害倍率提升80%。",
+    "iconPath": "img/chain/58c48f3c430b39d2.png"
+   },
+   {
+    "name": "飞吧，乘着金色的翅膀",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/fc7dc9fa79e945168ff3db84def1b23920250117.png",
+    "desc": "施放共鸣解放<b>即兴喜剧，开场</b>时，获得如下效果，12秒内：\n·普攻<b>幻想照进现实</b>攻击目标时，无视对方60%的防御。\n·普攻<b>幻想照进现实</b>第3段落地后，会将洛可可送上空中，进入飞跃幻想状态，此时短按普攻，将会施放普攻<b>构筑现实</b>，普攻<b>构筑现实</b>免疫打断，造成普攻幻想照进现实第3段100%的伤害，此次伤害为重击伤害。\n·普攻<b>构筑现实</b>落地后，会将洛可可送上空中，进入<b>飞跃幻想</b>状态。普攻<b>构筑现实</b>需要在处于<b>飞跃幻想</b>状态时才可施放。",
+    "iconPath": "img/chain/ea64b2e3f96c4eb9.png"
+   }
+  ]
+ },
+ "洛瑟菈": {
+  "name": "洛瑟菈",
+  "subtitle": "Lucilla",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/2265ad4c2c7b4f46809677d5c292c36620260610.png",
+  "chains": [
+   {
+    "name": "遥远的晌午",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/040c638151e84b5f98e68ad92bba33f520260606.png",
+    "desc": "施放<b>共鸣技能·幻象定帧</b>展开<b>聚焦环</b>期间，指针首次进入<b>完美焦距</b>时将立即使<b>完美焦距</b>充满<b>聚焦环</b>。\n施放<b>共鸣技能·追光</b>时，洛瑟菈的暴击提升20%，持续10秒。\n<b>共鸣技能·幻象定帧</b>、<b>普攻·溯念留形第3段</b>免疫打断。",
+    "iconPath": "img/chain/e4be1a483ab2b739.png"
+   },
+   {
+    "name": "酣睡的月光",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/e67c1098f2274eab90f52391670bb1ab20260606.png",
+    "desc": "施放<b>共鸣解放·历历在目</b>时，洛瑟菈将根据<b>共鸣模态</b>提供额外的强化效果：\n·处于<b>共鸣模态·霜渐</b>时，队伍中登场角色一定范围内的目标受到<b>【霜渐效应】</b>的伤害加深80%。\n·处于<b>共鸣模态·声骸</b>时，队伍中角色的声骸技能伤害加成提升40%。\n<b>追忆状态</b>持续期间，上述效果持续存在。退出<b>追忆状态</b>后，上述效果保留30秒。\n洛瑟菈切换模态时，上述效果提前结束。",
+    "iconPath": "img/chain/95ca5bbdb4ea546b.png"
+   },
+   {
+    "name": "时间自无声处消逝",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f30340a75fe24ee79e4f9286e81bcb6720260606.png",
+    "desc": "<b>断舍离</b>的伤害倍率提升100%。",
+    "iconPath": "img/chain/c65c316a765fa481.png"
+   },
+   {
+    "name": "过去悄然沉默",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/e35cd43458b24de58c84763b41f1d39620260606.png",
+    "desc": "<b>遗忘</b>命中将牵引周围的目标。施放<b>遗忘</b>时，洛瑟菈的攻击提升10%，可叠加3层，持续6秒，持续时间结束清除全部层数。\n施放<b>普攻·溯念留形第3段</b>时，洛瑟菈受到的伤害降低30%。",
+    "iconPath": "img/chain/0d364e4c816adaaa.png"
+   },
+   {
+    "name": "岁月如溪水",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ba4db5ef6da246fda37be91e499cc76920260606.png",
+    "desc": "<b>遗忘</b>的伤害倍率提升50%。",
+    "iconPath": "img/chain/b2544b764b065392.png"
+   },
+   {
+    "name": "在如烟的时间里张望",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/d0613158fcdd422b83ba3fcaa7ee8f5020260606.png",
+    "desc": "<b>追忆状态</b>持续期间，洛瑟菈每次消耗<b>【照片】</b>将获得1层<b>铭记</b>，可叠加3层。每层<b>铭记</b>使<b>断舍离</b>造成的伤害提升200%，至多提升600%。施放<b>断舍离</b>后清除全部的<b>铭记</b>层数。\n若洛瑟菈在<b>追忆状态</b>持续期间击败了任意目标，将获得<b>怀恋</b>：退出<b>追忆状态</b>且处于非战斗状态时，消耗<b>怀恋</b>，洛瑟菈回复150点<b>【印象】</b>。",
+    "iconPath": "img/chain/e44350226d054910.png"
+   }
+  ]
+ },
+ "清宵": {
+  "name": "清宵",
+  "subtitle": "Qingxiao",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/ec44ffab3d204ae8b15f88cf452ebe4c20260810.png",
+  "chains": [
+   {
+    "name": "起若流云聚还散",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/3533ba95ce634388873ecda20dbc6c9220260819.png",
+    "desc": "暴击提升16%。\n<b>护体剑光</b>层数上限提升至2层，施放<b>重击·弦剑</b>时，可额外获得1层<b>护体剑光</b>。\n进入战斗后，获得25层的<b>清邪剑诀</b>。\n<b>普攻·弦剑</b>、<b>空中攻击·弦剑</b>、<b>普攻·昙体仙身</b>造成伤害后，若拥有<b>清邪剑诀</b>，将移除<b>清邪剑诀</b>，触发<b>巨阙灭迹</b>，造成清宵攻击400%的<b>气动伤害</b>，本次伤害为普攻伤害，该效果每秒最多触发1次。每移除一层<b>清邪剑诀</b>，使目标受到<b>巨阙灭迹</b>伤害提升4%，该效果持续2秒。\n<b>清邪剑诀</b>层数上限为25。",
+    "iconPath": "img/chain/965d58d2f7dc6f4d.png"
+   },
+   {
+    "name": "罢如素英落无声",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0de3acf0f8ec4538b2d320803ed94de120260819.png",
+    "desc": "<b>重击·弦剑</b>伤害倍率提升40%。\n进入战斗状态后，附近敌人的<b>心识锁定</b>层数上限提升至25。\n<b>固有技能·识海浩渺，尘世万千</b>的<b>【凝识】</b>层数上限提升至25。\n<b>天心空明</b>效果强化：\n施放<b>重击·弦剑</b>时，对附近的目标附加的<b>心识锁定</b>层数提升至6层。",
+    "iconPath": "img/chain/80c10629ea678236.png"
+   },
+   {
+    "name": "长梦无痕剑留影",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/3292dca3ab5f45e29f6a18310317a98c20260819.png",
+    "desc": "<b>共鸣解放·天光云影沧澜兴</b>暴击伤害提升100%。\n施放<b>重击·弦剑</b>期间，根据附近敌人<b>心识锁定</b>的最高层数，获得同等层数的<b>万物和鸣</b>。\n<b>万物和鸣</b>：每层使<b>重击·天钧荡煞·昙体仙身</b>伤害倍率提升3%。施放<b>重击·天钧荡煞·昙体仙身</b>后移除<b>万物和鸣</b>。\n<b>固有技能·识海浩渺，尘世万千</b>的<b>【凝识】</b>效果附加<b>【集谐·干涉】</b>层数提升至2层。",
+    "iconPath": "img/chain/9ad52e57cdf66021.png"
+   },
+   {
+    "name": "红尘杳渺且偕行",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/636d098a13ca42d2aaeec5459e751cac20260819.png",
+    "desc": "队伍中的角色附加<b>【集谐·偏移】</b>后，该角色攻击提升20%，持续8秒。",
+    "iconPath": "img/chain/33f805b7e72c7246.png"
+   },
+   {
+    "name": "寒芒愿暖凡间雪",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/2163afca35ef465196160fda00a3defe20260820.png",
+    "desc": "<b>共鸣技能·浮声一刹·行罚</b>伤害倍率提升100%。\n<b>御剑飞行</b>移动时，<b>【御剑气劲】</b>消耗降低30%。",
+    "iconPath": "img/chain/b690b34bfcb54c31.png"
+   },
+   {
+    "name": "涤荡浊岁天地清",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/50cda46c848241788df1c4931b0242a120260819.png",
+    "desc": "目标受到清宵的<b>重击·弦剑</b>、<b>重击·天钧荡煞·昙体仙身</b>、<b>共鸣解放·天光云影沧澜兴</b>、<b>巨阙灭迹</b>伤害提升40%。\n施放<b>重击·弦剑</b>期间，根据附近敌人<b>心识锁定</b>的最高层数，获得同等层数的<b>清邪剑诀</b>。\n目标每拥有1层<b>心识锁定</b>，受到<b>巨阙灭迹</b>伤害加深2%，前7层每层额外加深5%。\n解锁<b>固有技能·通晓万物，指名破祟</b>后，<b>巨阙灭迹</b>对拥有<b>心识锁定</b>的目标造成伤害提升，每层提升2%，前7层每层额外提升5%。\n清宵响应<b>【集谐·干涉】</b>效果提升20%。",
+    "iconPath": "img/chain/2a88b4c34dd0ee87.png"
+   }
+  ]
+ },
+ "渊武": {
+  "name": "渊武",
+  "subtitle": "YUANWU",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/1ac0b370bcb045b5a568b4404790b43720240521.png",
+  "chains": [
+   {
+    "name": "点一盏清茗",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1ebf7b15b06d401ea1c3f16b5a6538fb20240514.png",
+    "desc": "渊武处在共鸣回路雷厉风行状态时，自身的普攻攻速提升20%，重击攻速提升20%。",
+    "iconPath": "img/chain/f9680cfba1f13e67.png"
+   },
+   {
+    "name": "敛狂戾之心",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/b770ba154e4a4926abbe94c0a20b61f020240514.png",
+    "desc": "施放变奏技能轰雷时，渊武额外回复15点共鸣能量。",
+    "iconPath": "img/chain/017bf2bf23cbc70c.png"
+   },
+   {
+    "name": "正周身之气",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/c85e7649fd0b4b7cb7d8f079fb1399eb20240514.png",
+    "desc": "共鸣技能雷之楔的协同攻击命中目标时，基于渊武20%防御额外提升伤害",
+    "iconPath": "img/chain/ef664372b536fde4.png"
+   },
+   {
+    "name": "挥刚猛之拳",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1afcff34ea164870bd1c23cb072e608120240514.png",
+    "desc": "施放共鸣解放寂土重明时，队伍中在场角色获得渊武自身200%防御的护盾，持续10秒。",
+    "iconPath": "img/chain/6b63c6e07fb71b18.png"
+   },
+   {
+    "name": "顾一方天地",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1d444a68b6ff4ad49a867a82dc9ae1cd20240514.png",
+    "desc": "共鸣技能雷之楔在场时，渊武的共鸣解放伤害加成提升50%。",
+    "iconPath": "img/chain/ec4a1158e1152449.png"
+   },
+   {
+    "name": "保八方平安",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/e9a4f6724676411b9eb1587424b6bfa020240514.png",
+    "desc": "处在共鸣技能雷之楔范围内的附近队伍中所有角色将持续获得效果：防御提升32%，该效果持续时间3秒。",
+    "iconPath": "img/chain/536a213e0f921cbc.png"
+   }
+  ]
+ },
+ "漂泊者·导电": {
+  "name": "漂泊者·导电",
+  "subtitle": "ROVER",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/5f2d5b70b7ef43f4aff481632fbc322420240521.png",
+  "chains": [
+   {
+    "name": "鬼工玲珑",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/de003050d07d4e7c9f14462696638c7220260709.png",
+    "desc": "施放<b>常态攻击</b>和共鸣技能<b>千声翻涌</b>时，获得抗打断提升效果，持续0.5秒。",
+    "iconPath": "img/chain/cb54e30123f9979c.png"
+   },
+   {
+    "name": "千巧百巧",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/aac5616c99bf4df8860e30a751316fa020260709.png",
+    "desc": "共鸣解放<b>最终战略</b>造成伤害后给目标附加5层<b>【电磁效应】</b>",
+    "iconPath": "img/chain/aa71dd92fc445297.png"
+   },
+   {
+    "name": "化朽为奇",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4789e4942f9643c9b5f4a3062492bee920260709.png",
+    "desc": "共鸣技能<b>超负荷</b>伤害倍率提升20%。",
+    "iconPath": "img/chain/601a537fdf0ee6cb.png"
+   },
+   {
+    "name": "声动霄壤",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/8e7b418168474581962da208c6b5069120260709.png",
+    "desc": "共鸣解放<b>最终战略</b>伤害倍率提升20%。",
+    "iconPath": "img/chain/2848c3babe58e2f3.png"
+   },
+   {
+    "name": "变转之理",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/aff83d9c03b2456e8e758008a8e7aaf420260709.png",
+    "desc": "<b>临界共鸣</b>状态期间暴击伤害提升20%。",
+    "iconPath": "img/chain/3681a22757d6af38.png"
+   },
+   {
+    "name": "匣中心渊",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f444bfdc07a4404493df2a61e464891020260709.png",
+    "desc": "共鸣技能<b>千声翻涌</b>和<b>雷陨</b>伤害倍率提升20%。",
+    "iconPath": "img/chain/3f69e803412f0497.png"
+   }
+  ]
+ },
+ "漂泊者·气动": {
+  "name": "漂泊者·气动",
+  "subtitle": "ROVER",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/b17220a6c6904ebb80bb868f8639857220250323.png",
+  "chains": [
+   {
+    "name": "风止息于无明界",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/5331e6328e8d4669901512dc6b5b704e20250323.png",
+    "desc": "施放空中攻击<b>抃风儛润</b>时，获得抗打断提升效果，持续3秒。",
+    "iconPath": "img/chain/fcf50507f483574d.png"
+   },
+   {
+    "name": "流光乍隐于长夜",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/12f436cc92ec49e0bb1b8051ef4d891b20250323.png",
+    "desc": "施放共鸣技能<b>缥缈无相</b>时，队伍中登场角色获得持续回复生命效果，每3秒回复漂泊者20%攻击的生命值，持续30秒。期间登场角色生命值低于35%时，立即回复登场角色已损失生命值10%的生命值，该效果每10秒可触发1次，且不受治疗效果加成影响。",
+    "iconPath": "img/chain/50d131964b174928.png"
+   },
+   {
+    "name": "虚相陷落于掌中",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/20cf201f26134cd782c52a50f2d1978a20250323.png",
+    "desc": "气动伤害加成提升15%。",
+    "iconPath": "img/chain/9be52bf192542178.png"
+   },
+   {
+    "name": "界限崩折于刹那",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/b3a2b3cc3102446fa02e91193df1287920250323.png",
+    "desc": "施放空中攻击<b>抃风儛润</b>时，共鸣技能伤害加成提升15%，持续5秒。",
+    "iconPath": "img/chain/63a37b13675437b9.png"
+   },
+   {
+    "name": "生灭交错于来路",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/aa5cdeab57d2441e8079f4a2186ae48f20250323.png",
+    "desc": "共鸣解放<b>万象归墟</b>伤害倍率提升20%。",
+    "iconPath": "img/chain/87d7b7221472f76f.png"
+   },
+   {
+    "name": "万象崩落于风间",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/b2df9fc3f0dd4e98a4ae48e51857ae3520250323.png",
+    "desc": "共鸣技能<b>缥缈无相</b>伤害倍率提升30%。",
+    "iconPath": "img/chain/f4f6a75aa4322e53.png"
+   }
+  ]
+ },
+ "漂泊者·湮灭": {
+  "name": "漂泊者·湮灭",
+  "subtitle": "ROVER",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/5f2d5b70b7ef43f4aff481632fbc322420240521.png",
+  "chains": [
+   {
+    "name": "弦外知机",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/a4af1af0faf94b3b87891a3c9e8bf14020240527.png",
+    "desc": "共鸣技能伤害加成提升30%。",
+    "iconPath": "img/chain/65e3dcc277e9b31b.png"
+   },
+   {
+    "name": "晦明如朔",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/6322763e160946ab82a2a01c0b40bccc20240527.png",
+    "desc": "施放重击灭音进入暗涌状态时，重置共鸣技能的冷却时间。",
+    "iconPath": "img/chain/5ee1daa27b6f48cf.png"
+   },
+   {
+    "name": "声息涌动",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/e7335c52ce4f4518b1d822887fe6b4a020240527.png",
+    "desc": "处于暗涌状态时，第5段普攻命中敌人时，可回复已损失生命值10%的生命值。",
+    "iconPath": "img/chain/0195d0afb12f9e61.png"
+   },
+   {
+    "name": "尘声湮灭",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/b5f3a0c6969b410a911a5dbf7c730e1920240527.png",
+    "desc": "重击灭音、共鸣解放临渊死寂命中目标时，目标的湮灭抗性降低10%，持续20秒。",
+    "iconPath": "img/chain/5621af71f20ad279.png"
+   },
+   {
+    "name": "万物寂听",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/71ec7280ba06488b8a52a43fce9c940d20240527.png",
+    "desc": "处于暗涌状态时第5段普攻可额外造成一次湮灭伤害，此次伤害为第5段普攻伤害的50%。",
+    "iconPath": "img/chain/9c96bc004b524448.png"
+   },
+   {
+    "name": "暗涌潮升",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/8a23f30a851741de855e990d545d1c9620240527.png",
+    "desc": "处于暗涌状态时，漂泊者的暴击提升25%。",
+    "iconPath": "img/chain/d5dd4fd49f287392.png"
+   }
+  ]
+ },
+ "漂泊者·衍射": {
+  "name": "漂泊者·衍射",
+  "subtitle": "ROVER",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/3699be9cadfb40c78d42dd1db6298e0720240521.png",
+  "chains": [
+   {
+    "name": "始源纪行",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/03d6682d8a084736824c6df9909cb71020240514.png",
+    "desc": "施放共鸣技能浮声千斩或共鸣技能浮声千斩·旋音时，漂泊者的暴击提升15%，持续7秒。",
+    "iconPath": "img/chain/a27aa084c2c58c36.png"
+   },
+   {
+    "name": "微物细语",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/fb4ef556c2d64ff5acd9f6fa9dae93b020240514.png",
+    "desc": "漂泊者的衍射伤害加成提升20%。",
+    "iconPath": "img/chain/91c337f9e56803ed.png"
+   },
+   {
+    "name": "尘声百面",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/c3e5915dafa14abdbc8a5573fcb92b3220240514.png",
+    "desc": "漂泊者的共鸣效率提升20%。",
+    "iconPath": "img/chain/0e7f05b51358d7ae.png"
+   },
+   {
+    "name": "连音扫弦",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/2b7748dcc75345d4af2bdf72de736c8920240514.png",
+    "desc": "施放共鸣解放回响奏鸣时，为队伍中的角色持续回复生命值，每秒回复量相当于自身攻击的20%，持续5秒。",
+    "iconPath": "img/chain/ccafc774be4a47c3.png"
+   },
+   {
+    "name": "回声流转",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/6e47c846d1e249c08b319cafde97da2920240514.png",
+    "desc": "共鸣解放伤害加成提升40%。",
+    "iconPath": "img/chain/516b11a283930b1d.png"
+   },
+   {
+    "name": "长路归鸣",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/5c44236c5c0f4e9cb254176c5deabb5520240514.png",
+    "desc": "共鸣技能浮声千斩或共鸣技能浮声千斩·旋音命中目标时，目标衍射伤害抗性降低10%，持续20秒。",
+    "iconPath": "img/chain/8b27114117cf8843.png"
+   }
+  ]
+ },
+ "灯灯": {
+  "name": "灯灯",
+  "subtitle": "LUMI",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/efd604fe527746a88a0d228e447feb7520241130.png",
+  "chains": [
+   {
+    "name": "包裹正等待揽收",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ffad4ff986c64dc7a8111677a22b5a1020241130.png",
+    "desc": "施放<b>强化·后撤</b>后3秒内，逐渐回复60点耐力。",
+    "iconPath": "img/chain/28d8cb74f0148f75.png"
+   },
+   {
+    "name": "呜呜物流已收件",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/580b354a0e13493eac04dbd69464a48020241130.png",
+    "desc": "<b>强化·前扑</b>和<b>强化·后撤</b>攻击敌人时，无视对方20%的防御。",
+    "iconPath": "img/chain/603598fc340df848.png"
+   },
+   {
+    "name": "特快专递运输中",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0d4c79f13ef24cc0bd5155f5b8ba714b20241130.png",
+    "desc": "共鸣解放<b>啾啾专送</b>造成的伤害提升30%。",
+    "iconPath": "img/chain/db827aca6363cc34.png"
+   },
+   {
+    "name": "灯灯正为您派送",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/7b472a3df2e1484b81fcb7552e7326e120241130.png",
+    "desc": "灯灯普攻伤害加成提升30%。",
+    "iconPath": "img/chain/8c66885551601362.png"
+   },
+   {
+    "name": "快件已顺利签收",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/95a9d5dbd68349b28b66ec69cee30ca520241130.png",
+    "desc": "<b>【光能】</b>充满时，<b>强光穿射</b>造成的伤害倍率提升100%。",
+    "iconPath": "img/chain/95125facbaf5535b.png"
+   },
+   {
+    "name": "给个五星好评哦",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/051ea751f4af498b834f3dbb3fa8193b20241130.png",
+    "desc": "施放共鸣解放<b>啾啾专送</b>时，队伍中的角色的攻击提升20%，持续20秒。",
+    "iconPath": "img/chain/2b038638c13fdcdf.png"
+   }
+  ]
+ },
+ "炽霞": {
+  "name": "炽霞",
+  "subtitle": "CHIXIA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/37e8061f023342e2b529bf0f01618a7b20240521.png",
+  "chains": [
+   {
+    "name": "剧院的英雄戏",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1ae19e0731c2420ab1e345aeca59a91520240327.png",
+    "desc": "施放共鸣技能·<b>轰轰</b>时，必定暴击。",
+    "iconPath": "img/chain/c60dc867127860b6.png"
+   },
+   {
+    "name": "跃动的火星",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/60c7f41a11514a22beeeef89d06571ce20240327.png",
+    "desc": "施放共鸣解放<b>炽烈焰火</b>期间，每击败1个目标，回复5点共鸣解放能量，每次最多可回复20点。",
+    "iconPath": "img/chain/40a307591a7db619.png"
+   },
+   {
+    "name": "不灭的火把",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/acb691c835aa427c95c14f2723844b6e20240327.png",
+    "desc": "共鸣解放<b>炽烈焰火</b>对生命值低于50%的目标，伤害提升40%。",
+    "iconPath": "img/chain/b48ec66c44b95101.png"
+   },
+   {
+    "name": "英雄的绝招",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/5125d99a4222474b9679236178c673db20240327.png",
+    "desc": "施放共鸣解放<b>炽烈焰火</b>时，炽霞获得60发<b>【热压弹】</b>，并立即重置一次共鸣技能<b>咻咻斗意</b>的冷却时间。",
+    "iconPath": "img/chain/85a589a2ba8ac664.png"
+   },
+   {
+    "name": "胜利的枪弹焰火",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/922474ccaa8d4ab1ba0b1dee6fd528d520240327.png",
+    "desc": "固有技能<b>加麻加辣</b>叠加至满层时，攻击额外提升30%。",
+    "iconPath": "img/chain/61077ad69852a2b4.png"
+   },
+   {
+    "name": "剧终的回归彩蛋",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/81c21d2239cf43948b87c2f8f0049b9c20240327.png",
+    "desc": "触发共鸣技能<b>轰轰</b>后，队伍中的角色普攻伤害提升25%，持续15秒。",
+    "iconPath": "img/chain/f66df1b348ef5f49.png"
+   }
+  ]
+ },
+ "爱弥斯": {
+  "name": "爱弥斯",
+  "subtitle": "AEMEATH",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/dbecc24a507441428f583e36b03e329f20260105.png",
+  "chains": [
+   {
+    "name": "如金粉般洒落的初煦",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/e2e83cfb820549a1b4dbeb77c2f0821020260203.png",
+    "desc": "<b>即刻响应</b>状态下，<b>重击·爱弥斯</b>、<b>重击·机兵</b>暴击伤害提升300%，且蓄力期间可牵引周围的目标。\n爱弥斯满足以下条件超过4秒时，获得<b>即刻响应·辉芒</b>状态。\n·处于非战斗状态。\n·未处于<b>重击·爱弥斯</b>、<b>重击·机兵</b>、共鸣解放<b>星辉破界而来·终结</b>施放状态。\n<b>即刻响应·辉芒</b>拥有<b>即刻响应</b>的所有效果，且<b>即刻响应·辉芒</b>不会因<b>星辉破界而来·于此释放</b>状态结束而移除。\n处于<b>即刻响应·辉芒</b>状态且不处于<b>星辉破界而来·于此释放</b>状态，施放<b>重击·爱弥斯·二段蓄力</b>或<b>重击·机兵·二段蓄力</b>时，可获得100点【<b>同步率</b>】。\n处于<b>共鸣模态·震谐</b>/<b>共鸣模态·聚爆</b>时，爱弥斯自身施放的技能直接造成的伤害击败被附加<b>震谐轨迹</b>/<b>聚爆轨迹</b>状态的敌人时，获得<b>轨迹封存·震谐</b>/<b>轨迹封存·聚爆</b>状态，持续10秒。\n<b>轨迹封存·震谐</b>/<b>轨迹封存·聚爆</b>状态下保留击败目标被附加<b>震谐轨迹</b>/<b>聚爆轨迹</b>的最高层数。\n爱弥斯下一次自身施放的技能直接造成的伤害立即为命中目标附加对应层数的<b>震谐轨迹</b>/<b>聚爆轨迹</b>，最高可叠加至当前目标的<b>震谐轨迹</b>/<b>聚爆轨迹</b>层数上限，同时清除<b>轨迹封存·震谐</b>/<b>轨迹封存·聚爆</b>状态，1秒内无法再次获得<b>轨迹封存·震谐</b>/<b>轨迹封存·聚爆</b>。",
+    "iconPath": "img/chain/90ce8611fdee6596.png"
+   },
+   {
+    "name": "如雪绒般漂浮的音符",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/b5b558e43e194d1ba4c567425fb50a6820260203.png",
+    "desc": "共鸣技能<b>光翼共奏·降临</b>的伤害倍率提升100%。\n共鸣技能<b>光翼共奏·登台</b>的伤害倍率提升100%。\n处于<b>共鸣模态·震谐</b>，共鸣技能<b>光翼共奏</b>额外造成的<b>震谐伤害</b>命中目标时，使目标受到共鸣技能<b>光翼共奏</b>额外造成的<b>震谐伤害</b>倍率提升20%，持续1秒，最多叠加5层。\n\n处于<b>共鸣模态·聚爆</b>获得以下强化：\n·<b>星屑共振</b>状态对共鸣技能<b>光翼共奏</b>引爆的<b>【聚爆效应】</b>伤害倍率提升效果增强，对<b>【聚爆效应】</b>主目标的伤害倍率提升效果提升至400%。\n·<b>聚爆轨迹</b>对共鸣技能<b>光翼共奏</b>引爆的<b>【聚爆效应】</b>伤害倍率提升效果增强，每层对<b>【聚爆效应】</b>主目标的伤害倍率提升效果提升至15%。\n·处于战斗状态，队伍中登场角色附近的敌人被击败时，立即根据<b>【聚爆效应】</b>层数上限引爆<b>【聚爆效应】</b>。",
+    "iconPath": "img/chain/a02cab6d926d013f.png"
+   },
+   {
+    "name": "炽烈在静默间延展如初",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/fbac6d0df37f41d0a2c137e47730197820260203.png",
+    "desc": "共鸣解放<b>星辉破界而来·终结</b>的伤害倍率提升100%。\n共鸣解放<b>星辉破界而来·过载</b>的伤害倍率提升40%。\n处于<b>即刻响应</b>状态，施放<b>重击·爱弥斯</b>、<b>重击·机兵</b>时，根据自身处于<b>共鸣模态·震谐</b>/<b>共鸣模态·聚爆</b>，为附近目标附加<b>【震谐·偏移】</b>/<b>【聚爆效应】</b>。\n\n固有技能<b>星与星之间</b>替换为以下效果：\n·处于<b>共鸣模态·震谐</b>时，队伍中的角色附加<b>【震谐·偏移】</b>或造成<b>震谐伤害</b>时，爱弥斯暴击伤害提升60%，共鸣解放<b>星辉破界而来·终结</b>伤害加深25%。\n角色编入队伍或切换模态时，重置该效果。\n\n·处于<b>共鸣模态·聚爆</b>时，队伍中的角色附加<b>【聚爆效应】</b>时，爱弥斯暴击伤害提升60%，共鸣解放<b>星辉破界而来·终结</b>伤害加深25%。\n角色编入队伍或切换模态时，重置该效果。",
+    "iconPath": "img/chain/7d375ff53a50a2ac.png"
+   },
+   {
+    "name": "于无垠电子海间轻舞",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/69cdd1a837d24338bb3b899f540a5da720260203.png",
+    "desc": "施放变奏技能<b>以旋律穿越长空</b>、变奏技能<b>携星辉降临于此</b>、共鸣技能<b>合击·突刺</b>、共鸣技能<b>光翼共奏</b>时，队伍中的角色<b>全属性伤害加成提升</b>20%，持续30秒。",
+    "iconPath": "img/chain/e96c2258e3e2004d.png"
+   },
+   {
+    "name": "远航至那星海尽处",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/445c62619386474e983fe7926ed4026f20260203.png",
+    "desc": "爱弥斯自身技能直接造成的伤害击败目标时，<b>【流溢辉光】</b>重置为100%。\n\n爱弥斯受到致命伤害时，将失去意识并进入<b>二维电子幽灵</b>状态，持续5秒。\n进入<b>二维电子幽灵</b>状态时，为队伍中的角色提供爱弥斯360%攻击的护盾，持续5秒。退出<b>二维电子幽灵</b>状态时，爱弥斯将恢复意识并回复100%生命值与30点共鸣能量。该效果每10分钟可触发1次。\n爱弥斯恢复意识时，退出<b>二维电子幽灵</b>状态并移除该效果提供的护盾。",
+    "iconPath": "img/chain/2b5d0c9e4043f398.png"
+   },
+   {
+    "name": "春风祝颂你的旅途",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/8dccf6a45d574ac897e5a0e9b7dcbd1d20260203.png",
+    "desc": "目标受到爱弥斯的共鸣解放伤害提升40%。\n\n处于<b>共鸣模态·震谐</b>时，爱弥斯的震谐伤害可暴击，暴击固定为80%，暴击伤害固定为275%。\n\n处于<b>共鸣模态·聚爆</b>，并处于战斗状态，队伍中登场角色附近的敌人受到聚爆效应触发的伤害可暴击，暴击固定为80%，暴击伤害固定为275%。\n\n共鸣回路<b>为寂静赋形</b>为目标附加<b>震谐轨迹</b>、<b>聚爆轨迹</b>层数翻倍。\n\n处于<b>共鸣模态·震谐</b>/<b>共鸣模态·聚爆</b>，并处于战斗状态，队伍中登场角色附近的敌人<b>震谐轨迹</b>/<b>聚爆轨迹</b>层数上限提升至60层。爱弥斯施放共鸣技能<b>光翼共奏</b>期间，对范围内目标附加10层<b>震谐轨迹</b>/<b>聚爆轨迹</b>，持续30秒。",
+    "iconPath": "img/chain/433e73217c99e3ed.png"
+   }
+  ]
+ },
+ "珂莱塔": {
+  "name": "珂莱塔",
+  "subtitle": "CARLOTTA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/9349aee5c66e4000935c0d10cd62c74120241228.png",
+  "chains": [
+   {
+    "name": "美或死，璀璨即凋零",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/86765320896e4f43bbc862a63c2a9f8920241229.png",
+    "desc": "珂莱塔对拥有<b>解离</b>效果的目标攻击造成伤害时，该次伤害的暴击提升<b>12.5%</b>。对处于<b>变彩</b>状态下的目标施放共鸣技能<b>示我璀璨</b>并命中时，额外回复<b>30</b>点<b>【灵萃】</b>。",
+    "iconPath": "img/chain/6d55a5fedf193698.png"
+   },
+   {
+    "name": "寂与亡，衰败亦新生",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/de679135e7084790ae39ca7671345e6220241229.png",
+    "desc": "共鸣解放<b>致死以终</b>的伤害倍率提升<b>126%</b>。",
+    "iconPath": "img/chain/b28fc3df296953b1.png"
+   },
+   {
+    "name": "切步、向前，此为优雅的进行式",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/af7c4f1b310849e39ec48f07d2786bda20241229.png",
+    "desc": "延奏技能<b>碎璃镜花</b>：施放延奏技能<b>致辞</b>后，额外进行一次攻击，造成珂莱塔<b>1032.18%</b>攻击的<b>冷凝伤害</b>。\n共鸣技能<b>暴力美学</b>、共鸣技能<b>示我璀璨</b>的伤害倍率提升<b>93%</b>。",
+    "iconPath": "img/chain/e7dcd136a78c3b40.png"
+   },
+   {
+    "name": "以旧雨，为颂赞的苦酒",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4e6ffab15cce4ac5b8988971059f905520241229.png",
+    "desc": "珂莱塔施放重击、重击<b>限制性策略</b>、重击<b>末路见行</b>时，队伍中的角色共鸣技能伤害加成提升<b>25%</b>，持续<b>30</b>秒。",
+    "iconPath": "img/chain/eead56e50886d50a.png"
+   },
+   {
+    "name": "敬昨夜、今日和彼时彼刻",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/7287cb3aaca0449fb6598ed3fc79e5cb20241229.png",
+    "desc": "重击<b>末路见行</b>的伤害倍率提升<b>47%</b>。",
+    "iconPath": "img/chain/9050a23fcdf45147.png"
+   },
+   {
+    "name": "我依然故我，于终幕之上",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/11b95db69e354d2db0d3e6c5953e81e820241229.png",
+    "desc": "共鸣解放<b>死兆</b>的射击造成更高的伤害，并且生成的晶体数量翻倍，二者总计使共鸣解放<b>死兆</b>伤害倍率提升<b>186.6%</b>。\n共鸣解放<b>死兆</b>的射击命中目标时，对目标附加<b>焕彩</b>效果：持续时间内无法进行任何动作，受到伤害或持续<b>1.5</b>秒时清除效果。",
+    "iconPath": "img/chain/19b983a1525adebe.png"
+   }
+  ]
+ },
+ "琳奈": {
+  "name": "琳奈",
+  "subtitle": "LYNAE",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/a51e63285b1446fd91e57d4c7f6277ff20251202.png",
+  "chains": [
+   {
+    "name": "应是肆意挥洒的年华",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/217141d2e6404f5c973fc5126bfdb4b920251224.png",
+    "desc": "<b>普攻·幻光折跃</b>的伤害倍率提升120%。\n<b>颜料</b>的持续时间提升100%，每6秒将处于<b>颜料</b>范围内的敌人向<b>颜料</b>中心进行一次<b>牵引</b>。\n施放<b>普攻·幻光折跃</b>和<b>普攻·视觉冲击</b>期间免疫打断。\n<b>「光学取样」阶段</b>期间，处于非战斗状态大于2秒时，回复120点<b>【溢彩】</b>，每2秒触发一次。",
+    "iconPath": "img/chain/31b20e54d57ec48e.png"
+   },
+   {
+    "name": "驶向光彩交绘的彼方",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/dbb76e177d3e4892a7a5437a788b0ed420251224.png",
+    "desc": "全伤害加深25%。\n延奏技能额外获得以下效果：\n施放延奏技能时，使下一个登场的角色全伤害加深25%，持续14秒，若切换至其他角色则该效果提前结束",
+    "iconPath": "img/chain/824778b307a372b7.png"
+   },
+   {
+    "name": "为一瞬的绚烂",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/8c1ec0aeb88f4eb3ac1d88a7eba18fab20251224.png",
+    "desc": "<b>普攻·视觉冲击</b>和<b>普攻·虹彩飞溅</b>的伤害倍率提升90%。\n战斗状态期间，<b>【流光】</b>大于等于120点时，每1秒获得一层<b>预调色</b>，上限25层。每层<b>预调色</b>使<b>加色混合</b>的衍射伤害加成提升55%。施放<b>加色混合</b>期间不会获得<b>预调色</b>，<b>加色混合</b>结束时，移除所有<b>预调</b>色。<b>【流光】</b>小于120点时，每0.5秒失去一层<b>预调色</b>。\n非战斗状态期间，<b>【流光】</b>大于等于120点时，每0.5秒获取一层<b>预调色</b>，<b>【流光】</b>小于120点时，每1秒失去一层预调色。",
+    "iconPath": "img/chain/579ce506e7173c2d.png"
+   },
+   {
+    "name": "灰影随风呼啸而去",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/e2b780c8a1564d3e863a539a92ddbabb20251224.png",
+    "desc": "攻击提升20%。",
+    "iconPath": "img/chain/d5501c03ebd41d5b.png"
+   },
+   {
+    "name": "不羁未来的映想",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ba135bb9c8a94423b96513efc8218b7220251224.png",
+    "desc": "<b>共鸣解放·爆炸喷涂</b>的伤害倍率提升70%。",
+    "iconPath": "img/chain/6d6145334e4b0fb5.png"
+   },
+   {
+    "name": "以「我」为名的真彩",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/735f71bfc88846a7a372bc63997812d920251224.png",
+    "desc": "每次施放<b>绮彩巡游·跃动集束</b>或<b>绮彩巡游·空中重击</b>时，为自身叠加1层<b>心之彩</b>，最多叠加3层，每层<b>心之彩</b>使目标受到<b>普攻·虹彩飞溅</b>和<b>普攻·视觉冲击</b>的伤害提升30%。施放<b>普攻·虹彩飞溅</b>或<b>普攻·视觉冲击</b>后，移除所有<b>心之彩</b>。\n施放<b>普攻·幻光折跃</b>时，刷新<b>绮彩巡游·空中重击</b>的可施放次数。\n施放<b>绮彩巡游·空中重击</b>期间免疫打断且受到伤害降低30%。\n施放<b>延奏技能·有空一起兜风！</b>时，琳奈不会退出<b>绮彩巡游</b>状态。\n<b>【流光】</b>上限由120提升至360。且<b>【流光】</b>达到上限时，轮滑速度进一步提升。\n施放变奏技能时，若处于<b>绮彩巡游</b>状态，回复120点<b>【流光】</b>。",
+    "iconPath": "img/chain/542f400681e49ee1.png"
+   }
+  ]
+ },
+ "白芷": {
+  "name": "白芷",
+  "subtitle": "BAIZHI",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/5f555080f03a440bb689dee8e8c1b8c420240804.png",
+  "chains": [
+   {
+    "name": "极简与繁复",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/cc61e13385ae4f5eb0536c411bd2da7020240327.png",
+    "desc": "施放共鸣技能·<b>应急预案</b>时，每消耗1点<b>念意</b>，白芷回复2.5点共鸣能量。",
+    "iconPath": "img/chain/e040f9c6cbe7b876.png"
+   },
+   {
+    "name": "沉默的冰原",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/bba9881499a84b269c058af35c56836520240327.png",
+    "desc": "施放共鸣技能·<b>应急预案</b>时，若有4点<b>念意</b>，白芷的冷凝伤害加成提升15%，治疗效果加成提升15%，持续12秒。",
+    "iconPath": "img/chain/aa856860061139e7.png"
+   },
+   {
+    "name": "真理的崇奉",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/03ca331d464748f7a81c382afdcec7ac20240327.png",
+    "desc": "施放变奏技能·<b>覆雪流盈</b>时，白芷的生命上限提升12%，持续10秒。",
+    "iconPath": "img/chain/8832cf1f671d9d1b.png"
+   },
+   {
+    "name": "被追溯的本源",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/d19187464f594fde8a05d4ef0cf572a820240327.png",
+    "desc": "施放共鸣解放·<b>刹那合弥</b>时，<b>频隙回响</b>获得强化：\n·<b>频隙回响</b>数量+2；\n·<b>频隙回响</b>治疗倍率提升20%；\n·<b>频隙回响</b>造成额外冷凝伤害，伤害值以白芷自身的生命值上限1.2%结算。",
+    "iconPath": "img/chain/6b04d8b77f43188b.png"
+   },
+   {
+    "name": "被回应的祈愿",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ad38f956cee54a7f84b5a2c654f6332e20240327.png",
+    "desc": "白芷在队伍中时，当队伍中的角色失去意识时，立刻<b>复活</b>该角色并回复该角色生命上限100%的生命，该效果每10分钟可触发1次。",
+    "iconPath": "img/chain/699ea9bb8ec4c0e8.png"
+   },
+   {
+    "name": "闻道者的觉悟",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/196febf24a55412f82163c3147be07a520240327.png",
+    "desc": "角色拾取<b>天籁</b>时，附近队伍中所有角色的冷凝伤害加成提升12%，持续12秒。",
+    "iconPath": "img/chain/c80ac49c39f31fe8.png"
+   }
+  ]
+ },
+ "相里要": {
+  "name": "相里要",
+  "subtitle": "XIANGLI YAO",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/2f1312d7f9134d6282dc8485b040a37620240812.png",
+  "chains": [
+   {
+    "name": "卓异的门生",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/d6c2c8363b784c128a457551cc6154f420240905.png",
+    "desc": "施放共鸣技能<b>万方法则</b>时，额外生成6个<b>衍构模体</b>攻击目标，伤害倍率为共鸣技能<b>万方法则</b>的8%，此次伤害为<b>共鸣解放伤害</b>。",
+    "iconPath": "img/chain/4f7e07df310d98c4.png"
+   },
+   {
+    "name": "前人的行迹",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/88088e68e8734d76a2cddcb658d717c320240905.png",
+    "desc": "施放共鸣技能或共鸣解放<b>思维矩阵</b>时，自身<b>暴击伤害提升30%</b>，持续8秒。",
+    "iconPath": "img/chain/8eece86d8950f5ad.png"
+   },
+   {
+    "name": "邃古的遗墟",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4c8eea33a18a4a6ca18f40d88b14b4cb20240905.png",
+    "desc": "施放共鸣解放<b>思维矩阵</b>后，获得效果：共鸣技能<b>应刃</b>、共鸣技能<b>基本推衍</b>、共鸣技能<b>一相万殊</b>或共鸣技能<b>万方法则</b>伤害提升63%，持续24秒，该效果最多可触发5次。",
+    "iconPath": "img/chain/1e5ae1124328c1ad.png"
+   },
+   {
+    "name": "再塑的躯骸",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/5dd94755a0c4406e91ec69c625005fd320240905.png",
+    "desc": "施放共鸣解放<b>思维矩阵</b>时，队伍中的角色<b>共鸣解放伤害</b>加成提升25%，持续30秒。",
+    "iconPath": "img/chain/42cc6928a531dd31.png"
+   },
+   {
+    "name": "群星的止境",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4d76990a6bca4278a3bd6e838054c95120240905.png",
+    "desc": "延奏技能<b>链式伤害</b>倍率增加222%，共鸣解放<b>思维矩阵</b>伤害倍率提升100%。",
+    "iconPath": "img/chain/5573d08630f0cdc8.png"
+   },
+   {
+    "name": "坊市的烟火",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4b4903dfbd5047549f07deb5c0be728520240905.png",
+    "desc": "强化施放共鸣解放<b>思维矩阵</b>时获得的<b>幻方</b>，使共鸣技能<b>万方法则</b>伤害倍率提升76%。",
+    "iconPath": "img/chain/4181f9a058111349.png"
+   }
+  ]
+ },
+ "秋水": {
+  "name": "秋水",
+  "subtitle": "AALTO",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/36a92b13898a41b2bf3538c0fb5cfa0a20250813.png",
+  "chains": [
+   {
+    "name": "恶作剧开场",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/179d10e85cd64685bc6e88c06fdd6c4820240329.png",
+    "desc": "<b>共鸣技能·移位戏法</b>的冷却时间减少<b>4</b>秒。",
+    "iconPath": "img/chain/950aec95ea92a0c7.png"
+   },
+   {
+    "name": "织雾首秀",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ac5709f83bb448089a84959dd19d86c220240329.png",
+    "desc": "<b>【雾化分身】</b>继承的生命值提升<b>100%</b>，秋水攻击被分身嘲讽的目标时，攻击提升<b>15%</b>。",
+    "iconPath": "img/chain/501580a5cb81f7bb.png"
+   },
+   {
+    "name": "雾化转场",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/34c53f78ec514f1993c52a5bce9b1d6c20240329.png",
+    "desc": "秋水的<b>普攻</b>或<b>空中攻击</b>穿过<b>【雾气】</b>时，会额外生成<b>2</b>颗子弹，共造成<b>普攻</b>或<b>空中攻击</b>的<b>50%</b>伤害。",
+    "iconPath": "img/chain/b21ae38886d299ac.png"
+   },
+   {
+    "name": "终幕的黑花",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/a2ccfe6a871e4a2ca99ffe7c6e33c45020240329.png",
+    "desc": "<b>共鸣技能·雾化子弹</b>伤害提升<b>30%</b>，<b>共鸣回路·迷雾潜行</b>状态下秋水受到的伤害降低<b>30%</b>。",
+    "iconPath": "img/chain/d8d0c68134fec19b.png"
+   },
+   {
+    "name": "迷途者喝彩",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/d4f6c137eafe409a86d7c047c123cf3820240329.png",
+    "desc": "处于<b>共鸣回路·迷雾潜行</b>时，秋水的<b>气动伤害</b>加成提升<b>25%</b>，效果持续<b>6</b>秒。",
+    "iconPath": "img/chain/e3a1bd20d3d8c0b9.png"
+   },
+   {
+    "name": "幕后卖家",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/351b38d53acf4b348222271dab12fbf220240329.png",
+    "desc": "<b>共鸣解放·雾里观花</b>持续时，额外增加<b>暴击8%</b>，秋水的<b>重击</b>穿过<b>虚实之门</b>时，伤害额外提升<b>50%</b>。",
+    "iconPath": "img/chain/344bf81f1541dcd4.png"
+   }
+  ]
+ },
+ "秧秧": {
+  "name": "秧秧",
+  "subtitle": "YANGYANG",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/9d5e09a460ce4220824a5aab421da42820240521.png",
+  "chains": [
+   {
+    "name": "底色湛蓝如洗",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/14758a2dbe7a4a8bba6ba763e8a440e420240329.png",
+    "desc": "施放变奏技能·湛蓝礼赞后，秧秧的气动伤害加成额外提升15%，效果持续8秒。",
+    "iconPath": "img/chain/109d2820b7bf3751.png"
+   },
+   {
+    "name": "雀鸟衔枝而行",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/d4e547eebd0941fb9a09691c2dcd9fce20240329.png",
+    "desc": "重击命中目标时，秧秧额外回复10点共鸣能量，每20秒可触发1次。",
+    "iconPath": "img/chain/7938f47d53e11064.png"
+   },
+   {
+    "name": "流息声声不绝",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/c923680289424a53baff8120b174f7fc20240329.png",
+    "desc": "共鸣技能伤害加成提升40%，风场对周围目标的牵引效果增强，牵引范围增加33%。",
+    "iconPath": "img/chain/51b4cdbec7b25cdd.png"
+   },
+   {
+    "name": "若可侧耳倾听",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/c239a6f32a7f4394afe9ff55d6a86fa620240329.png",
+    "desc": "空中攻击释羽的伤害提升95%。",
+    "iconPath": "img/chain/965f1e8656833b8b.png"
+   },
+   {
+    "name": "绪风于此响彻",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/c8925702593046248cc9a8e2f3b222f720240329.png",
+    "desc": "共鸣解放朔风旋涌的伤害提升85%。",
+    "iconPath": "img/chain/7810ce2b0bfa6dad.png"
+   },
+   {
+    "name": "致美好以颂歌",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/2c2cd6a0d59248b88f0da4a19062f71b20240329.png",
+    "desc": "施放空中攻击释羽后，队伍中的角色的攻击提升20%，效果持续20秒。",
+    "iconPath": "img/chain/1940bac0a05e30bf.png"
+   }
+  ]
+ },
+ "秧秧·玄翎": {
+  "name": "秧秧·玄翎",
+  "subtitle": "YangyangXuanling",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/80b1525b2f19499d962af2b0e658061920260625.png",
+  "chains": [
+   {
+    "name": "禾雀随风初绽",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/08976cb9b55e4f22b2ebdbace1e0b53f20260709.png",
+    "desc": "施放<b>共鸣技能·剑式流转·苍</b>、<b>共鸣技能·剑式流转·羽</b>时，召唤<b>玄翎之影·抗坠</b>，造成秧秧·玄翎攻击337.98%的<b>湮灭伤害</b>，此次伤害为<b>重击伤害</b>。\n施放<b>共鸣技能·剑式流转·苍</b>、<b>共鸣技能·剑式流转·羽</b>期间，停滞周围目标。\n<b>重击·苍剑式</b>、<b>普攻·湮象风华</b>、<b>闪避反击·湮象风华</b>免疫打断。",
+    "iconPath": "img/chain/c5b2619dd30d5f3a.png"
+   },
+   {
+    "name": "戛剑棹歌而远",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/c3ca1240db3446bba82de9b2bf4ef5ec20260709.png",
+    "desc": "<b>重击·苍剑式</b>、<b>重击·羽剑式</b>、<b>空中攻击·释羽风落</b>、<b>普攻·湮象风华</b>、<b>闪避反击·湮象风华</b>造成的伤害提升100%。\n秧秧·玄翎每次脱离战斗状态或恢复意识后，处于非战斗状态达到4秒时，触发一次以下效果：\n·获得<b>贯珠</b>，上限1层，施放<b>普攻·苍剑式</b>、<b>普攻·羽剑式</b>时，召唤<b>玄翎之影·贯珠</b>攻击目标，造成秧秧·玄翎攻击337.98%的<b>湮灭伤害</b>，此次伤害为<b>重击伤害</b>。召唤<b>玄翎之影·贯珠</b>后移除<b>贯珠</b>。\n·回复2点<b>【苍翎】</b>。\n·重置<b>【绝息】</b>、<b>【流岚】</b>的获取冷却时间。",
+    "iconPath": "img/chain/c17ebf9a2fd2bf8a.png"
+   },
+   {
+    "name": "追念暨云陵",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/cbfbaaed452645ceb4a6218f70dfd88e20260709.png",
+    "desc": "共鸣解放<b>裁羽寂万音</b>造成的伤害加深175%。\n施放<b>变奏技能·羽挟苍空</b>、<b>共鸣技能·剑式流转·苍</b>、<b>共鸣技能·剑式流转·羽</b>时，使自身一定范围内的目标<b>【虚湮效应】</b>层数上限增加3层，持续20秒，该效果无法叠加。\n<b>普攻·苍剑式</b>第4段、<b>普攻·羽剑式</b>第4段、<b>重击·苍剑式</b>、<b>重击·羽剑式</b>额外为目标附加1层<b>【虚湮效应】</b>。",
+    "iconPath": "img/chain/2d8b7dd31d5f1ab4.png"
+   },
+   {
+    "name": "一纸信笺遥眷",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/04eb65ab2c7c41d1a0e18703a973a8b120260709.png",
+    "desc": "施放<b>变奏技能·羽挟苍空</b>、<b>共鸣技能·剑式切换·苍</b>、<b>共鸣技能·剑式切换·羽</b>、<b>共鸣技能·剑式流转·苍</b>、<b>共鸣技能·剑式流转·羽</b>时，队伍中的角色攻击提升20%，持续20秒。",
+    "iconPath": "img/chain/a455857899921581.png"
+   },
+   {
+    "name": "羽展。羽展",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/94d0aa7973574e82926857b8161230ce20260709.png",
+    "desc": "秧秧·玄翎受到致命伤害时，此次伤害不会使秧秧·玄翎倒下，并回复秧秧·玄翎50%生命上限的生命值，同时免疫伤害和打断，持续3秒。该效果每10分钟可触发1次。",
+    "iconPath": "img/chain/710cabeb39c05a8c.png"
+   },
+   {
+    "name": "所愿苍琅长睆",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4e980044e154421c837dff409643274720260709.png",
+    "desc": "秧秧·玄翎为目标附加<b>【虚湮效应】</b>后，获得<b>万声皆流</b>，持续30秒。<b>万声皆流</b>持续期间，目标受到秧秧·玄翎的重击伤害提升40%。\n施放<b>共鸣技能·剑式流转·苍</b>、<b>共鸣技能·剑式流转·羽</b>时，获得<b>止如槁木</b>，持续30秒。<b>止如槁木</b>持续期间，若秧秧·玄翎为队伍中登场角色，则附近队伍中的角色为目标附加<b>【霜渐效应】</b>、<b>【聚爆效应】</b>、<b>【电磁效应】</b>、<b>【风蚀效应】</b>、<b>【光噪效应】</b>、<b>【虚湮效应】</b>后，秧秧·玄翎召唤<b>玄翎之影·止如槁木</b>攻击目标，造成秧秧·玄翎攻击337.98%的<b>湮灭伤害</b>。<b>玄翎之影·止如槁木</b>的伤害为<b>重击伤害</b>，且必定暴击。\n<b>玄翎之影·止如槁木</b>召唤间隔1秒，召唤5次后移除<b>止如槁木</b>，<b>止如槁木</b>持续时间结束或被移除后，重置<b>玄翎之影·止如槁木</b>的召唤次数，<b>止如槁木</b>的获取冷却时间25秒。",
+    "iconPath": "img/chain/f555ba72e040b5a7.png"
+   }
+  ]
+ },
+ "穗穗": {
+  "name": "穗穗",
+  "subtitle": "Suisui",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/a1a06d946dae4b039e958e799ba0f63e20260625.png",
+  "chains": [
+   {
+    "name": "雨洗千山皆入画",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1fe136e0fd5742438995b9e29591722a20260729.png",
+    "desc": "持有<b>烟岚</b>的角色为目标附加<b>【异常效应】</b>或造成<b>异常效应伤害</b>后，也可以触发攻击提升效果。\n第3次<b>翾舞</b>的时候获得的<b>重明照影</b>的时间提升<b>100</b>%。\n<b>普攻·濯雨时</b>、<b>重击·濯雨时</b>、<b>下落攻击·重明枕露</b>和<b>下落攻击·飞燕裁风</b>免疫打断。",
+    "iconPath": "img/chain/041d9d2276bfdebb.png"
+   },
+   {
+    "name": "霞铺万顷欲流金",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/bce68775553644ff9012c97090280b1b20260729.png",
+    "desc": "<b>山河水境</b>内附近队伍中所有角色触发以下效果后，使触发效果的角色暴击伤害提升<b>50</b>%，持续<b>30</b>秒：\n·为目标附加【<b>光噪效应</b>】、【<b>聚爆效应</b>】、【<b>霜渐效应</b>】、【<b>风蚀效应</b>】、【<b>电磁效应</b>】，或造成对应异常效应伤害。\n·消耗目标【<b>虚湮效应</b>】层数。\n队伍中登场角色不处于<b>山河水境</b>内时，该暴击伤害提升效果暂时失效。",
+    "iconPath": "img/chain/c1df06221f34a686.png"
+   },
+   {
+    "name": "半卷疏帘邀晚照",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/53f58d5cf0054f70a424ed2275ae6a6220260729.png",
+    "desc": "施放<b>共鸣技能·濯雨时</b>后的一定时间内，短按<b>普攻</b>，将会施放<b>普攻·濯雨时第4段</b>。\n\n施放<b>共鸣技能·濯雨时</b>时，获得<b>点翠</b>，切换至其他角色时移除。施放<b>普攻·濯雨时第4段</b>时，会消耗<b>点翠</b>，回复自身<b>20</b>点协奏，并回复<b>350</b>点<b>【芳菲信】</b>。每<b>25</b>秒最多消耗<b>1</b>次<b>点翠</b>。",
+    "iconPath": "img/chain/fc572ccded630984.png"
+   },
+   {
+    "name": "一桁秋山共我吟",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/58ab3ab8a052473a8eb22089ed7ae1f020260729.png",
+    "desc": "<b>润物</b>和<b>春生</b>造成的治疗量提升<b>50</b>%。",
+    "iconPath": "img/chain/3fffc33215b659e9.png"
+   },
+   {
+    "name": "愿乘东风千万里",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1f4c727d0de640acb04d97e475cc4a2a20260729.png",
+    "desc": "<b>普攻·濯雨时</b>和<b>重击·濯雨时</b>的伤害倍率提升<b>100</b>%。",
+    "iconPath": "img/chain/2781a7055c2ad3e0.png"
+   },
+   {
+    "name": "不负江山锦绣心",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/19f5f545ff524f74bf910d0089c7db7220260729.png",
+    "desc": "<b>变奏技能·泠泠漱玉声</b>和<b>共鸣技能·醒春潮</b>的暴击伤害提升<b>500</b>%。",
+    "iconPath": "img/chain/c79582b005065a21.png"
+   }
+  ]
+ },
+ "绯雪": {
+  "name": "绯雪",
+  "subtitle": "HIYUKI",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/089c1b422356449a9bfbb92e7d79451d20260401.png",
+  "chains": [
+   {
+    "name": "不见春",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/7349c9ee1b1d4aad85b7915f688a00d820260430.png",
+    "desc": "<b>普攻·预求身</b>、<b>重击·预求身</b>、<b>空中攻击·预求身</b>、<b>闪避反击·预求身</b>的伤害倍率提升120%。\n<b>普攻·预求身第3段</b>的攻击范围提升，且会将攻击范围内的敌人向中心进行牵引。施放<b>普攻·预求身第4、5段</b>期间免疫打断。\n施放<b>预求我身·见心</b>时，使下一次<b>普攻·预求身第1段</b>和下一次<b>普攻·预求身第2段</b>命中目标时获得强化，为目标附加1次<b>【霜渐效应】</b>。",
+    "iconPath": "img/chain/ecf4334504d7c538.png"
+   },
+   {
+    "name": "于无声处冰冷燃烧",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/db8bba04796242699aab42c6b1f2f69220260430.png",
+    "desc": "<b>普攻·居合</b>的伤害倍率提升125%。\n\n固有技能<b>无常世</b>替换为以下效果：\n绯雪每次脱离战斗状态或恢复意识后，处于非战斗状态达到4秒时，回复3点<b>【锻雪·归刃】</b>。\n\n绯雪每次脱离战斗状态或恢复意识后，处于非战斗状态达到4秒时，触发一次以下效果：\n·处于<b>预求身</b>状态时，<b>【武霜·居合】</b>回复3点。\n·重置2次<b>霜罚·白玉切</b>的冷却时间。\n·后续2次施放<b>霜罚·白玉切</b>或<b>霜罚·落华</b>期间，额外回复50点<b>【寒意】</b>。",
+    "iconPath": "img/chain/54bf9254b050b5a8.png"
+   },
+   {
+    "name": "我身无我亦无穷",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/5bd700c314d641d1ac07dc61b9c3214820260430.png",
+    "desc": "固有技能<b>细雪</b>获得额外效果：当角色编入队伍或绯雪恢复意识，2秒后绯雪获得1层<b>【雪锈】</b>，最多通过该方式获取1层<b>【雪锈】</b>。\n<b>重击·寒簇·常世身</b>和<b>重击·枯霜·预求身</b>的伤害倍率提升160%。\n持有2层<b>【雪锈】</b>时，自身为队伍中登场角色时，每次自身附加<b>【霜渐效应】</b>时，额外附加的异常倍率提升488%。",
+    "iconPath": "img/chain/631834790a1c685b.png"
+   },
+   {
+    "name": "有如苇草浮沉",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/65dd61e3ce5c4c4a8e62e123f0f150a120260430.png",
+    "desc": "施放<b>共鸣技能·常世身</b>、<b>霜罚·白玉切</b>、<b>霜罚·落华</b>时，使附近队伍中所有角色造成的伤害提升20%，持续30秒。\n每次施放<b>霜罚·白玉切</b>、<b>霜罚·落华</b>时，回复自身生命上限18%的生命值。",
+    "iconPath": "img/chain/f9b14ecf224ed385.png"
+   },
+   {
+    "name": "千祈万愿尽求我身",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f461fcce6bd84389b9fa25ea3ba9eb2f20260430.png",
+    "desc": "<b>共鸣技能·常世身</b>、<b>霜罚·白玉切</b>、<b>霜罚·落华</b>的伤害倍率提升80%。",
+    "iconPath": "img/chain/ba1b1c8ff3691e79.png"
+   },
+   {
+    "name": "纵使前路永夜无终",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/111213774b9d4966b9d19de6c6e7327b20260430.png",
+    "desc": "<b>预求我身·见心</b>、<b>预求我身·归刃</b>暴击伤害提升500%。\n\n持有2层<b>【雪锈】</b>时，“自身为队伍中登场角色时，每次自身附加<b>【霜渐效应】</b>时，额外附加异常倍率”改为“自身为队伍中登场角色时，每次队伍中的角色附加<b>【霜渐效应】</b>时，额外附加异常倍率”。\n持有2层<b>【雪锈】</b>时，绯雪的暴击伤害提升40%。\n持有3层<b>【雪锈】</b>时，队伍中登场角色一定范围内的目标受到<b>【霜冻效应】</b>的最终伤害提升25%。",
+    "iconPath": "img/chain/b3e481bea6dc2b5b.png"
+   }
+  ]
+ },
+ "维里奈": {
+  "name": "维里奈",
+  "subtitle": "VERINA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/ecd9c5b6dcbf4804b6c8ffb2b0b1b3bc20240521.png",
+  "chains": [
+   {
+    "name": "萌芽的一瞬",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/cb7ddde7b94642e19a8a9411883a3c9120240511.png",
+    "desc": "施放延奏技能盛放时,队伍中登场角色额外获得持续回复生命效果,每5秒回复维里奈20%攻击的生命值，持续30秒。",
+    "iconPath": "img/chain/e9913a11cbef5959.png"
+   },
+   {
+    "name": "抽叶的思考",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/295d2e5085284efe8ea3e3bc84aa893a20240511.png",
+    "desc": "施放共鸣技能扩繁试验时，额外获得1点【光合能量】和10点协奏能量。",
+    "iconPath": "img/chain/7b0ad21854752e8e.png"
+   },
+   {
+    "name": "生长的选择",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/c0cafeaa4b924a93a6d6e0400cd7b50120240511.png",
+    "desc": "共鸣解放光合标记的治疗效果加成提升12%。",
+    "iconPath": "img/chain/2ac135cb49d4371a.png"
+   },
+   {
+    "name": "盛放的拥抱",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/282c8163febb4b54924351823083562620240511.png",
+    "desc": "施放重击星星花绽放、空中攻击星星花绽放、共鸣解放草木生长或延奏技能盛放时，队伍中的角色衍射伤害加成提升15%，持续24秒。",
+    "iconPath": "img/chain/c24aed11d43d760b.png"
+   },
+   {
+    "name": "结果的奇迹",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/6f7624cccf474abe8cef4a2d9e0edaf020240511.png",
+    "desc": "治疗生命值低于50%的角色时，维里奈的治疗效果加成提升20%。",
+    "iconPath": "img/chain/319a1cf6b1c85cd0.png"
+   },
+   {
+    "name": "丰收的喜悦",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ef3afc19de6d45babf08e1591e1b2cf920240511.png",
+    "desc": "重击星星花绽放及空中攻击星星花绽放的伤害提升20%，命中目标时触发1次协同攻击，并为附近队伍中所有角色回复生命值，此次协同攻击伤害和回复生命值等同于共鸣解放光合标记。",
+    "iconPath": "img/chain/2ff95e39b897d529.png"
+   }
+  ]
+ },
+ "莫宁": {
+  "name": "莫宁",
+  "subtitle": "MORNYE",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/610ec03f0f754ca3b15dfdc98a80bd3220251202.png",
+  "chains": [
+   {
+    "name": "缄默的观测者",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/4d40f692b0d34e7aa5c03a3d8c82983520260115.png",
+    "desc": "<b>普攻·广域观测模式</b>免疫打断。\n莫宁为目标附加的<b>干涉标记</b>的持续时间延长150%，且<b>干涉标记</b>的伤害提升效果不再需要目标处于<b>【震谐·干涉】</b>或<b>【集谐·干涉】</b>状态。莫宁为目标附加<b>观测标记</b>时，将同时附加<b>干涉标记</b>。",
+    "iconPath": "img/chain/19926dc6a5c7fcd0.png"
+   },
+   {
+    "name": "熵增的启明星",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/02c3a047912b495284dee8329807069e20260115.png",
+    "desc": "附近队伍中所有角色对拥有<b>干涉标记</b>的目标造成的暴击伤害提升：莫宁自身共鸣效率大于100%时，每超过1%的共鸣效率计算为0.2%的暴击伤害提升，上限32%。\n<b>谐振场</b>、<b>强谐振场</b>还会使生效范围内附近队伍中所有角色<b>偏谐值累积效率</b>额外提升20%。",
+    "iconPath": "img/chain/85908c63425f9f3f.png"
+   },
+   {
+    "name": "递归的蓝图",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f4612b3fae3047fe9a9e2afff3ce7a3120260115.png",
+    "desc": "施放<b>共鸣技能·分布式阵列</b>时，额外回复自身25点协奏能量，并回复100点<b>【相对动能】</b>，每25秒可触发1次。",
+    "iconPath": "img/chain/e7885f82fbb26464.png"
+   },
+   {
+    "name": "宇宙的隐变量",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/711cf78ad405413e86f5388d3e4f52f820260115.png",
+    "desc": "<b>强谐振场</b>的治疗量提升30%。",
+    "iconPath": "img/chain/69e9cade1b554351.png"
+   },
+   {
+    "name": "钟慢效应",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ad1df250b8234334b94ba74bfef882cf20260115.png",
+    "desc": "<b>共鸣解放·临界协议</b>伤害倍率提升40%。\n<b>震谐响应·粒子射流</b>伤害倍率提升160%。",
+    "iconPath": "img/chain/daffcc082d170f38.png"
+   },
+   {
+    "name": "直到群星的尽头",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/242c1aa01a7d4eb6be738c9092e4f1a920260115.png",
+    "desc": "<b>共鸣解放·临界协议</b>造成的伤害提升400%。\n莫宁处于非战斗状态大于4秒后，每0.2秒回复共鸣能量上限10%的共鸣能量。",
+    "iconPath": "img/chain/df01f687ae9cf77c.png"
+   }
+  ]
+ },
+ "莫特斐": {
+  "name": "莫特斐",
+  "subtitle": "MORTEFI",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/b315f71ab0fc4af3ad845d620d99ed0920240521.png",
+  "chains": [
+   {
+    "name": "孤独的练习曲",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/2fe7d9c866bc4e7b99b9491437bc1f6e20240515.png",
+    "desc": "共鸣解放浮翼狂想持续期间，队伍中登场角色施放共鸣技能时，莫特斐会进行协同攻击，打出2发共鸣解放加强音，造成热熔伤害。",
+    "iconPath": "img/chain/33709e02aca0f334.png"
+   },
+   {
+    "name": "虚伪的赞美诗",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/6deb227b356049458e351914d9faf4c620240515.png",
+    "desc": "使用声骸技能后，额外回复10点共鸣能量，每20秒可触发1次。",
+    "iconPath": "img/chain/fa5442bcfe870a3a.png"
+   },
+   {
+    "name": "预热的宣叙调",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/83e2092ee9774a6c83d45403df3508a420240515.png",
+    "desc": "共鸣解放浮翼狂想持续期间，共鸣解放加强音的暴击伤害提升30%。",
+    "iconPath": "img/chain/3ada0e1120639110.png"
+   },
+   {
+    "name": "宣泄的华尔兹",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/40592891dfd14a5fa27853dbd9d202e520240515.png",
+    "desc": "共鸣解放浮翼狂想的持续时间延长7秒。",
+    "iconPath": "img/chain/56870c3ab5069b7e.png"
+   },
+   {
+    "name": "葬送的四重奏",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/7eb3eaf314f1466693769dd3598234d920240515.png",
+    "desc": "共鸣技能激昂变奏和共鸣技能怒火赋格命中目标时，打出4发共鸣解放加强音，造成热熔伤害，此次共鸣解放加强音伤害降低50%。",
+    "iconPath": "img/chain/0a5c35680aa4d954.png"
+   },
+   {
+    "name": "盛怒的无言歌",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/59eb38dbb70140588cbceb29775a9c1c20240515.png",
+    "desc": "施放共鸣解放暴烈终曲时，队伍中的角色攻击提升20%，持续20秒",
+    "iconPath": "img/chain/39fe3a31e80d3fbc.png"
+   }
+  ]
+ },
+ "菲比": {
+  "name": "菲比",
+  "subtitle": "PHOEBE",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/b88abc8d9d404801b6c5910790a534ba20241122.png",
+  "chains": [
+   {
+    "name": "暖灯与枕边的祝愿",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/8d1f745d09ba4a4c9ad687db2658ec9d20250209.png",
+    "desc": "赦罪状态下共鸣解放启明之誓愿伤害倍率提升效果从255%变为480%。\n告解状态下共鸣解放启明之誓愿伤害倍率提升90%，并且附加【光噪效应】层数提升至目标可附加层数的上限。",
+    "iconPath": "img/chain/59ac86e18c4462e2.png"
+   },
+   {
+    "name": "泪水中飘摇的孤船",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f9f04061049d480184df35137496515d20250209.png",
+    "desc": "赦罪状态下，延奏技能对拥有【光噪效应】的目标伤害加深120%。\n告解状态下，默祷的【光噪效应】伤害加深效果额外提升120%。",
+    "iconPath": "img/chain/ead222e6c2dfd0e6.png"
+   },
+   {
+    "name": "雏菊编织花环与梦",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/c61267fd7c59429b9c9a179d61ca18d120250209.png",
+    "desc": "赦罪状态下，重击星辉伤害倍率提升91%。\n告解状态下，重击星辉伤害倍率提升249%。",
+    "iconPath": "img/chain/8162a1fda42a4502.png"
+   },
+   {
+    "name": "再次敲响振翅的钟声",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/489b6473c5fa432bbe305e2ee49eca2320250209.png",
+    "desc": "普攻、普攻夏弥尔之星、闪避反击、夏弥尔之星·闪避反击命中目标时，目标衍射伤害抗性降低10%，持续30秒。",
+    "iconPath": "img/chain/5685b910336a8e30.png"
+   },
+   {
+    "name": "向遥远光辉虔声祈祷",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/a05f8bb460e24231b196f1ddeb4cfd2920250209.png",
+    "desc": "施放变奏技能金色恩典时，菲比的衍射伤害加成提升12%，持续15秒。",
+    "iconPath": "img/chain/658187056cabb313.png"
+   },
+   {
+    "name": "于静寂窗边啁啾歌唱",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/483e51621f904d1db277da5aecd37b7820250209.png",
+    "desc": "【镜之环】的停滞效果增加2秒。【镜之环】持续期间，对每个进入【镜之环】的目标施加停滞效果；同一个【镜之环】最多可对12个目标施加停滞效果，且对每个目标只能施加一次。\n赦罪状态、告解状态下，菲比施放共鸣技能召唤【镜之环】时，攻击提升10%，持续20秒，同时向【镜之环】位置附带一次重击星辉。此次重击星辉不消耗【福音】，不视为施放重击。",
+    "iconPath": "img/chain/43dd67483643eb51.png"
+   }
+  ]
+ },
+ "西格莉卡": {
+  "name": "西格莉卡",
+  "subtitle": "SIGRIKA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/2aa5795d1f414a13a6407632493c2ea020260319.png",
+  "chains": [
+   {
+    "name": "那本该闪耀的光辉",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/550dfa16f2c04a33adb2cc1d2e01ec1720260317.png",
+    "desc": "<b>普攻・明悟</b>、<b>闪避反击・解读</b>、<b>共鸣技能・大嘭嘭！</b>和<b>共鸣技能・日灵帮帮忙</b>伤害倍率提升 70%。\n西格莉卡施放<b>普攻・明悟</b>、<b>共鸣技能・大嘭嘭！</b>和<b>共鸣技能・日灵帮帮忙</b>期间，免疫打断。\n<b>凝语</b>层数上限改为 3 层，西格莉卡施放延奏技能<b>在这一瞬间</b>，可额外获得 1 层<b>凝语</b>。",
+    "iconPath": "img/chain/a5adfdf2521600be.png"
+   },
+   {
+    "name": "那深含期待的苦涩",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/7f706d1fca3240fdb7b7f56d117a91fa20260317.png",
+    "desc": "<b>共鸣回路・我即语义</b>伤害倍率提升 120%。\n西格莉卡处于非战斗状态大于 4 秒时，获得<b>专注</b>，每 4 秒只生效 1 次。",
+    "iconPath": "img/chain/77f612e5634f7ebc.png"
+   },
+   {
+    "name": "逃避着，寻找着",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/8610f78426ec4504a54181615b6a55ab20260317.png",
+    "desc": "<b>「天赋？」</b>层数上限改为 4 层且西格莉卡施放<b>共鸣回路・我即语义</b>后或切换至其他角色时不再结束该效果。\n西格莉卡处于非战斗状态时，每 30 秒会清除全部<b>「天赋？」</b>层数。",
+    "iconPath": "img/chain/5f72f1e49ea67a42.png"
+   },
+   {
+    "name": "失去着，收获着",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/da27fe36de4047b09aeaa01222d6458f20260317.png",
+    "desc": "队伍中的角色施放声骸技能时，使队伍中的角色攻击提升 20%，持续 20 秒。",
+    "iconPath": "img/chain/27193c2ec69d5dce.png"
+   },
+   {
+    "name": "直到沉于影下",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/74f6aec5efc9487fbaddd0dab76710e320260317.png",
+    "desc": "共鸣解放<b>如那期望般！</b>伤害倍率提升 30%。",
+    "iconPath": "img/chain/b557dd2ff1fdc5fc.png"
+   },
+   {
+    "name": "语义点亮，光芒升起",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/46ed0fa9771349c5a4e0b0853f49b4e820260317.png",
+    "desc": "目标受到西格莉卡的伤害提升 30%。\n<b>「天赋？」</b>获得下述额外效果：\n每层使得西格莉卡<b>符语爆破、符语链刃</b>、<b>符语日灵</b>和<b>共鸣回路・我即语义</b>造成的伤害加深 15%，至多使造成的伤害加深 60%。\n每层使得西格莉卡<b>符语爆破</b>、<b>符语链刃</b>、<b>符语日灵</b>和<b>共鸣回路・我即语义</b>造成的伤害无视目标 7.5% 防御，至多使造成的伤害无视目标 30% 防御。",
+    "iconPath": "img/chain/3b950e302c398214.png"
+   }
+  ]
+ },
+ "赞妮": {
+  "name": "赞妮",
+  "subtitle": "ZANI",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/9068e57a03ac4c9db1c247eb009c177920250404.png",
+  "chains": [
+   {
+    "name": "当清晨闹钟响起时",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/19077f2e0ca1438d93bf3229ad3e0aab20250427.png",
+    "desc": "施放<b>集中压制</b>或<b>破袭反击</b>时，衍射伤害加成提升<b>50%</b>，持续<b>14</b>秒。\n<b>重斩·终夜</b>免疫打断。",
+    "iconPath": "img/chain/98faf0111c924fb0.png"
+   },
+   {
+    "name": "冷面包配饮料",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/cc6bc4d30d0e43c68334f9392595ff7520250427.png",
+    "desc": "暴击提升<b>20%</b>。\n<b>集中压制</b>、<b>破袭反击</b>倍率提升<b>80%</b>。",
+    "iconPath": "img/chain/ee3b0dcb90ebdd37.png"
+   },
+   {
+    "name": "日复一日的通勤",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/805ea2498e394973bf18b93610d3f84220250427.png",
+    "desc": "处于<b>灼焰形态</b>时每消耗<b>1</b>点【焰光】，使本次共鸣解放<b>终绝将至之刻</b>最后一段的倍率增加<b>8%</b>，最多增加<b>1200%</b>。",
+    "iconPath": "img/chain/c2f3f58805dc81b0.png"
+   },
+   {
+    "name": "高效节能主义者",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/b04ecdb0a79c4d7f8eda84ece303789520250427.png",
+    "desc": "施放变奏技能<b>即刻执行</b>时，队伍中的角色攻击提升<b>20%</b>，持续<b>30</b>秒。",
+    "iconPath": "img/chain/f0e134f8532ce321.png"
+   },
+   {
+    "name": "一切需求按时完成",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/a5ef5d6c99524449a41126ee4727761820250427.png",
+    "desc": "共鸣解放<b>重燃</b>倍率提升<b>120%</b>。",
+    "iconPath": "img/chain/183e194c2000d4bc.png"
+   },
+   {
+    "name": "当务之急？下班！",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/7ca936b97b7143e3a53186f9273643a620250427.png",
+    "desc": "<b>重斩·破晓</b>、<b>重斩·将明</b>、<b>重斩·终夜</b>、<b>重斩·闪裂</b>倍率提升<b>40%</b>。<b>重斩·终夜</b>命中时消耗的每点【焰光】额外增加倍率提升<b>40%</b>。\n处于<b>灼焰形态</b>时获得以下效果：\n【焰光】低于<b>70</b>点时立即回复<b>70</b>点，<b>灼焰形态</b>期间可触发<b>1</b>次。\n进入<b>灼焰形态</b>后<b>8</b>秒内受到致死伤害时不会倒下，最少保留<b>1</b>点生命值。",
+    "iconPath": "img/chain/c33a1d125a60f0ae.png"
+   }
+  ]
+ },
+ "达妮娅": {
+  "name": "达妮娅",
+  "subtitle": "DENIA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/176a32e3cefe47a4a29819d033a306cc20260521.png",
+  "chains": [
+   {
+    "name": "薄明梦中的寂静光辉",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/27a4bed1b8f443c99a77e5cfef8cbb8320260520.png",
+    "desc": "暴击伤害提升<b>30</b>%。\n施放共鸣技能<b>拟态泡泡·布景之形</b>、<b>共鸣技能放逐·幻灭之形</b>、<b>普攻·幻灭之形第3段</b>、<b>普攻·幻灭之形第4段</b>、<b>空中攻击·幻灭之形第3段</b>、<b>空中攻击·幻灭之形第4段</b>期间，免疫打断。\n处于<b>布景之形</b>进入战斗时，获得<b>熵变强化·布景之形</b>，持续<b>30</b>秒。\n处于<b>幻灭之形</b>进入战斗时，获得<b>熵变强化·幻灭之形</b>，持续<b>12</b>秒。",
+    "iconPath": "img/chain/43f9784cfb11c9bf.png"
+   },
+   {
+    "name": "坠入此世一片潮水",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/9f0cfb10f6464f38a72c63c4c0f2e8e020260520.png",
+    "desc": "处于<b>共鸣模态·聚爆</b>，队伍中的角色施加<b>【聚爆效应】</b>后，该角色热熔伤害加成提升<b>50</b>%，持续<b>15</b>秒。登场角色附近的敌人触发<b>【聚爆效应】</b>引爆后，达妮娅获得<b>1</b>层<b>简并虚质</b>，持续<b>15</b>秒，上限<b>10</b>层。每层<b>简并虚质</b>使达妮娅造成伤害无视目标<b>1</b>%热熔伤害抗性。\n达妮娅切换模态时，该效果提前结束。\n处于<b>共鸣模态·集谐</b>，<b>共鸣回路</b>效果提升：队伍中的角色施加<b>【集谐·偏移】</b>后，该角色谐度破坏增幅提升<b>20</b>点，持续<b>15</b>秒，目标将积累偏谐值上限<b>100</b>%的<b>【偏谐值】</b>，积累<b>【偏谐值】</b>效果对同一目标<b>300</b>秒内只能触发<b>1</b>次。\n达妮娅切换模态时，该效果提前结束。\n共鸣技能<b>放逐·幻灭之形</b>伤害倍率提升<b>40</b>%。",
+    "iconPath": "img/chain/ae272751a418716a.png"
+   },
+   {
+    "name": "黑夜与风中奔驰着赤杨",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/2a7c62a450f94f5aaa8ec7ef24a3481c20260520.png",
+    "desc": "共鸣解放<b>帷幕终景·幻灭之形</b>伤害倍率提升<b>80</b>%。\n<b>【黯核】</b>上限提升至5枚，处于<b>熵变强化</b>时，<b>【黯核】</b>的获取间隔缩短至<b>6</b>秒。\n<b>熵变强化·布景之形</b>效果获得强化：每秒获得<b>【虚质粒子】</b>提升至<b>4</b>点。\n<b>熵变强化·幻灭之形</b>效果获得强化：施放共鸣解放<b>帷幕终景·幻灭之形</b>时，额外回复<b>30</b>点协奏能量。\n固有技能<b>伪物弥留</b>效果强化：\n进入战斗时，<b>【黯核】</b>与<b>【虚质粒子】</b>回复至上限。该效果每<b>12</b>秒可触发<b>1</b>次。\n<b>【黯核】</b>数量达到上限时，施放<b>普攻·布景之形第4段</b>、共鸣技能<b>拟态泡泡·布景之形</b>消耗所有<b>【黯核】</b>，使本次技能伤害倍率增加<b>1200</b>%，本次伤害为<b>共鸣解放伤害</b>。",
+    "iconPath": "img/chain/f7d7660c8be2300c.png"
+   },
+   {
+    "name": "从远方，回到远方",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0995ef1878aa42209db44eb6bd9f00c420260520.png",
+    "desc": "<b>蚀域</b>攻击间隔缩短至<b>3</b>秒。",
+    "iconPath": "img/chain/ca728753db346d76.png"
+   },
+   {
+    "name": "若能以谎言缝补心脏",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/e12ad39723cc414c8d8eb8c09584461d20260520.png",
+    "desc": "共鸣解放<b>帷幕终景·布景之形</b>造成的伤害提升<b>100</b>%。",
+    "iconPath": "img/chain/cdf17152f56d4f79.png"
+   },
+   {
+    "name": "祝愿你于静默中，得到太阳",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f34fb6872c6147f48dfc7f2542b8655420260520.png",
+    "desc": "处于<b>熵变强化</b>时，攻击提升<b>60</b>%，热熔伤害加成提升<b>60</b>%。\n处于<b>共鸣模态·聚爆</b>时，<b>蚀域</b>对目标造成伤害后，根据<b>【聚爆效应】</b>层数上限引爆<b>【聚爆效应】</b>，本次引爆对<b>【聚爆效应】</b>主目标的伤害倍率提升<b>200</b>%，且不移除<b>【聚爆效应】</b>层数。同一目标最多可受到<b>1</b>次该效果，目标受到共鸣解放<b>帷幕终景·幻灭之形</b>的伤害后，重置该次数，重置效果对同一目标<b>2</b>秒内只能触发<b>1</b>次。\n处于<b>共鸣模态·集谐</b>时，队伍中的角色对拥有<b>【集谐·偏移】</b>的<b>【失谐】</b>目标造成<b>谐度破坏伤害</b>时，将额外附加<b>1</b>层<b>【集谐·干涉】</b>，该效果对同一目标3秒内只能触发<b>1</b>次。",
+    "iconPath": "img/chain/cb3ca9fb351a3695.png"
+   }
+  ]
+ },
+ "釉瑚": {
+  "name": "釉瑚",
+  "subtitle": "YOUHU",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/8c9bd4369ebf4955bb7e22d808a4369a20240923.png",
+  "chains": [
+   {
+    "name": "港边小憩",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/918403f8683f4396b6dfef25e48b618c20240923.png",
+    "desc": "施放<b>问祯</b>时，釉瑚有10%概率免疫伤害和受击，持续5秒，若切换至其他角色则该效果提前结束。",
+    "iconPath": "img/chain/32ceb2662e65f55b.png"
+   },
+   {
+    "name": "侧堂酣睡",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/db70d81dcdc147cabf596fc67fd1b9f720240923.png",
+    "desc": "<b>对偶</b>、<b>联珠</b>、<b>合说</b>对共鸣回路<b>诗中物</b>的伤害提升效果额外生效一次。",
+    "iconPath": "img/chain/6e85b061e7e42f44.png"
+   },
+   {
+    "name": "火中噩魇",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/bd66e7e5857145a4800cc6c3b925876e20240923.png",
+    "desc": "釉瑚的攻击提升20%。",
+    "iconPath": "img/chain/4b6e3cb2fbd2d589.png"
+   },
+   {
+    "name": "雪夜迷寐",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/8a3f77b03e1e42cc961f65c83c7463bb20240923.png",
+    "desc": "每次施放共鸣技能<b>匣中问祯</b>时，有20%概率不进入冷却状态。",
+    "iconPath": "img/chain/14b20dfb38483568.png"
+   },
+   {
+    "name": "万里浅眠",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0a81dd7aa6b346c0b392939cfb08983520240923.png",
+    "desc": "施放变奏技能<b>遂心匣</b>时，釉瑚的暴击提升15%，持续14秒。",
+    "iconPath": "img/chain/502b6371f3a2bd9f.png"
+   },
+   {
+    "name": "千秋一枕",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/7f56606b144246398841d0f95f3430ec20240923.png",
+    "desc": "施放共鸣技能<b>奇珍赏</b>时，获得1层<b>霁青</b>效果，最多可叠加4层，持续7秒，每层<b>霁青</b>使釉瑚的暴击伤害提升15%。",
+    "iconPath": "img/chain/686c9d266673d04e.png"
+   }
+  ]
+ },
+ "鉴心": {
+  "name": "鉴心",
+  "subtitle": "JIANXIN",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/8ca4424e81474b74aecf9a158d497bf520240521.png",
+  "chains": [
+   {
+    "name": "林间青枝",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/a080d7d792454569bdb0ba07eae1fbea20240328.png",
+    "desc": "施放变奏技能·<b>掌息之要</b>后，普攻获得的<b>【气】</b>额外增加100%，持续10秒。",
+    "iconPath": "img/chain/6c64b9821a1e5a68.png"
+   },
+   {
+    "name": "道者稚徒",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ac7e179d3e6943e29976d2d58dba40d620240328.png",
+    "desc": "共鸣技能<b>·静气循行</b>的使用次数额外增加1次。",
+    "iconPath": "img/chain/61f8c77a965e0ed0.png"
+   },
+   {
+    "name": "无心无为",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/6c2db665a49a4dc1913d84dee127d99420240328.png",
+    "desc": "共鸣技能·<b>静气循行</b>施放架势持续2.5秒后，可以直接打出共鸣技能行气反击。",
+    "iconPath": "img/chain/2c930fd321daa035.png"
+   },
+   {
+    "name": "十问之思",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/59b47f95d0ad4d6d9f8396b03e0763e620240328.png",
+    "desc": "施放重击·<b>混元气旋</b>时，鉴心共鸣解放伤害提升80%，持续14秒",
+    "iconPath": "img/chain/42bbb62642dd9431.png"
+   },
+   {
+    "name": "经世自鉴",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/06eda56f9f0a40abb6c8bf4a946dfd0220240328.png",
+    "desc": "共鸣解放·<b>涤净力场</b>范围增加33%。",
+    "iconPath": "img/chain/2a1b44fe7b801a67.png"
+   },
+   {
+    "name": "向己而生",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ce183021e15b44e9a441ca325dd5540c20240328.png",
+    "desc": "重击·混元气旋期间施展<b>冲拳</b>，5秒内施放共鸣技能时，将施放共鸣技能特殊行气反击，造成鉴心攻击力556.67%的气动伤害，此次伤害为重击伤害，同时获得等级4的护盾。",
+    "iconPath": "img/chain/58d9b17678b7027e.png"
+   }
+  ]
+ },
+ "锁暝": {
+  "name": "锁暝",
+  "subtitle": "Suoming",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/321cb886cb28422bb94b940ada4c790820260829.png",
+  "chains": [
+   {
+    "name": "身入凄雨",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ac990e0f253b45f6aaa2c69b14730c7620261022.png",
+    "desc": "<b>共鸣技能·解伞形·无舍念</b>免疫打断。\n<b>变奏技能·拢伞形·闪裂</b>、<b>变奏技能·解伞形·碎霆</b>、<b>变奏技能·拢伞形·锁妄念·同奏</b>、<b>变奏技能·解伞形·旋雷破·同奏</b>的伤害倍率提升60%。",
+    "iconPath": "img/chain/5e71b39cb73d67ed.png"
+   },
+   {
+    "name": "破雷斩恶",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/9e9606aa85a0433f82987f0d96258db420261022.png",
+    "desc": "暴击伤害提升40%。\n施放<b>延奏技能</b>时，下一位登场的角色暴击伤害提升10%，每拥有一层<b>【同奏增益】</b>，暴击伤害额外提升6%，最多额外提升24%，持续30秒。若切换至其他角色则该效果提前结束。",
+    "iconPath": "img/chain/16946dacddb28cdd.png"
+   },
+   {
+    "name": "孤伞独行",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/198c6e7a3eef499a8a1f0052a2cdce4d20261022.png",
+    "desc": "施放<b>变奏技能·拢伞形·闪裂</b>或<b>变奏技能·解伞形·碎霆</b>时，获得1层<b>【同奏增益】</b>，持续30秒，该效果每25秒生效一次。\n· 若锁暝提供过<b>【同奏增益】</b>，在<b>【同奏增益】</b>存在期间内则仅刷新持续时间。\n\n施放<b>共鸣解放</b>时，锁暝自身普攻伤害加深30%，持续25秒。",
+    "iconPath": "img/chain/1ec9a6736c0ff71f.png"
+   },
+   {
+    "name": "承印于心",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/21735205412b4a8fbaa6b2db83e08c9f20261022.png",
+    "desc": "锁暝攻击提升20%。",
+    "iconPath": "img/chain/d14b6b62c5b4d567.png"
+   },
+   {
+    "name": "契深未忘",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f0603fd4fd9942e4a0469be84f3c128520261022.png",
+    "desc": "<b>共鸣解放·暝伞形·重锁狱瘴</b>的伤害倍率提升40%。",
+    "iconPath": "img/chain/aed24e74e4aa6a06.png"
+   },
+   {
+    "name": "九影相随",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/aaeae35af95d468188a697d411a023a920261022.png",
+    "desc": "队伍中的角色每层<b>【同奏增益】</b>的效果提升50%，最多对4层<b>【同奏增益】</b>生效。\n<b>普攻·暝伞形·刻心念</b>的伤害倍率提升50%。\n拥有<b>禁锁契主</b>效果时，锁暝暴击伤害额外提升200%。",
+    "iconPath": "img/chain/66d2500ea3ff1f3f.png"
+   }
+  ]
+ },
+ "长离": {
+  "name": "长离",
+  "subtitle": "CHANGLI",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/b6a9b2df4a454c85b1dc6c728b9ede7520240716.png",
+  "chains": [
+   {
+    "name": "隐我所思",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/7df40bea2fa241f7adde7211659bf1fc20240722.png",
+    "desc": "施放共鸣技能<b>赫羽三相</b>或重击<b>焚身以火</b>时，长离的抗打断能力提升，且造成的伤害提升10%。",
+    "iconPath": "img/chain/c91f2b09e1a78460.png"
+   },
+   {
+    "name": "循我所望",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/2d2b2cb805ef4991b2c884d83b1828df20240722.png",
+    "desc": "获得<b>【离火】</b>时，长离的<b>暴击</b>提升25%，持续8秒。",
+    "iconPath": "img/chain/fc34561dd0c4e0f1.png"
+   },
+   {
+    "name": "据我所闻",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/db2a943951b34a25902018ad9ca4a13020240722.png",
+    "desc": "共鸣解放<b>离火照丹心</b>造成的伤害提升80%。",
+    "iconPath": "img/chain/d99bc951ab0b0c9a.png"
+   },
+   {
+    "name": "饰我所言",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/f4c659db5c8a46dca6c6ea6dab3d168120240722.png",
+    "desc": "施放<b>变奏技能</b>后，队伍中的角色<b>攻击</b>提升20%，持续30秒。",
+    "iconPath": "img/chain/ca5c94c186de44aa.png"
+   },
+   {
+    "name": "舍我所得",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/bcf14c85c59f4aaabf94bed55239c9cc20240722.png",
+    "desc": "重击<b>焚身以火</b>倍率提升50%，造成的伤害提升50%。",
+    "iconPath": "img/chain/699d77bb3a2ad136.png"
+   },
+   {
+    "name": "成我所谋",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/ef4337850f594e82932b9b77b926028620240722.png",
+    "desc": "共鸣技能<b>赫羽三相</b>、重击<b>焚身以火</b>和共鸣解放<b>离火照丹心</b>攻击造成伤害时额外忽视目标40%防御。",
+    "iconPath": "img/chain/3c24da3934228007.png"
+   }
+  ]
+ },
+ "陆·赫斯": {
+  "name": "陆·赫斯",
+  "subtitle": "LUUK HERSSEN",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/8b37676e923f4492bcf86ee80792900320260105.png",
+  "chains": [
+   {
+    "name": "流金于灰白中灼烧",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1c4df197d7c54e5cb61a05e599caeaa120260226.png",
+    "desc": "<b>空中攻击</b>伤害加成提升150%。\n【日辉庇覆】层数上限提升1层。\n处于<b>黄金的裁量</b>状态时，施放共鸣技能<b>斩杀日冕</b>可获得1层【日辉庇覆】。",
+    "iconPath": "img/chain/64d0eab982c68d44.png"
+   },
+   {
+    "name": "眼底尚有雪崩未止",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/dcecda11e2e14f309ef6aecb31e391ce20260226.png",
+    "desc": "共鸣解放<b>于永冻中释义</b>伤害倍率提升60%，该倍率提升效果与【终局之释义】的倍率提升效果相互叠加。\n固有技能<b>无因的医谕</b>效果中：对有【集谐·干涉】的目标造成伤害时，陆·赫斯每拥有10点谐度破坏增幅，伤害加深效果提升至10%，此效果最高加深由30%提升至60%",
+    "iconPath": "img/chain/6655c8021e095981.png"
+   },
+   {
+    "name": "金雨浇筑你的脊骨",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0dc9bada972e4e429268ef2d92f86e5120260226.png",
+    "desc": "<b>黄金的裁量</b>状态下所有形态的共鸣技能<b>斩杀日冕</b>伤害倍率提升136%，施放<b>斩杀日冕·曜</b>后，使接下来的<b>空中攻击·判决大地裂响</b>和<b>日髓阵列</b>伤害倍率提升136%。该倍率提升效果与共鸣回路<b>黄金的裁量</b>的倍率提升效果相互叠加。\n固有技能<b>雪下的脉搏</b>获得强化：【续写白昼】效果可叠加上限提升至4层。",
+    "iconPath": "img/chain/992edb1daa0bf5ea.png"
+   },
+   {
+    "name": "冻土之下，亦有新生",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/1b96c70533cf40cfad2ac336dad1338c20260226.png",
+    "desc": "队伍中的角色造成【谐度破坏】伤害后，使队伍中所有角色造成的伤害提升20%，持续20秒，无法叠加。",
+    "iconPath": "img/chain/6bfd83f1c7fa45c7.png"
+   },
+   {
+    "name": "穿过风雪构筑的静场",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/8e7be19827ef4e119fa7aadbe9d5c2fb20260226.png",
+    "desc": "变奏技能<b>注入黎明以前</b>和延奏技能<b>致濒死以答</b>伤害加成提升80%。\n共鸣技能<b>流金回潮</b>伤害倍率提升50%，冷却时间降低2秒，可施放次数增加1次。",
+    "iconPath": "img/chain/5b4573b5675988e8.png"
+   },
+   {
+    "name": "冰原之上，铺开无垠曦光",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/9505b854eedd4613be442a72506fc94f20260226.png",
+    "desc": "附近队伍中所有角色造成【谐度破坏】伤害时，使目标受到陆·赫斯所有形态的共鸣技能<b>斩杀日冕</b>、<b>日髓阵列</b>和<b>空中攻击·判决大地裂响</b>的伤害提升30%，持续25秒。\n陆·赫斯每层【<b>终局之释义</b>】额外使共鸣解放<b>于永冻中释义</b>伤害加成提升40%，最高120%。\n陆·赫斯对有【集谐·干涉】的目标造成伤害时，视为将目标当前的【集谐·干涉】提升2层，且此效果无视层数上限。",
+    "iconPath": "img/chain/8ab85804a12cf429.png"
+   }
+  ]
+ },
+ "露帕": {
+  "name": "露帕",
+  "subtitle": "LUPA",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/c8f96315d0ca455c85e600a08198726e20250509.png",
+  "chains": [
+   {
+    "name": "看那无名之人",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/5a5c6167022241df88b817c72c0f4a2b20250701.png",
+    "desc": "施放共鸣解放<b>荣光欢酣于火</b>时，露帕额外回复<b>10</b>点协奏能量，暴击提升<b>20%</b>，持续<b>10</b>秒。\n<b>狼舞的决意·极</b>免疫打断。",
+    "iconPath": "img/chain/e39d1b750cc65f1b.png"
+   },
+   {
+    "name": "所处皆为猎场",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/30563205f50740848e0218da6f5bf14120250701.png",
+    "desc": "施放共鸣解放<b>荣光欢酣于火</b>、<b>重击·狼咬</b>、<b>重击·锐爪</b>、<b>空中攻击·焰袭</b>时，队伍中的角色热熔伤害加成提升<b>20%</b>，持续<b>30</b>秒，可叠加<b>2</b>层。",
+    "iconPath": "img/chain/0f97c9b94edeaefc.png"
+   },
+   {
+    "name": "狼影随焰咆哮",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/27bc2f8ae5aa4b0eb1d2d1e6fb751ab520250701.png",
+    "desc": "·变奏技能<b>你无法逃离！</b>的伤害倍率提升<b>100%</b>。\n·共鸣解放<b>追猎</b>额外效果不再需要队伍中的热熔属性角色达到<b>3</b>名。\n·共鸣解放<b>荣光</b>效果替换为：\n施放共鸣解放<b>荣光欢酣于火</b>时，额外获得<b>荣光</b>效果，<b>35</b>秒内：队伍中的角色攻击时无视<b>15%</b>热熔抗性。",
+    "iconPath": "img/chain/ac47e94d7785d816.png"
+   },
+   {
+    "name": "旗帜于火飞扬",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/fdefc46fb9ab48bc904cf5d1d555490720250701.png",
+    "desc": "<b>狼舞的决意·极</b>的伤害倍率提升<b>125%</b>。",
+    "iconPath": "img/chain/df278a5830612c1c.png"
+   },
+   {
+    "name": "胜利让掌声喝彩",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/77ccbc1c6d4a4882ab3921e1919d84f720250701.png",
+    "desc": "施放变奏技能<b>你在看哪里？</b>或<b>你无法逃离！</b>时，共鸣解放伤害加成提升<b>15%</b>，持续<b>10</b>秒。",
+    "iconPath": "img/chain/14ec144ab133ce94.png"
+   },
+   {
+    "name": "致那最闪耀的焰星",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/b7584bb670f241929a55684df74c2db620250701.png",
+    "desc": "·共鸣回路<b>狼舞的决意·极</b>、共鸣解放<b>荣光欢酣于火</b>、变奏技能<b>你无法逃离！</b>攻击造成伤害时忽视目标<b>30%</b>防御。\n·施放共鸣技能<b>凶噬</b>命中目标时，回复<b>100</b>点【狼焰】，每<b>20</b>秒可触发一次。\n·共鸣回路<b>狼舞的决意</b>替换为<b>狼舞的决意·极</b>，施放<b>狼舞的决意·极</b>不需要处于<b>赛点沸腾</b>状态。\n·施放变奏技能<b>你无法逃离！</b>不再结束<b>追猎</b>和<b>荣光</b>效果。",
+    "iconPath": "img/chain/da6f228a0e274eed.png"
+   }
+  ]
+ },
+ "露西": {
+  "name": "露西",
+  "subtitle": "LUCY",
+  "figure": "https://prod-alicdn-community.kurobbs.com/forum/fdb8a07392a84260aef429d47f7b09bf20260509.png",
+  "chains": [
+   {
+    "name": "月球、船票与梦想",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/edce20dde08d406da1561d8d6e15daca20260606.png",
+    "desc": "<b>共鸣技能·有效载荷</b>、<b>共鸣技能·脉冲干扰</b>、<b>重击·双线程</b>和<b>重击·多线程</b>免疫打断。\n施放<b>变奏技能·过时幻觉</b>时攻击提升20%，持续14秒。\n队伍中的角色直接造成的伤害击败带有<b>欺骗程式</b>效果的目标时，露西记录该效果并激活对应的<b>快捷响应</b>，持续6秒。露西失去意识时，记录效果失效。\n<b>快捷响应</b>：生效期间，对队伍中登场角色周围一定范围内的所有目标附加记录的<b>欺骗程式</b>效果，对范围内每名目标仅生效一次。\n可被记录的<b>欺骗程式</b>效果：<b>欺骗程式·义体故障</b>、<b>欺骗程式·突破协议</b>、<b>欺骗程式·运动失能</b>、<b>欺骗程式·武装故障</b>、<b>欺骗程式·赛博精神病</b>。通过<b>快捷响应</b>附加<b>欺骗程式</b>效果时，仅附加可持续生效的状态效果。",
+    "iconPath": "img/chain/1f9c2709e2ca367e.png"
+   },
+   {
+    "name": "黑墙、过去与逃离",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/53254cf599c04350b54d1e957a8214c120260606.png",
+    "desc": "施放<b>共鸣解放·网络行者</b>和<b>共鸣解放·暗网深潜</b>时，初始的<b>Ram点数</b>提升至32点。\n施放<b>共鸣技能·脉冲干扰</b>后额外造成1次450%的<b>衍射伤害</b>，该次伤害为重击伤害。\n该次伤害命中目标时，为目标额外附加以下<b>欺骗程式</b>效果：<b>欺骗程式·义体故障</b>、<b>欺骗程式·突破协议</b>、<b>欺骗程式·运动失能</b>、<b>欺骗程式·武装故障</b>、<b>欺骗程式·赛博精神病</b>。通过该方式附加<b>欺骗程式</b>效果时，仅附加可持续生效的状态效果。\n<b>共鸣回路·黑墙深度</b>效果中：施放<b>重击·多线程</b>时，若自身持有<b>SQL</b>，伤害倍率提升效果由270%提升至560%。",
+    "iconPath": "img/chain/bcf4865afea85083.png"
+   },
+   {
+    "name": "赛博朋克",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/6c69ef8d29374a0899722ab65877540b20260606.png",
+    "desc": "<b>共鸣解放·网络行者</b>和<b>共鸣解放·暗网深潜</b>的覆写篡改的伤害倍率提升50%、暴击伤害提升100%。\n<b>欺骗程式·运动失能</b>的伤害倍率提升65%。\n<b>骇破响应·数据崩解</b>的伤害倍率提升65%。",
+    "iconPath": "img/chain/e3e73d5fd0035215.png"
+   },
+   {
+    "name": "夜之城没有活着的传奇",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/101b19948bfa43ad898eb7676dd032b820260606.png",
+    "desc": "队伍中角色附加<b>【骇破·偏移】</b>后，使队伍中角色全属性伤害加成提升20%，持续20秒。",
+    "iconPath": "img/chain/925424e96600605a.png"
+   },
+   {
+    "name": "前往地狱的断路",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/32f2c6cb57a8485ba2b3def2686373d920260606.png",
+    "desc": "<b>固有技能·幽灵义体</b>中获取的<b>光学欺骗</b>层数上限提升至2层。\n<b>固有技能·幽灵义体</b>获得强化：生命值低于50%时，自身受到攻击后获得1层<b>光学欺骗</b>，该效果有180秒的冷却时间。触发<b>光学欺骗</b>效果时，获得基于露西自身攻击力150%的护盾，持续10秒。",
+    "iconPath": "img/chain/96ff0edcf45f0dd6.png"
+   },
+   {
+    "name": "I Really Want to Stay At Your House",
+    "icon": "https://prod-alicdn-community.kurobbs.com/forum/0ab3fedae97a497ca55703f756dd6b0920260606.png",
+    "desc": "拥有<b>【骇破·偏移】</b>效果或处于<b>【骇破·干涉】</b>状态的目标受到露西的重击伤害提升40%。\n拥有<b>【骇破·偏移】</b>效果或处于<b>【骇破·干涉】</b>状态的目标受到露西的骇破伤害提升60%。\n<b>骇破响应·数据崩解</b>触发的停滞效果延长至1.5秒。",
+    "iconPath": "img/chain/19cf421cc79abb01.png"
+   }
+  ]
+ }
+}

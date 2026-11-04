@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #05070f; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "HarmonyOS Sans SC", sans-serif;
+    color: #e8f0ff;
+    -webkit-font-smoothing: antialiased;
+    width: max-content;
+  }
+  .wrap {
+    position: relative;
+    width: 860px;
+    padding: 0 0 18px;
+    background: #05070f;
+    isolation: isolate;
+  }
+  /* 整图背景：元素星空图（miao 的 bg-xxx 星空底图，跟原神天赋图同一套观感），往下压暗保证表可读 */
+  .wrap::before {
+    content: ""; position: absolute; inset: 0; z-index: -2;
+    background-image: url("{{_res_path}}{{bgImg}}");
+    background-size: 860px auto;
+    background-repeat: repeat-y;
+    background-position: center top;
+  }
+  .wrap::after {
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background:
+      radial-gradient(ellipse at 74% 3%, rgba(120,190,255,.14), transparent 42%),
+      linear-gradient(180deg,
+        rgba(6,16,34,.10) 0%,
+        rgba(6,16,34,.06) 7%,
+        rgba(6,16,34,.12) 18%,
+        rgba(6,16,34,.22) 40%,
+        rgba(6,16,34,.30) 68%,
+        rgba(6,16,34,.34) 100%);
+  }
+
+  /* ---------- 头部 ---------- */
+  .head {
+    position: relative;
+    padding: 32px 32px;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  /* 上半部分：角色名片从上往下逐渐淡出（顶部不透明 -> 底部全透明），叠在整图星空底上 */
+  .head-bg {
+    position: absolute; inset: 0;
+    background-image: url("{{_res_path}}{{card}}");
+    background-size: cover;
+    background-position: center 42%;
+    opacity: 1;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 14%, rgba(0,0,0,.72) 52%, rgba(0,0,0,.28) 80%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 0%, #000 14%, rgba(0,0,0,.72) 52%, rgba(0,0,0,.28) 80%, transparent 100%);
+  }
+  /* 只压左侧保证白字可读，垂直方向交给 .wrap::after 统一处理，头部和下方背景连成一张 */
+  .head-mask {
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(4,8,18,.58) 0%, rgba(4,8,18,.30) 44%, rgba(4,8,18,.06) 72%, rgba(4,8,18,0) 100%),
+      linear-gradient(180deg, rgba(4,8,18,.14) 0%, rgba(4,8,18,.02) 60%, rgba(4,8,18,.16) 100%);
+  }
+  /* 左上角色头像：游戏内解包头像（152x152），圆形裁切 + 冷光边 */
+  .avatar {
+    flex: 0 0 200px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background: radial-gradient(circle at 50% 40%, rgba(90,140,240,.28), rgba(10,20,40,.92) 72%);
+    border: 3px solid rgba(150,195,255,.48);
+    box-shadow: 0 0 30px rgba(90,150,255,.34), 0 8px 22px rgba(0,0,0,.5);
+  }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .head-inner { position: relative; z-index: 2; display: flex; width: 100%; gap: 30px; align-items: center; }
+  .head-txt { flex: 1; min-width: 0; max-width: 600px; }
+  .kicker {
+    display: inline-block;
+    font-size: 21px;
+    letter-spacing: 3px;
+    color: #9fc0ff;
+    padding: 4px 14px;
+    border-radius: 22px;
+    background: rgba(90,140,240,.16);
+    border: 1px solid rgba(120,170,255,.28);
+    margin-bottom: 14px;
+  }
+  .name-row { display: flex; align-items: baseline; gap: 16px; }
+  .cname {
+    font-size: 86px; font-weight: 700; letter-spacing: 4px;
+    color: #fff;
+    text-shadow: 0 2px 18px rgba(0,0,0,.8), 0 0 34px rgba(120,170,255,.35);
+  }
+  .enname {
+    font-size: 21px; letter-spacing: 6px; color: rgba(170,200,255,.55);
+    text-transform: uppercase;
+  }
+  .role-desc {
+    margin-top: 14px;
+    font-size: 21px; line-height: 1.72;
+    color: rgba(215,228,255,.82);
+    max-width: 636px;
+    text-shadow: 0 1px 8px rgba(0,0,0,.85);
+  }
+  .tags { margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .tag {
+    font-size: 20px; padding: 7px 19px; border-radius: 7px;
+    background: rgba(10,18,36,.62);
+    border: 1px solid rgba(120,160,240,.22);
+    color: rgba(200,220,255,.86);
+  }
+  .tag b { color: #ffd76e; font-weight: 500; }
+
+  /* ---------- 基础数据 ---------- */
+  .stats {
+    margin: 18px 26px 4px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(24,40,74,.72), rgba(12,22,44,.72));
+    border: 1px solid rgba(120,160,240,.18);
+    box-shadow: 0 6px 18px rgba(0,0,0,.35);
+    padding: 12px 8px 14px;
+    position: relative;
+  }
+  .stats .lbl {
+    position: absolute; top: -9px; left: 16px;
+    font-size: 11px; letter-spacing: 1.5px;
+    color: #cfe0ff;
+    background: #16233f;
+    border: 1px solid rgba(120,160,240,.30);
+    border-radius: 20px;
+    padding: 2px 10px;
+  }
+  .stats .row { display: flex; margin-top: 6px; }
+  .stat { flex: 1; text-align: center; }
+  .stat .num {
+    font-size: 30px; font-weight: 700; letter-spacing: .5px;
+    color: #fff;
+    text-shadow: 0 0 18px rgba(110,170,255,.45);
+    font-variant-numeric: tabular-nums;
+  }
+  .stat .cap { font-size: 12px; color: rgba(180,202,240,.62); margin-top: 3px; letter-spacing: .5px; }
+
+  /* ---------- 技能卡 ---------- */
+  .sec-title {
+    margin: 20px 26px 6px;
+    font-size: 13px; letter-spacing: 3px;
+    color: rgba(190,214,255,.82);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .sec-title::after {
+    content: ""; flex: 1; height: 1px;
+    background: linear-gradient(90deg, rgba(120,160,240,.30), rgba(120,160,240,0));
+  }
+
+  .skill {
+    margin: 12px 26px 0;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(120,165,255,.16), rgba(70,110,190,.10));
+    border: none;
+    box-shadow: none;
+    overflow: hidden;
+    position: relative;
+  }
+  .skill-head {
+    display: flex; align-items: center; gap: 16px;
+    padding: 16px 18px 10px;
+  }
+  .sicon {
+    width: 84px; height: 84px; border-radius: 50%;
+    flex: 0 0 84px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .sicon img { width: 54px; height: 54px; object-fit: contain; filter: invert(1) brightness(1.12) drop-shadow(0 0 8px rgba(160,205,255,.6)); }
+  .stitle { flex: 1; min-width: 0; }
+  .sname {
+    font-size: 23px; font-weight: 700; letter-spacing: .5px;
+    color: #ffffff;
+    text-shadow: 0 2px 14px rgba(0,0,0,.65), 0 0 22px rgba(130,185,255,.30);
+    line-height: 1.25;
+  }
+  .stype-row { display: flex; gap: 6px; margin-top: 7px; flex-wrap: wrap; }
+  .stype {
+    font-size: 11px; padding: 2px 9px; border-radius: 10px;
+    background: rgba(255,255,255,.10);
+    border: 1px solid rgba(255,255,255,.22);
+    color: rgba(232,242,255,.88);
+    letter-spacing: .5px;
+  }
+  /* 描述 */
+  .sdesc { padding: 0 18px 4px 118px; }
+  .sdesc .blk { margin-bottom: 7px; }
+  .sdesc .dl {
+    font-size: 13px; font-weight: 700; letter-spacing: .5px;
+    color: #ffffff;
+    margin-bottom: 1px;
+    text-shadow: 0 1px 6px rgba(0,0,0,.55);
+  }
+  .sdesc .dt {
+    font-size: 12.5px; line-height: 1.6;
+    color: rgba(238,244,255,.86);
+    text-shadow: 0 1px 5px rgba(0,0,0,.45);
+  }
+  .sdesc .dt .hl { color: #9fd8ff; }
+  /* 倍率表 */
+  .table-wrap { padding: 8px 18px 16px; }
+  table.rate {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-variant-numeric: tabular-nums;
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(255,255,255,.055);
+    border: none;
+  }
+  table.rate th, table.rate td {
+    padding: 4px 1px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 10.8px;
+    white-space: pre-line;
+    line-height: 1.32;
+    letter-spacing: -.2px;
+    word-spacing: -.5px;
+  }
+  table.rate thead th {
+    font-size: 11px;
+    color: rgba(210,228,255,.78);
+    background: rgba(255,255,255,.085);
+    border-bottom: 1px solid rgba(255,255,255,.10);
+    letter-spacing: .5px;
+  }
+  table.rate tbody td:first-child, table.rate thead th:first-child {
+    text-align: left;
+    padding-left: 14px;
+    color: rgba(240,246,255,.92);
+    font-size: 12.5px;
+    min-width: 128px; width: 128px;
+  }
+  table.rate tbody tr:nth-child(even) td { background: rgba(255,255,255,.028); }
+  table.rate tbody td { color: #f0f5ff; }
+  table.rate tbody tr:hover td { background: rgba(255,255,255,.08); }
+
+  /* 固有 / 延奏 */
+  .passive {
+    margin: 12px 26px 0;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: rgba(12,22,44,.62);
+    border: 1px solid rgba(110,150,230,.12);
+    display: flex; gap: 14px;
+  }
+  .passive .picon {
+    width: 52px; height: 52px; border-radius: 50%; flex: 0 0 52px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .passive .picon img { width: 34px; height: 34px; object-fit: contain; opacity: .92; filter: invert(1) brightness(1.08); }
+  .passive .pname { font-size: 16px; font-weight: 700; color: var(--accent); margin-bottom: 4px; }
+  .passive .pdesc { font-size: 12.5px; line-height: 1.7; color: rgba(205,220,250,.76); }
+
+  /* 底部 */
+  .foot {
+    margin: 16px 26px 0;
+    padding-top: 12px;
+    border-top: 1px solid rgba(110,150,230,.12);
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 11px; color: rgba(178,202,238,.68);
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap" style="--accent: {{accent}}">
+  <div class="head">
+    <div class="head-bg"></div>
+    <div class="head-mask"></div>
+    <div class="head-inner">
+      {{if head}}<div class="avatar"><img src="{{_res_path}}{{head}}" alt=""></div>{{/if}}
+      <div class="head-txt">
+        <div class="kicker">{{title}}</div>
+        <div class="name-row">
+          <div class="cname">{{name}}</div>
+          <div class="enname">{{subtitle}}</div>
+        </div>
+        <div class="role-desc">{{desc}}</div>
+        <div class="tags">{{each tags t}}<span class="tag">{{t.k}} · <b>{{t.v}}</b></span>{{/each}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="lbl">90 级基础数据</div>
+    <div class="row">
+      {{each stats s}}<div class="stat"><div class="num">{{s.num}}</div><div class="cap">{{s.label}}</div></div>{{/each}}
+    </div>
+  </div>
+
+  <div class="sec-title">技 能 天 赋</div>
+
+  {{each skills s}}
+  <div class="skill">
+    <div class="skill-head">
+      <div class="sicon" style="{{siconCss}}">{{if s.icon}}<img src="{{_res_path}}{{s.icon}}" alt="">{{/if}}</div>
+      <div class="stitle">
+        <div class="sname">{{s.name}}</div>
+        <div class="stype-row"><span class="stype">{{s.type}}</span>{{if s.table}}<span class="stype">Lv 1 - 10</span>{{/if}}</div>
+      </div>
+    </div>
+    {{if s.desc.length}}
+    <div class="sdesc">
+      {{each s.desc d}}
+      <div class="blk">
+        {{if d.label}}<div class="dl">{{d.label}}</div>{{/if}}
+        {{if d.text}}<div class="dt">{{d.text}}</div>{{/if}}
+      </div>
+      {{/each}}
+    </div>
+    {{/if}}
+    {{if s.table}}
+    <div class="table-wrap">
+      <table class="rate">
+        <thead><tr><th>技能等级</th>{{each s.table.head h}}<th>{{h}}</th>{{/each}}</tr></thead>
+        <tbody>
+        {{each s.table.rows r}}<tr><td>{{r.name}}</td>{{each r.vals v}}<td>{{v}}</td>{{/each}}</tr>{{/each}}
+        </tbody>
+      </table>
+    </div>
+    {{/if}}
+  </div>
+  {{/each}}
+
+  <div class="foot">
+    <span>鸣潮 · 角色天赋图</span>
+    <span>{{watermark}}</span>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+

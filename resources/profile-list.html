@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #050a16; }
+  body {
+    font-family: YS, "PingFang SC", "Microsoft YaHei", "汉仪文黑-65W", sans-serif;
+    color: #eef3ff;
+    -webkit-font-smoothing: antialiased;
+    /* TRSS 的 puppeteer 默认视口只有 800 宽，body 不撑开的话元素截图会裁掉右边 320px */
+    width: max-content;
+  }
+  /* 背景：原神面板列表同款蓝色星云（miao-plugin common/bg/bg-hydro.webp） */
+  .wrap {
+    width: 1120px;
+    padding: 26px 26px 20px;
+    background:
+      radial-gradient(ellipse at 50% 8%, rgba(92,158,255,.16), transparent 58%),
+      linear-gradient(180deg, rgba(5,10,22,0) 0%, rgba(5,10,22,.03) 52%, rgba(4,8,18,.42) 100%),
+      url("{{_miao_path}}common/bg/bg-hydro.webp") 50% 26% / cover no-repeat,
+      #081226;
+    box-shadow: inset 0 0 170px rgba(0,0,0,.16);
+  }
+
+  /* ---------- 头部 ---------- */
+  .head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 4px 16px;
+    border-bottom: 1px solid rgba(130,170,255,.22);
+    margin-bottom: 18px;
+  }
+  .head .title {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 10px rgba(0,0,0,.55);
+  }
+  .head .title i {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgba(185,208,255,.62);
+    margin-left: 10px;
+    letter-spacing: 0;
+  }
+  .head .meta {
+    font-size: 13px;
+    color: rgba(185,208,255,.68);
+    line-height: 1.7;
+    text-align: right;
+    text-shadow: 0 1px 6px rgba(0,0,0,.6);
+  }
+  .head .meta b { color: #ffd76e; font-weight: normal; }
+
+  /* ---------- 网格 ---------- */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .card {
+    position: relative;
+    min-width: 0;
+    height: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(14,28,58,.32);
+    border: 1px solid rgba(120,160,240,.20);
+    box-shadow: 0 8px 20px rgba(0,0,0,.42);
+  }
+  .card::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; top: 0;
+    height: 4px;
+    background: #8fa9ff;
+    box-shadow: 0 0 10px rgba(143,169,255,.8);
+    opacity: .92;
+  }
+  /* 外框（边框 + 顶条）只按星级区分：五星金、四星紫 */
+  .card.star5 {
+    border: 2px solid rgba(255,206,110,.78);
+    box-shadow: 0 0 18px rgba(255,206,110,.28), 0 8px 20px rgba(0,0,0,.42);
+  }
+  .card.star4 {
+    border: 2px solid rgba(176,132,255,.72);
+    box-shadow: 0 0 18px rgba(176,132,255,.24), 0 8px 20px rgba(0,0,0,.42);
+  }
+  .card.star5::after { background: #ffcf6e; box-shadow: 0 0 14px rgba(255,207,110,.95); }
+  .card.star4::after { background: #b57bff; box-shadow: 0 0 14px rgba(181,123,255,.90); }
+  .card .pic {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: 78% 8%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+  .card .shade {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(4,8,18,0) 40%, rgba(4,8,18,.46) 68%, rgba(4,8,18,.88) 100%);
+  }
+  /* 星级色调往卡面里渗一点：底部泛金 / 泛紫 */
+  .card.star5 .shade {
+    background:
+      linear-gradient(180deg, rgba(255,206,110,0) 44%, rgba(255,206,110,.10) 74%, rgba(255,206,110,.26) 100%),
+      linear-gradient(180deg, rgba(4,8,18,0) 40%, rgba(4,8,18,.44) 68%, rgba(4,8,18,.86) 100%);
+  }
+  .card.star4 .shade {
+    background:
+      linear-gradient(180deg, rgba(176,132,255,0) 44%, rgba(176,132,255,.10) 74%, rgba(176,132,255,.24) 100%),
+      linear-gradient(180deg, rgba(4,8,18,0) 40%, rgba(4,8,18,.44) 68%, rgba(4,8,18,.86) 100%);
+  }
+  /* 星级：用 PNG 画——★ 字形只有 0.5em 撑不起来，inline SVG 在 shotium 引擎下整块不渲染，img 才稳 */
+  .card .stars {
+    position: absolute;
+    top: 7px; left: 10px;
+    display: flex;
+    gap: 1px;
+  }
+  .card .stars img {
+    width: 20px;
+    height: 20px;
+    flex: none;
+    display: block;
+  }
+  .card .main-tag {
+    position: absolute;
+    top: 7px; right: 8px;
+    z-index: 4;
+    font-size: 16px;
+    padding: 3px 10px;
+    border-radius: 11px;
+    color: #0b1224;
+    background: var(--c, #41aefb);
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(65,174,251,.45);
+  }
+  .card .info {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 0 74px 14px 14px;
+  }
+  .card .name {
+    font-size: 24px;
+    max-width: 108px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    line-height: 1.25;
+    text-shadow: 0 2px 8px rgba(0,0,0,.9);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card:has(.main-tag) .name {
+    font-size: 18px;
+    max-width: none;
+  }
+  .card .row {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 17px;
+    color: rgba(255,255,255,.88);
+  }
+  .card .lv {
+    flex: none;
+    white-space: nowrap;
+    font-size: 17px;
+    padding: 1px 6px;
+    border-radius: 7px;
+    background: rgba(255,255,255,.14);
+    border: 1px solid rgba(255,255,255,.16);
+  }
+  .card .elem {
+    flex: none;
+    white-space: nowrap;
+    font-size: 17px;
+    padding: 1px 6px;
+    border-radius: 7px;
+    color: var(--c, #41aefb);
+    border: 1px solid var(--c, #41aefb);
+    background: rgba(4,8,18,.42);
+  }
+  /* 共鸣链：放在星级星星下面，放大显示 */
+  .card .chain {
+    position: absolute;
+    top: 34px; left: 10px;
+    z-index: 3;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.15;
+    padding: 1px 9px;
+    border-radius: 9px;
+    color: #ffd76e;
+    border: 1px solid rgba(255,215,110,.55);
+    background: rgba(4,8,18,.5);
+    text-shadow: 0 1px 3px rgba(0,0,0,.9);
+  }
+  .card .chain.zero {
+    color: rgba(255,255,255,.55);
+    border-color: rgba(255,255,255,.22);
+  }
+  /* 右上角：武器类型图标 */
+  .card .weapon {
+    position: absolute;
+    top: 7px; right: 8px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 8px;
+    background: rgba(4,8,18,.44);
+    border: 1px solid rgba(255,255,255,.10);
+  }
+  .card .weapon img {
+    width: 28px;
+    height: 28px;
+    display: block;
+    opacity: .90;
+  }
+  /* 主角卡：右上角只留「主角」标签，不画武器类型图标 */
+  .card:has(.main-tag) .weapon {
+    display: none;
+  }
+  /* 右下角：角色已装备的武器大图标，边框按武器星级上色 */
+  .card .equip {
+    position: absolute;
+    right: 8px; bottom: 8px;
+    z-index: 3;
+    width: 64px; height: 64px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 38%, rgba(10,18,34,.34), rgba(4,8,18,.74));
+    border: 2px solid rgba(160,190,230,.35);
+    box-shadow: 0 2px 10px rgba(0,0,0,.55);
+    overflow: hidden;
+  }
+  .card .equip img {
+    width: 100%; height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  .card .equip.s5 { border-color: #ffcf6e; box-shadow: 0 0 12px rgba(255,207,110,.55), 0 2px 10px rgba(0,0,0,.5); }
+  .card .equip.s4 { border-color: #b57bff; box-shadow: 0 0 10px rgba(181,123,255,.42), 0 2px 10px rgba(0,0,0,.5); }
+  .card .equip.s3 { border-color: #6bb6ff; box-shadow: 0 0 10px rgba(107,182,255,.38), 0 2px 10px rgba(0,0,0,.5); }
+  /* 武器图标右下角：精炼阶数 */
+  .card .equip .res {
+    position: absolute;
+    right: 4px; bottom: 6px;
+    padding: 0 1px;
+    background: none;
+    border: none;
+    color: #ffe9a8;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    font-style: normal;
+    text-shadow:
+      0 0 3px rgba(0,0,0,.95),
+      0 1px 2px rgba(0,0,0,.95),
+      1px 1px 2px rgba(0,0,0,.9),
+      -1px 1px 2px rgba(0,0,0,.9),
+      0 0 8px rgba(0,0,0,.75);
+    z-index: 4;
+  }
+
+  /* ---------- 底部 ---------- */
+  .foot {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(130,170,255,.16);
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: rgba(170,195,240,.50);
+    text-shadow: 0 1px 6px rgba(0,0,0,.6);
+  }
+
+  /* 六属性色：取自鸣潮 wiki */
+  .elem-cryo    { --c: #41aefb; }
+  .elem-pyro    { --c: #f0744e; }
+  .elem-anemo   { --c: #55ffb5; }
+  .elem-electro { --c: #b46bff; }
+  .elem-geo     { --c: #eecc22; }
+  .elem-quantum { --c: #e549a5; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <div class="title">鸣潮角色面板<i>共 {{count}} 名角色</i></div>
+    <div class="meta">
+      <div>UID <b>{{uid}}</b> · {{serverName}}</div>
+      <div>{{dataSource}} · {{time}}</div>
+    </div>
+  </div>
+
+  <div class="grid">
+{{each roles r}}
+    <div class="card elem-{{r.elem}} star{{r.starLevel}}">
+      <div class="pic" style="background-image:url('{{@r.pic}}');background-position:{{r.picPos}}% 8%;"></div>
+      <div class="shade"></div>
+      <div class="stars">{{each r.starList}}<img src="{{_res_path}}img/star-{{r.starImg}}.png" alt="">{{/each}}</div>
+      <div class="chain{{if !r.chain}} zero{{/if}}">{{r.chain}}链</div>
+{{if r.isMain}}      <div class="main-tag">主角</div>{{/if}}
+{{if r.wtype}}      <span class="weapon"><img src="{{_res_path}}img/wt-w_{{r.wtype}}.png" alt="{{r.weapon}}"></span>{{/if}}
+{{if r.equipIcon}}      <div class="equip s{{r.equipStar}}" title="{{r.equipName}}"><img src="{{@r.equipIcon}}" alt="{{r.equipName}}">{{if r.equipReson}}<i class="res">{{r.equipReson}}</i>{{/if}}</div>{{/if}}
+      <div class="info">
+        <div class="name">{{r.name}}</div>
+        <div class="row">
+          <span class="lv">Lv.{{r.level}}</span>
+          <span class="elem">{{r.elemName}}</span>
+        </div>
+      </div>
+    </div>
+{{/each}}
+  </div>
+
+  <div class="foot">
+    <span>{{copyright}}</span>
+    <span>想细看某个角色，发 #更新&lt;角色名&gt;角色面板</span>
+  </div>
+</div>
+</body>
+</html>

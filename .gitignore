@@ -1,0 +1,12 @@
+# 本地备份与临时文件
+*.bak*
+*.orig
+node_modules/
+temp/
+
+# 本地配置（真实 QQ 号等，不进公开仓库）
+data/bind-alias.json
+
+# 系统文件
+.DS_Store
+Thumbs.db
