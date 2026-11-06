@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<style>
+  /* ===== 玩家名片：复刻库街区「我的」页面 ===== */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #F6F3ED; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans SC", sans-serif;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    width: max-content;
+  }
+  .wrap { width: 1080px; background: #F6F3ED; padding-bottom: 0; }
+
+  /* ---------- 顶部场景 ---------- */
+  /* 库街区「我的」页顶部主视觉：user_card_mc 原图 3060x1135 (1020:378)
+     1080 宽下 = 400.6px 高，所以 hero 用 400px，图 100% 100% 不裁剪不变形 */
+  /* hero 高度 = 400（素材比例），白卡上移 80 让圆角压在图上 */
+  .hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    /* 素材顶部 126/1135 是透明渐显（原版用来和页面顶背景融合），
+       这里用素材主体色兜底，渐显区就像是自然淡入，不会露死色 */
+    background: #122424;
+  }
+  /* 背景层：尺寸跟素材比例走（1080x400），不裁不拉，角色不会被裁出画 */
+  .hero-img {
+    position: absolute;
+    inset: 0;
+    background-position: 50% 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    filter: saturate(.86) brightness(1.02);
+  }
+  .hero-mask {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(10,20,24,.28) 0%, rgba(10,20,24,0) 18%, rgba(30,20,26,0) 62%, rgba(255,255,255,0) 100%);
+  }
+  .hero-bar {
+    position: absolute; top: 0; left: 0; right: 0;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 26px 34px;
+  }
+  .hero-bar .l, .hero-bar .r { display: flex; align-items: center; gap: 18px; }
+  .round-btn {
+    width: 58px; height: 58px; border-radius: 50%;
+    background: rgba(28,38,40,.34);
+    border: 1px solid rgba(255,255,255,.22);
+    backdrop-filter: blur(6px);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 26px; font-weight: 400; line-height: 1;
+  }
+  .sticker-row {
+    position: absolute; left: 34px; bottom: 96px;
+    display: flex; align-items: flex-end; gap: 12px;
+  }
+  .sticker { width: 74px; height: 74px; border-radius: 18px; background: rgba(255,255,255,.55); }
+
+  /* ---------- 鸣潮用户卡片叠层（layout 1020:378，1080 宽渲染） ---------- */
+  .mc-card { position: absolute; inset: 0; }
+  /* 头像：宽 9.41%、1:1、白圈 #7FFFFFFF 外扩 1dp、圆角 6dp
+     底边 = 卡片底 - 4.71%*61/16（layout 里 16:61 的定位块贴底）= 194px */
+  .mc-avatar {
+    position: absolute; left: 4.71%; bottom: 194px; width: 9.41%; aspect-ratio: 1 / 1;
+    border-radius: 50%; background: rgba(255,255,255,.45);
+    box-shadow: 0 0 0 3px rgba(255,255,255,.5), 0 8px 22px rgba(0,0,0,.22);
+    overflow: hidden;
+  }
+  .mc-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; display: block; }
+  /* 名字区：起点 = 头像右 + 2.94%（=17.06%），上沿对齐头像顶（104.6px），下沿对齐头像底 */
+  .mc-user {
+    position: absolute; left: 17.06%; top: 104.6px; height: 101.6px;
+    display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;
+  }
+  .mc-name {
+    font-size: 39px; font-weight: 700; color: #FFFFFF; line-height: 1;
+    letter-spacing: .5px; text-shadow: 0 2px 8px rgba(0,0,0,.35);
+    max-width: 620px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .mc-sub { display: flex; align-items: center; gap: 14px; font-size: 30px; line-height: 1; }
+  .mc-server { font-size: 30px; font-weight: 700; color: #FFFFFF; }
+  /* 蓝标签：10dp #3BA9FF、圆角 3dp、0.5dp 描边、填充 #0D80D91A */
+  .mc-tag {
+    font-size: 27px; color: #3BA9FF; line-height: 1;
+    padding: 6px 14px; border-radius: 9px;
+    border: 1.5px solid rgba(59,169,255,.55);
+    background: #0D80D91A;
+  }
+  /* 竖线：#33FFFFFF 1dp x 10dp */
+  .mc-vline { width: 3px; height: 30px; background: #33FFFFFF; flex: 0 0 auto; }
+  /* 特征码：11dp #999999 */
+  .mc-uid { font-size: 33px; color: #999999; letter-spacing: .5px; }
+  /* 四格：每格内容居中，中心线 10.59% / 32.94% / 55.29% / 77.65%（layout 的 1dp 定位点），
+     数字 16dp、标签 10dp #B1B1B1，整组距卡片底 51px，右侧 22.35% 留给立绘 */
+  .mc-stats { position: absolute; inset: 0; }
+  .mc-stats .v, .mc-stats .l { text-shadow: 0 2px 8px rgba(8,14,18,.6); }
+  .mc-stats .cell { position: absolute; bottom: 51px; transform: translateX(-50%); text-align: center; }
+  .mc-stats .cell:nth-child(1) { left: 10.59%; }
+  .mc-stats .cell:nth-child(2) { left: 32.94%; }
+  .mc-stats .cell:nth-child(3) { left: 55.29%; }
+  .mc-stats .cell:nth-child(4) { left: 77.65%; }
+  .mc-stats .v { font-size: 48px; font-weight: 700; color: #FFFFFF; line-height: 1; text-shadow: 0 2px 8px rgba(0,0,0,.3); }
+  .mc-stats .l { margin-top: 6px; font-size: 30px; color: #B1B1B1; line-height: 1; }
+  /* 格间竖线：1dp #33FFFFFF，从数字顶到标签底 */
+  .mc-stats .sep {
+    position: absolute; width: 1px; bottom: 51px; height: 84px;
+    background: rgba(255,255,255,.18);
+  }
+  .mc-stats .sep:nth-child(5) { left: 21.765%; }
+  .mc-stats .sep:nth-child(6) { left: 44.115%; }
+  .mc-stats .sep:nth-child(7) { left: 66.47%; }
+
+  /* ---------- 白色大卡 ---------- */
+  .sheet {
+    position: relative;
+    margin-top: -80px;
+    background: #F6F3ED;
+    border-radius: 60px 60px 0 0;
+    padding: 0 24px 8px;
+  }
+
+  /* 个人主页头部：圆头像 206px，双层金环（外粗金渐变环 + 米白间隙 + 内细金线），昵称 48px、特征码 30px */
+  .profile { display: flex; align-items: flex-start; margin: 0 -24px 18px; padding: 6px 34px 0 68px; }
+  .p-avatar {
+    position: relative; flex: 0 0 auto; width: 206px; height: 206px; border-radius: 50%; padding: 5px;
+    background: linear-gradient(158deg, #F8E1AA 0%, #E9CB84 26%, #C9A152 62%, #F0DCA8 100%);
+    box-shadow: 0 6px 18px rgba(150,112,36,.14);
+  }
+  .p-av-gap { width: 100%; height: 100%; border-radius: 50%; padding: 8px; background: #F6F3ED; }
+  .p-av-in {
+    width: 100%; height: 100%; border-radius: 50%; padding: 2px; overflow: hidden;
+    background: linear-gradient(180deg, #E8CD92 0%, #C7A254 100%);
+  }
+  /* 游戏内头像（headPhotoUrl）256×256，人物四周留了一圈透明边，撑满框时脸会显小；
+     App 头像（headUrl）几乎贴边，视觉上差 ~16%，这里放大补回来 */
+  .p-avatar img {
+    display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover;
+    object-position: 50% 50%; transform: scale(1.25);
+  }
+  /* 库街区头像框素材（headFrameUrl）：盖在最外层，自带透明区域 */
+  .p-avatar .av-frame {
+    position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 50%;
+    object-fit: contain; pointer-events: none;
+  }
+  .p-info { padding: 26px 0 0 32px; }
+  .p-name { display: flex; align-items: center; gap: 16px; font-size: 48px; font-weight: 700; color: #222222; letter-spacing: .5px; }
+  .p-name .edit { font-size: 34px; color: #BDB7AB; }
+  .p-uid { margin-top: 16px; display: flex; align-items: center; gap: 12px; font-size: 30px; color: #8A8579; }
+  .p-uid .copy { font-size: 26px; color: #BDB7AB; }
+
+  /* ---------- 区块 ---------- */
+  .sec { margin-bottom: 26px; border-radius: 18px; overflow: hidden; }
+  .sec-head {
+    height: 84px; padding: 0 26px;
+    display: flex; align-items: center; gap: 16px;
+    background: linear-gradient(180deg, #4B4B4B 0%, #3A3A3A 100%);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+    position: relative;
+  }
+  .sec-head::after {
+    content: ""; position: absolute; inset: 0;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><path d='M60 12 L74 48 L110 60 L74 72 L60 108 L46 72 L10 60 L46 48 Z' fill='none' stroke='rgba(255,255,255,0.05)' stroke-width='2'/></svg>") right -10px center / 190px no-repeat;
+    pointer-events: none;
+  }
+  .sec-ico {
+    width: 48px; height: 48px;
+    display: flex; align-items: center; justify-content: center;
+    flex: 0 0 auto;
+  }
+  .sec-ico img { display: block; width: 100%; height: 100%; object-fit: contain; }
+  .sec-title { font-size: 33px; font-weight: 600; color: #F2EFE8; letter-spacing: 1px; }
+  .sec-right { margin-left: auto; display: flex; align-items: center; gap: 18px; font-size: 25px; color: #C9C4BA; position: relative; z-index: 1; }
+  .sec-right .act { color: #E4DAC4; }
+  .sec-body { background: #fff; }
+
+  /* ---------- 日常数据 ---------- */
+  .daily-top { display: flex; padding: 30px 10px 8px; }
+  .daily-cell { flex: 1; text-align: center; position: relative; }
+  .daily-cell + .daily-cell::before {
+    content: ""; position: absolute; left: 0; top: 12px; bottom: 12px; width: 1px; background: #EFEBE3;
+  }
+  .daily-cell .row { display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .daily-cell .ico { width: 40px; height: 40px; object-fit: contain; }
+  .daily-cell .val { font-size: 33px; font-weight: 700; color: #3C3C3C; }
+  .daily-cell .val b { color: #3C3C3C; }
+  .daily-cell .val i { font-style: normal; font-size: 26px; color: #9E9E9E; font-weight: 400; }
+  .daily-cell .cap { margin-top: 8px; font-size: 24px; color: #9E9E9E; }
+  .daily-cell .sub { margin-top: 10px; font-size: 21px; color: #B4B0A8; }
+
+  .daily-list { padding: 6px 34px 26px; }
+  .daily-line { display: flex; align-items: center; gap: 14px; height: 74px; }
+  .daily-line .ico { width: 40px; height: 40px; object-fit: contain; }
+  .daily-line .nm { font-size: 28px; color: #3A3A3A; flex: 0 0 auto; }
+  .daily-line .nm em { font-style: normal; font-size: 22px; color: #B08A3E; margin-left: 8px; }
+  .daily-line .dots { flex: 1; height: 1px; margin: 0 6px; border-bottom: 2px dotted #DCD7CD; }
+  .daily-line .rt { font-size: 25px; color: #8E8E8E; flex: 0 0 auto; }
+  .daily-line .rt b { color: #B08A3E; font-weight: 700; }
+  .radio-bar { height: 14px; border-radius: 7px; background: #EFECE5; overflow: hidden; margin: -4px 0 12px 54px; width: 520px; }
+  .radio-bar i { display: block; height: 100%; width: 21%;
+    background: repeating-linear-gradient(90deg, #D9B355 0 8px, #E7CB85 8px 12px); }
+
+  /* ---------- 我的资料 ---------- */
+  .stat-big { display: flex; padding: 30px 10px 24px; border-bottom: 1px solid #EFEBE2; }
+  .stat-big .cell { flex: 1; text-align: center; }
+  /* 四格：原版数字 16dp bold / 标签 10dp，等级金 #C49D17 取自代码 */
+  .stat-big .v { font-size: 48px; font-weight: 700; color: #C49D17; line-height: 1; }
+  .stat-big .l { margin-top: 12px; font-size: 30px; color: #6F6A5F; }
+
+  .stat-mid { display: flex; padding: 30px 10px 26px; }
+  .stat-mid .cell { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .stat-mid .top { display: flex; align-items: center; gap: 10px; }
+  .stat-mid .ico { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; }
+  .stat-mid .v { font-size: 36px; font-weight: 700; color: #3A3A3A; }
+  .stat-mid .l { font-size: 22px; color: #8C8C8C; }
+
+  /* 我的资料小图标：用 CSS 几何，避开 emoji 风格跳脱 */
+  .mic { width: 30px; height: 30px; flex: 0 0 auto; display: inline-block; }
+  .mic-medal { border-radius: 50%; background: radial-gradient(circle at 50% 36%, #FBEBC0 0%, #E3C173 46%, #B98A2E 100%); box-shadow: inset 0 0 0 3px rgba(255,255,255,.5), inset 0 0 0 5px rgba(160,115,35,.35); }
+  .mic-star { clip-path: polygon(50% 0%, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0% 50%, 38% 38%); background: linear-gradient(140deg, #F0D68E, #C39A44); }
+  .mic-beacon { clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); background: linear-gradient(140deg, #B3D9F2, #5B9CC7); }
+
+  .stat-grid { padding: 4px 10px 28px; border-top: 1px solid #F4F1EA; }
+  .stat-row { display: flex; padding-top: 22px; }
+  .stat-row .cell { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .stat-row .top { display: flex; align-items: center; gap: 10px; }
+  .stat-row .v { font-size: 32px; font-weight: 700; }
+  .stat-row .l { font-size: 22px; color: #909090; }
+
+  /* 奇藏箱图标：箱体 + 盖缝 + 锁扣 */
+  .box-ico {
+    width: 44px; height: 38px; border-radius: 7px;
+    position: relative; flex: 0 0 auto;
+    box-shadow: inset 0 -10px 0 rgba(0,0,0,.07), inset 0 2px 0 rgba(255,255,255,.42);
+  }
+  .box-ico::before {
+    content: ""; position: absolute; left: 0; right: 0; top: 13px; height: 3px;
+    background: rgba(255,255,255,.55);
+  }
+  .box-ico::after {
+    content: ""; position: absolute; left: 50%; top: 10px; width: 11px; height: 13px;
+    margin-left: -5.5px; border-radius: 2px;
+    background: rgba(255,255,255,.82);
+    box-shadow: 0 0 0 2px rgba(0,0,0,.06);
+  }
+  .box-1 { background: linear-gradient(180deg,#D2CCC0,#A9A296); }
+  .box-2 { background: linear-gradient(180deg,#9FD0EE,#5E9BC4); }
+  .box-3 { background: linear-gradient(180deg,#CBADE9,#8E6CC0); }
+  .box-4 { background: linear-gradient(180deg,#F6DC96,#C9A227); }
+
+  /* 潮汐之遗：四角星 */
+  .ph-ico {
+    width: 36px; height: 36px; flex: 0 0 auto;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0% 50%, 38% 38%);
+  }
+  .ph-green { background: linear-gradient(135deg,#9DE9B8,#4FBF86); }
+  .ph-purple { background: linear-gradient(135deg,#D6B8F5,#9A6BD6); }
+  .ph-gold { background: linear-gradient(135deg,#FFE59B,#D8A62B); }
+
+  /* ---------- 共鸣者 ---------- */
+  .roles { display: flex; gap: 16px; padding: 30px 34px 28px; overflow: hidden; }
+  .role {
+    position: relative; flex: 0 0 209px; height: 274px; border-radius: 15px;
+    background: #EAE6E3; overflow: hidden;
+  }
+  /* 卡片图：方形头像铺满图区（透明底透出卡片浅色），与库街区真机一致 */
+  .role .pic {
+    position: absolute; left: 0; right: 0; top: 0; height: 204px;
+    background-size: cover; background-position: 50% 0; background-repeat: no-repeat;
+  }
+  /* 角色底下那道光：图片和名字条之间的一条浅金光带（真机同款） */
+  .role .glow {
+    position: absolute; left: 0; right: 0; bottom: 63px; height: 7px;
+    background: #F7EBA6;
+  }
+  /* 左上角灰白遮罩：真机盖在角色图和徽章下面的一层雾面背板 */
+  .role .hud {
+    position: absolute; left: 0; top: 0; width: 94px; height: 53px;
+    border-radius: 15px 0 8px 0;
+    background: linear-gradient(180deg, #D8D7D7 0%, #D8D7D7 26%, rgba(216,215,215,.72) 62%, rgba(216,215,215,.58) 100%);
+  }
+  /* 左上角元素徽记：近黑圆 + 属性图标（wiki 官方 128px 图标提色，和真机同形） */
+  .role .elem {
+    position: absolute; left: 7px; top: 9px;
+    width: 39px; height: 39px; border-radius: 50%;
+    background: #282828;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .role .elem img { width: 26px; height: 26px; display: block; }
+  .role .chain {
+    position: absolute; left: 54px; top: 12px;
+    min-width: 32px; height: 33px; padding: 0 7px; border-radius: 6px;
+    background: rgba(112,112,112,.78);
+    color: #FFFFFF; font-size: 25px; font-weight: 500;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .elem-cryo { color: #7FD0FF; }
+  .elem-pyro { color: #FF9A6B; }
+  .elem-electro { color: #C68BFF; }
+  .elem-anemo { color: #A8E86B; }
+  .elem-spectro { color: #FFD75E; }
+  .elem-havoc { color: #F06BC8; }
+  .role .lv {
+    position: absolute; right: 12px; bottom: 74px;
+    font-size: 24px; color: #FFFFFF; font-weight: 700;
+    text-shadow: 0 1px 3px rgba(0,0,0,.6);
+  }
+  .role .nm {
+    position: absolute; left: 0; right: 0; bottom: 0; height: 63px;
+    background: #3F3F3F; color: #F5F1E8; font-size: 22px;
+    display: flex; align-items: center; justify-content: center; letter-spacing: .5px;
+  }
+
+  /* ---------- 挑战数据 ---------- */
+  .sub-head { display: flex; align-items: center; padding: 26px 30px 14px; gap: 12px; }
+  .sub-head .ico { width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; color: #B99A55; font-size: 24px; }
+  .sub-head .t { font-size: 30px; font-weight: 600; color: #3A3A3A; }
+  .sub-head .more { margin-left: auto; font-size: 24px; color: #A09A8E; }
+
+  .tower-card { filter: brightness(1.12);
+    margin: 0 24px; height: 208px; border-radius: 12px; overflow: hidden;
+    background: linear-gradient(90deg, #241B12 0%, #3A2C1C 42%, #4A3A26 100%);
+    position: relative; display: flex; align-items: center; padding: 0 30px;
+    background-size: cover; background-position: 50% 38%;
+  }
+  .tower-card .shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,7,3,.78) 0%, rgba(14,9,5,.34) 48%, rgba(18,12,7,0) 100%); }
+  .tower-card .txt { position: relative; z-index: 1; }
+  .tower-card .nm { font-size: 32px; color: #F4EBD8; font-weight: 600; letter-spacing: .5px; }
+  .tower-card .stars { margin-top: 14px; display: flex; gap: 8px; }
+  .tower-card .st { width: 34px; height: 34px; display: flex; align-items: center; justify-content: center;
+    color: #FFD76E; font-size: 30px; text-shadow: 0 0 10px rgba(255,190,60,.55); }
+  .tower-card .st.off { color: rgba(255,255,255,.20); text-shadow: none; }
+  .tower-card .party { margin-left: auto; display: flex; gap: 10px; position: relative; z-index: 1; }
+  .tower-card .party span { width: 74px; height: 74px; border-radius: 50%; background: #2D2D2D center/cover; border: 2px solid rgba(255,255,255,.35); }
+
+  .locked { padding: 10px 30px 24px; }
+  .locked .item { margin-top: 26px; }
+  .locked .nm { display: flex; align-items: center; gap: 12px; font-size: 30px; color: #3A3A3A; font-weight: 600; }
+  .locked .nm .ico { color: #B99A55; font-size: 24px; }
+  .locked .ph {
+    margin-top: 16px; height: 168px; border-radius: 10px;
+    background: #FBF9F4;
+    display: flex; align-items: center; justify-content: center; gap: 18px;
+    color: #B9B2A4; font-size: 26px; letter-spacing: 2px;
+  }
+  .locked .ph .diamond { width: 26px; height: 26px; transform: rotate(45deg); border: 1px solid #DCD5C7; }
+  .locked .ph .line { width: 150px; height: 1px; background: #E4DED2; }
+
+  .plays { padding: 6px 24px 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .plays .btn {
+    height: 92px; border-radius: 10px;
+    background: linear-gradient(180deg, #F3EDE1 0%, #EAE2D2 100%);
+    border: 1px solid #E2D8C4;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 27px; color: #5C5140; letter-spacing: .5px;
+  }
+
+  /* ---------- 探索数据 ---------- */
+  .explore-list { padding: 4px 26px 24px; }
+  .country {
+    display: flex; align-items: center; gap: 16px;
+    margin-top: 14px; padding: 22px 24px; border-radius: 12px;
+    background: #fff; border: 1px solid #F0EBE1;
+  }
+  .country .left { flex: 1; }
+  .country .nm { font-size: 30px; color: #3A3A3A; display: flex; align-items: baseline; gap: 14px; }
+  .country .nm .bar-sep { width: 2px; height: 24px; background: #DDD6C8; }
+  .country .pc { font-size: 30px; font-weight: 700; color: #3A3A3A; }
+  .country .track { margin-top: 16px; height: 8px; border-radius: 4px; background: #EFECE5; overflow: hidden; }
+  .country .track i { display: block; height: 100%; border-radius: 4px; background: #D5A500; }
+  .country .badge { width: 92px; height: 92px; flex: 0 0 auto; object-fit: contain; opacity: .92; }
+
+  .detect { display: flex; gap: 14px; padding: 4px 26px 28px; overflow: hidden; }
+  .detect .d { width: 194px; height: 250px; border-radius: 10px; flex: 0 0 auto; position: relative;
+    background: #232323 center/cover; overflow: hidden; }
+  .detect .d .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.05) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,.72) 100%); }
+  .detect .d .nm { position: absolute; left: 0; right: 0; bottom: 44px; text-align: center; font-size: 25px; color: #F2EEE4; }
+  .detect .d .lv { position: absolute; left: 0; right: 0; bottom: 14px; text-align: center; font-size: 21px; color: #D8C79A; }
+  .detect .d .lv em { font-style: normal; color: #D8C79A; }
+
+  /* ---------- 数据坞---------- */
+  .calabash { display: flex; padding: 10px 26px 8px; gap: 20px; }
+  .cb-left { width: 200px; flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; padding-top: 10px; }
+  .cb-badge {
+    width: 132px; height: 132px; border-radius: 50%;
+    background: radial-gradient(circle at 50% 42%, #FFF6DF 0%, #F3E2B6 52%, #E4CD93 100%);
+    box-shadow: 0 0 0 4px #FBF7EC, 0 0 0 6px #E7D3A4, inset 0 0 22px rgba(190,150,60,.25);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 56px; font-weight: 700; color: #7A5A22;
+  }
+  .cb-exp { margin-top: 18px; font-size: 28px; color: #9A9A9A; }
+  .cb-exp b { font-size: 30px; color: #C39A44; font-weight: 700; }
+  .cb-exp-l { margin-top: 4px; font-size: 23px; color: #A6A6A6; }
+  .cb-right { flex: 1; }
+  .cb-row { display: flex; align-items: center; height: 74px; font-size: 27px; color: #3C3C3C; border-bottom: 1px solid #F2EEE6; }
+  .cb-row:last-child { border-bottom: 0; }
+  .cb-row .k { color: #4A4A4A; }
+  .cb-row .v { margin-left: auto; color: #C39A44; font-weight: 700; font-size: 27px; }
+  .cb-row .v.pl { font-weight: 500; color: #6E6E6E; }
+
+  .echoes { display: flex; gap: 14px; padding: 6px 26px 30px; overflow: hidden; }
+  .echo { width: 186px; height: 236px; border-radius: 10px; flex: 0 0 auto; position: relative;
+    background: #1E1E1E center/cover; overflow: hidden; }
+  .echo .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.05) 0%, rgba(0,0,0,0) 46%, rgba(0,0,0,.72) 100%); }
+  .echo .nm { position: absolute; left: 8px; right: 8px; bottom: 46px; font-size: 21px; line-height: 1.2; color: #F0ECE2; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .echo .st { position: absolute; left: 0; right: 0; bottom: 14px; text-align: center; color: #FFD76E; font-size: 19px; letter-spacing: 3px; }
+
+  /* ---------- 页脚 ---------- */
+  .foot {
+    height: 210px; display: flex; align-items: center; justify-content: center; gap: 20px;
+    background: linear-gradient(180deg, #F6F3ED 0%, #EAF1F2 46%, #D8E6EA 100%);
+    color: #5E6B70; font-size: 34px; letter-spacing: 6px; font-weight: 600;
+  }
+  .foot .split { width: 1px; height: 34px; background: #B9C7CC; }
+  .foot .logo { display: flex; align-items: center; gap: 12px; }
+  .foot .logo i { width: 56px; height: 56px; border-radius: 14px; border: 2px solid #7E8D93; display: flex; align-items: center; justify-content: center; font-size: 20px; font-style: normal; letter-spacing: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 顶部场景：鸣潮用户卡片（layout 1020:378） -->
+  <div class="hero">
+    <div class="hero-img" style="background-image:url('{{_res_path}}img/bg/castle_home.webp')"></div>
+    <div class="hero-mask"></div>
+    <div class="hero-bar">
+      <div class="l"><div class="round-btn">✕</div><div class="round-btn">?</div></div>
+      <div class="r"><div class="round-btn">⚙&#xFE0E;</div><div class="round-btn">↗</div></div>
+    </div>
+  </div>
+
+  <div class="sheet">
+
+    <!-- 个人主页头部：大头像 + 昵称 + 特征码 -->
+    <div class="profile">
+      <div class="p-avatar">{{if avatar}}<div class="p-av-gap"><div class="p-av-in"><img src="{{@avatar}}" alt=""></div></div>{{/if}}{{if headFrame}}<img class="av-frame" src="{{@headFrame}}" alt="">{{/if}}</div>
+      <div class="p-info">
+        <div class="p-name">{{name}}<span class="edit">✎&#xFE0E;</span></div>
+        <div class="p-uid">特征码: {{uid}}<span class="copy">⧉</span></div>
+      </div>
+    </div>
+
+    <!-- 日常数据 -->
+    <div class="sec">
+      <div class="sec-head">
+        <div class="sec-ico"><img src="{{_res_path}}img/icon/sec-daily.png" alt=""></div>
+        <div class="sec-title">日常数据</div>
+        <div class="sec-right"><span class="act">添加组件 ＋</span><span>｜</span><span>收起 ⌃</span></div>
+      </div>
+      <div class="sec-body">
+        <div class="daily-top">
+          <div class="daily-cell">
+            <div class="row"><img class="ico" src="https://web-static.kurobbs.com/gamerdata/widget/game3/energy.png" alt=""><span class="val">{{daily.energy.cur}}<i>/{{daily.energy.max}}</i></span></div>
+            <div class="cap">结晶波片</div>
+          </div>
+          <div class="daily-cell">
+            <div class="row"><img class="ico" src="{{@daily.storeEnergy.icon}}" alt=""><span class="val">{{daily.storeEnergy.cur}}<i>/{{daily.storeEnergy.max}}</i></span></div>
+            <div class="cap">{{daily.storeEnergy.label}}</div>
+          </div>
+          <div class="daily-cell">
+            <div class="row"><img class="ico" src="https://web-static.kurobbs.com/gamerdata/widget/game3/liveness.png" alt=""><span class="val">{{daily.liveness.cur}}<i>/{{daily.liveness.max}}</i></span></div>
+            <div class="cap">活跃度</div>
+          </div>
+        </div>
+        <div class="daily-list">
+          <div class="daily-line">
+            <img class="ico" src="{{@daily.weekly.icon}}" alt="">
+            <span class="nm">{{daily.weekly.label}}</span>
+            <span class="dots"></span>
+            <span class="rt">本周剩余收取次数 <b>{{daily.weekly.cur}}/{{daily.weekly.max}}</b></span>
+          </div>
+          <div class="daily-line">
+            <span class="nm">周度游历</span>
+            <span class="dots"></span>
+            {{if daily.rouge.has}}
+            <span class="rt">本期游历值<b>{{daily.rouge.score}}/{{daily.rouge.limit}}</b></span>
+            {{else}}
+            <span class="rt">本期游历值暂无数据</span>
+            {{/if}}
+          </div>
+          {{if daily.radio.has}}
+          <div class="daily-line">
+            <span class="nm">先约电台<em>Lv.{{daily.radio.level}}</em></span>
+            <span class="dots"></span>
+            <span class="rt">本周经验上限 <b>{{daily.radio.exp}}/{{daily.radio.expMax}}</b></span>
+          </div>
+          <div class="radio-bar"><i></i></div>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+
+    <!-- 我的资料 -->
+    <div class="sec">
+      <div class="sec-head">
+        <div class="sec-ico"><img src="{{_res_path}}img/icon/sec-profile.png" alt=""></div>
+        <div class="sec-title">我的资料</div>
+        <div class="sec-right"><span>收起 ⌃</span></div>
+      </div>
+      <div class="sec-body">
+        <div class="stat-big">
+          {{each stats.big c}}
+          <div class="cell"><div class="v">{{c.value}}</div><div class="l">{{c.label}}</div></div>
+          {{/each}}
+        </div>
+        <div class="stat-mid">
+          {{each stats.mid c}}
+          <div class="cell">
+            <div class="top">
+              {{if c.icon === 'achievement'}}<span class="mic mic-medal"></span>
+              {{else if c.icon === 'star'}}<span class="mic mic-star"></span>
+              {{else if c.icon === 'smallBeacon'}}<span class="mic mic-beacon"></span>
+              {{else}}<span class="mic mic-beacon"></span>{{/if}}
+              <span class="v">{{c.value}}</span>
+            </div>
+            <div class="l">{{c.label}}</div>
+          </div>
+          {{/each}}
+        </div>
+        <div class="stat-grid">
+          <div class="stat-row">
+            {{each stats.boxes b i}}
+            <div class="cell">
+              <div class="top"><span class="box-ico box-{{i+1}}"></span><span class="v">{{b.num}}</span></div>
+              <div class="l">{{b.name}}</div>
+            </div>
+            {{/each}}
+          </div>
+          <div class="stat-row">
+            {{each stats.phantoms p i}}
+            <div class="cell">
+              <div class="top"><span class="ph-ico ph-{{p.tone}}"></span><span class="v">{{p.num}}</span></div>
+              <div class="l">{{p.name}}</div>
+            </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 共鸣者 -->
+    <div class="sec">
+      <div class="sec-head">
+        <div class="sec-ico"><img src="{{_res_path}}img/icon/sec-role.png" alt=""></div>
+        <div class="sec-title">共鸣者</div>
+        <div class="sec-right"><span class="act">查看图鉴</span><span>｜</span><span>查看详情 →</span></div>
+      </div>
+      <div class="sec-body">
+        <div class="roles">
+          {{each roles r}}
+          <div class="role">
+            <div class="pic" style="background-image:url('{{@r.pic}}')"></div>
+            <div class="hud"></div>
+            <div class="glow"></div>
+            <div class="elem elem-{{r.elem}}"><img src="{{_res_path}}img/elem/{{r.elem}}.png" alt=""></div>
+            <div class="chain">{{r.chain}}</div>
+            <div class="lv">Lv.{{r.level}}</div>
+            <div class="nm">{{r.name}}</div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+    <!-- 挑战数据 -->
+    <div class="sec">
+      <div class="sec-head">
+        <div class="sec-ico"><img src="{{_res_path}}img/icon/sec-challenge.png" alt=""></div>
+        <div class="sec-title">挑战数据</div>
+      </div>
+      <div class="sec-body">
+        {{if tower}}
+        <div class="sub-head"><span class="ico">◈</span><span class="t">逆境深塔·{{tower.difficultyName}}</span><span class="more">查看详情 →</span></div>
+        <div class="tower-card" style="background-image:url('{{@tower.pic}}')">
+          <div class="shade"></div>
+          <div class="txt">
+            <div class="nm">{{tower.areaName}} · 第{{tower.floor}}层</div>
+            <div class="stars">
+              {{each tower.stars s}}
+              <span class="st {{if !s}}off{{/if}}">★</span>
+              {{/each}}
+            </div>
+          </div>
+          <div class="party">
+            {{each tower.roles u}}<span style="background-image:url('{{@u}}')"></span>{{/each}}
+          </div>
+        </div>
+        {{/if}}
+
+        <div class="locked">
+          {{each challenges c}}
+          <div class="item">
+            <div class="nm"><span class="ico">◈</span>{{c.name}}</div>
+            {{if !c.unlocked}}
+            <div class="ph"><span class="line"></span><span class="diamond"></span><span>暂未解锁</span><span class="diamond"></span><span class="line"></span></div>
+            {{/if}}
+          </div>
+          {{/each}}
+        </div>
+
+        <div class="sub-head"><span class="ico">◈</span><span class="t">更多玩法</span><span class="more">查看详情 →</span></div>
+        <div class="plays">
+          {{each morePlays p}}<div class="btn">{{p}}</div>{{/each}}
+        </div>
+      </div>
+    </div>
+
+    <!-- 探索数据 -->
+    <div class="sec">
+      <div class="sec-head">
+        <div class="sec-ico"><img src="{{_res_path}}img/icon/sec-explore.png" alt=""></div>
+        <div class="sec-title">探索数据</div>
+      </div>
+      <div class="sec-body">
+        <div class="sub-head"><span class="ico">◈</span><span class="t">探索进度</span><span class="more">查看详情 →</span></div>
+        <div class="explore-list">
+          {{each countries c}}
+          <div class="country">
+            <div class="left">
+              <div class="nm"><span>{{c.name}}</span><span class="bar-sep"></span><span class="pc">{{c.progress}}%</span></div>
+              <div class="track"><i style="width:{{c.progress}}%;background:{{c.color}}"></i></div>
+            </div>
+            {{if c.icon}}<img class="badge" src="{{@c.icon}}" alt="">{{/if}}
+          </div>
+          {{/each}}
+        </div>
+
+        {{if detections.length}}
+        <div class="sub-head"><span class="ico">◈</span><span class="t">敌迹探寻</span><span class="more">查看详情 →</span></div>
+        <div class="detect">
+          {{each detections d}}
+          <div class="d" style="background-image:url('{{@d.icon}}')">
+            <div class="shade"></div>
+            <div class="nm">{{d.name}}</div>
+            <div class="lv">Lv.{{d.levelName}}</div>
+          </div>
+          {{/each}}
+        </div>
+        {{/if}}
+      </div>
+    </div>
+
+    <!-- 数据坞 -->
+    {{if calabash}}
+    <div class="sec">
+      <div class="sec-head">
+        <div class="sec-ico"><img src="{{_res_path}}img/icon/sec-cache.png" alt=""></div>
+        <div class="sec-title">数据坞</div>
+        <div class="sec-right"><span>收起 ⌃</span></div>
+      </div>
+      <div class="sec-body">
+        <div class="calabash">
+          <div class="cb-left">
+            <div class="cb-badge">{{calabash.level}}</div>
+            <div class="cb-exp"><b>{{calabash.curExp}}</b>/{{calabash.target}}</div>
+            <div class="cb-exp-l">数据坞经验</div>
+          </div>
+          <div class="cb-right">
+            <div class="cb-row"><span class="k">声骸图鉴收集进度</span><span class="v">{{calabash.unlockCount}}/{{calabash.maxCount}}</span></div>
+            <div class="cb-row"><span class="k">基础吸收概率</span><span class="v pl">{{calabash.baseCatch}}</span></div>
+            <div class="cb-row"><span class="k">强化吸收概率</span><span class="v pl">{{calabash.strengthenCatch}}</span></div>
+            <div class="cb-row"><span class="k">最高可吸收品质</span><span class="v pl">{{calabash.qualityText}}</span></div>
+            <div class="cb-row"><span class="k">COST上限</span><span class="v pl">{{calabash.cost}}</span></div>
+          </div>
+        </div>
+        {{if calabash.phantoms.length}}
+        <div class="sub-head"><span class="ico">◈</span><span class="t">声骸图鉴</span><span class="more">查看详情 →</span></div>
+        <div class="echoes">
+          {{each calabash.phantoms p}}
+          <div class="echo" style="background-image:url('{{@p.icon}}')">
+            <div class="shade"></div>
+            <div class="nm">{{p.name}}</div>
+            <div class="st">{{p.starsText}}</div>
+          </div>
+          {{/each}}
+        </div>
+        {{/if}}
+      </div>
+    </div>
+    {{/if}}
+
+  </div>
+
+  <div class="foot">
+    <span>库街区</span>
+    <span class="split"></span>
+    <span>鸣潮</span>
+  </div>
+</div>
+</body>
+</html>
+
+
+

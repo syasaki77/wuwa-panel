@@ -17,6 +17,8 @@ import {
   requestAccessToken,
   getRoleData,
   getRoleDetail,
+  getPlayerCard,
+  getUserMine,
   refreshData,
   randomDeviceCode,
 } from './lib/kuro.js'
@@ -24,7 +26,8 @@ import { solveGeetest } from './lib/geetest.js'
 import { Store, WeaponStore, maskToken } from './lib/store.js'
 import { lookupRole, normName } from './lib/alias.js'
 import { buildPanelData, buildListData } from './lib/panel.js'
-import { renderPanel, renderRoleList } from './lib/render.js'
+import { buildPlayerCardData } from './lib/player-card.js'
+import { renderPanel, renderRoleList, renderPlayerCard } from './lib/render.js'
 import { findTalentRole, renderTalent } from './lib/talent.js'
 import { findChainRole, renderChain } from './lib/chain.js'
 
@@ -145,6 +148,8 @@ export class WuwaPanel extends plugin {
       rule: [
         { reg: '^#鸣潮绑定', fnc: 'bind' },
         { reg: '^\\d{4,8}$', fnc: 'bindByCode' },
+        // #鸣潮卡片 —— 库街区「我的 → 角色卡片」同款长图名片
+        { reg: '^#鸣潮卡片$', fnc: 'card' },
         { reg: '^#更新鸣潮面板(?:\\s*\\d{6,12})?$', fnc: 'updateAll' },
         { reg: '^#更新(?!鸣潮面板).+?角色面板(?:\\s*\\d{6,12})?$', fnc: 'updateOne' },
         { reg: '^#(?!(?:更新|鸣潮绑定|星铁|原神|米游社)).+?(?:角色)?面板(?:\\s*\\d{6,12})?$', fnc: 'updateOne' },
@@ -169,6 +174,8 @@ export class WuwaPanel extends plugin {
       roleName: roleName(r) || '未知角色',
       serverName: normServerName(r.serverName || r.server || ''),
       uid: r.uid || r.userId || '',
+      // 游戏内头像（库街区 profile_picture），名片顶部用它；headUrl 是库街区 App 的头像，不是游戏里的
+      headPhoto: r.headPhotoUrl || r.headPhoto || '',
     }))
   }
 
@@ -331,6 +338,20 @@ export class WuwaPanel extends plugin {
         logger.mark(`[鸣潮面板] 修复乱码绑定失败 user=${userId} msg=${err.message}`)
       }
     }
+    // 老绑定里没存游戏内头像（headPhoto），补拉一次并回写，免得名片顶部用错头像
+    if (!acc.headPhoto) {
+      try {
+        const fresh = await getBoundRoles(bind.token, bind.did)
+        if (Array.isArray(fresh) && fresh.length) {
+          bind.roles = this.slimRoles(fresh)
+          await Store.save(userId, bind)
+          acc = bind.roles.find(r => String(r.roleId) === String(acc.roleId)) || bind.roles[0]
+          logger.mark(`[鸣潮面板] 补齐游戏内头像 user=${userId}`)
+        }
+      } catch (err) {
+        logger.mark(`[鸣潮面板] 补头像失败 user=${userId} msg=${err.message}`)
+      }
+    }
     try {
       const bat = await requestAccessToken(bind.token, acc.serverId, acc.roleId, bind.did)
       return { bind, acc, bat }
@@ -457,6 +478,44 @@ export class WuwaPanel extends plugin {
     })
     const img = await renderPanel(this.e, data)
     await this.reply(img, false)
+  }
+
+  /**
+   * #鸣潮卡片 —— 库街区「我的 → 角色卡片」同款长图
+   * 主体资料、数据坞、探索、挑战、深塔一次拉齐；角色列表另外拉，失败不影响主体。
+   */
+  async card() {
+    const ctx = await this.prepare()
+    if (!ctx) return
+    const { bind, acc, bat } = ctx
+
+    await this.say('正在打包名片，稍等一下…')
+
+    try {
+      const [card, roleRaw, mine] = await Promise.all([
+        getPlayerCard(bind.token, acc.serverId, acc.roleId, bat, bind.did),
+        getRoleData(bind.token, acc.serverId, acc.roleId, bat, bind.did).catch(() => null),
+        getUserMine(bind.token, '', bind.did).catch(() => null),
+      ])
+      const data = buildPlayerCardData(card, {
+        roles: roleRaw,
+        uid: acc.roleId || '',
+        serverName: normServerName(acc.serverName),
+        avatar: acc?.headPhoto || mine?.headUrl || '',
+      })
+      const img = await renderPlayerCard(this.e, data)
+      return this.reply(img, false)
+    } catch (err) {
+      logger.mark(`[鸣潮面板] 名片失败 user=${this.e.user_id} msg=${err.message}`)
+      if (/未开放展示|showToGuest/.test(err.message)) {
+        return this.say('这个账号没开数据展示（库街区 → 我的 → 数据展示），名片取不到数据')
+      }
+      if (err.apiCode === 220 || /登录已过期/.test(err.message)) {
+        await Store.remove(this.e.user_id)
+        return this.say('库街区登录过期了，重新发 #鸣潮绑定 手机号，绑一次就好')
+      }
+      return this.say('名片生成失败：' + (err.message || '未知错误'))
+    }
   }
 
   /** #更新鸣潮面板 [UID] —— 全角色缩略图一览（带 UID 时查别人） */
